@@ -109,8 +109,6 @@ menu{
                 max-width: 1120px;
                 font-size: 12px;
                 color: #606060;
-                --space-around: 4rem;
-                width: min(100% - var(--space-around)* 2, var(--max-width));
                 margin: 0 auto;
                 .list-ul{
                     display: flex;

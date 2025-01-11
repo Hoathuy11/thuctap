@@ -168,7 +168,7 @@ menu .section-2 .container .list-item .item .article .title-1 {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: url("/thuy/assets/img/illust.png") no-repeat center center;
+  background: url("/assets/img/illust.png") no-repeat center center;
   background-size: contain;
   width: 100%;
   max-width: 298px;
@@ -220,7 +220,7 @@ menu .section-2 .container .list-item .item .article .title-3 {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: url("/thuy/assets/img/illust.png") no-repeat center center;
+  background: url("/assets/img/illust.png") no-repeat center center;
   background-size: contain;
   width: 100%;
   max-width: 295px;
@@ -253,7 +253,7 @@ menu .section-2 .container .list-item .item .text span {
 }
 
 .contact2 {
-  background: url("/thuy/assets/img/Rectangle 11.png") no-repeat center center;
+  background: url("/assets/img/Rectangle 11.png") no-repeat center center;
   background-size: cover;
   padding: 60px 0;
   color: white;

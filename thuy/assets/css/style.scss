@@ -1,5 +1,29 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+$font-noto: "Noto Sans JP", serif;
+$font-dm: "DM Serif Text", serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+body {
+    font-family: $font-noto;
 }
 img {
     max-width: 100%;
@@ -10,11 +34,13 @@ img {
     display: flex;
     flex-direction: column;
     padding: 32px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: white;
     .logo{
-        background-color: white;
         img{
             width: 100%;
-            max-width: 260px;
         }
     }
     .contact1{
@@ -22,18 +48,16 @@ img {
         max-width: 434px;
         display: flex;
         .phone{
-            width: 100%;
             max-width: 272px;
             font-size: 36px;
             color: #F67600;
             font-weight: bold;
         }
         .time{
-            width: 100%;
             max-width: 150px;
             font-size: 11px;
             padding: 10px 0;
-            transform: translateY(-5px);
+            transform: translateY(5px);
         }
         img{
             width: 32px;
@@ -46,87 +70,83 @@ img {
         justify-content: space-between;
     }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-    margin-top: 10px;
-    ul{
-        width: 100%;
+    .nav{
         display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        
-    }
-    li {
-        margin: auto;
-        &:hover{
-            color: #F67600;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 10px;
+        ul{
+            width: 100%;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            
+        }
+        li {
+            margin: auto;
+            &:hover{
+                color: #F67600;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 12px;
         }
     }
-    a{
-        text-decoration: none;
-        color: black;
-        padding: 12px;
-    }
-}}
+}
 .banner {
     position: relative;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 38px;
+    display: flex;
     font-weight: bold;
+    background: url('../img/AdobeStock_279597158_Preview\ 1.png')no-repeat center center;
+    width: min(100% - var(--space-around)* 2, var(--max-width));
+    max-width: 1360px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 20px;
     .reason{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        
+        line-height: 2;
         text-align: center;
     }
     .reason p {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
         color: #F67600;
     }
 }
-.banner img{
-    width: 1360px;
-    height: 300px;
-    border-radius: 20px;
+.list{
+    max-width: 1120px;
+    --space-around: 4rem;
+    width: min(100% - var(--space-around)* 2, var(--max-width));
+    font-size: 12px;
+    color: #606060;
+    margin: 0 auto;
+    .list-ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        line-height: 1;
+        gap: 0.8rem;
+        list-style-type: none;
+        padding: 20px 0;
+        a{
+            text-decoration: none;
+        }
+        .item-1 a{
+            color: #F67600;
+        }
+    }
 }
 menu{
     width: 100%;
     max-width: 1440px;
-    .section-1{
-        .container{
-            width: 100%;
-            margin: 0 auto;
-            .list{
-                max-width: 1120px;
-                font-size: 12px;
-                color: #606060;
-                margin: 0 auto;
-                .list-ul{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    line-height: 1;
-                    gap: 0.8rem;
-                    list-style-type: none;
-                    a{
-                        text-decoration: none;
-                    }
-                    .item-1 a{
-                        color: #F67600;
-                    }
-                }
-            }
-        }
-    }
     .section-2 {
         margin: 20px 0;
         .container {
@@ -137,7 +157,6 @@ menu{
             flex-direction: column;
             margin: 0 auto;
             .list-item {
-                width: 100%;
                 max-width: 1120px;
                 display: block;
                 flex-wrap: wrap;
@@ -145,97 +164,39 @@ menu{
                 .item{
                     display: flex;
                     flex-direction: row;
-                    gap: 15px;
-                    align-items: flex-start;
-                    padding: 50px 0;
-                    .img {
-                        width: 100%;
+                    gap: 40px;
+                    align-items: center;
+                    img {
                         max-width: 480px;
                         height: 320px;
                     }
                     .article {
-                        width: 100%;
                         max-width: 600px;
-                        margin: 0 20px;
-                        .title-1 {
-                            display: flex;
+                        .title{
+                            display: inline-flex;
                             align-items: center;
-                            gap: 10px;
+                            gap: 20px;
                             background: url('/assets/img/illust.png') no-repeat center center;
                             background-size: contain;
-                            width: 100%;
-                            max-width: 298px;
-                            padding: 20px;
                             .number {
-                                width: 100%;
                                 max-width: 59px;
                                 font-size: 64px;
                                 font-weight: bold;
                                 color: #F67600;
+                                font-family: "Oswald", sans-serif;
                             }
                             p {
-                                width: 100%;
                                 max-width: 296px;
                                 font-size: 18px;
-                                font-weight: bold;
+                                font-weight: 700;
+                                letter-spacing: 0.072rem;
+                                line-height: 1.8;
                                 span{
                                     color:#F67600;
+                                    font-weight: 700;
                                 }
                             }
-                        }
-                            .title-2 {
-                                display: flex;
-                                align-items: center;
-                                gap: 10px;
-                                background: url('/assets/img/illust.png') no-repeat center center;
-                                background-size: contain;
-                                width: 100%;
-                                max-width: 279px;
-                                padding: 20px;
-                                .number {
-                                    width: 100%;
-                                    max-width: 66px;
-                                    font-size: 64px;
-                                    font-weight: bold;
-                                    color: #F67600;
-                                }
-                                p {
-                                    width: 100%;
-                                    max-width: 173px;
-                                    font-size: 18px;
-                                    font-weight: bold;
-                                    span{
-                                        color:#F67600;
-                                    }
-                                }
-                            }
-                            .title-3{
-                                display: flex;
-                                align-items: center;
-                                gap: 10px;
-                                background: url('/assets/img/illust.png') no-repeat center center;
-                                background-size: contain;
-                                width: 100%;
-                                max-width: 295px;
-                                padding: 20px;
-                                .number {
-                                    width: 100%;
-                                    max-width: 66px;
-                                    font-size: 64px;
-                                    font-weight: bold;
-                                    color: #F67600;
-                                }
-                                p {
-                                    width: 100%;
-                                    max-width: 189px;
-                                    font-size: 18px;
-                                    font-weight: bold;
-                                    span{
-                                        color:#F67600;
-                                    }
-                                }
-                            }
-                        }
+                        }    
                         .text {
                             font-size: 16px;
                             line-height: 1.6;
@@ -250,6 +211,7 @@ menu{
             }
         }
     }
+}
 .contact2{
     background: url('/assets/img/Rectangle\ 11.png') no-repeat center center;
     background-size: cover;
@@ -262,7 +224,6 @@ menu{
     max-width: 1440px;
     .contact-list {
         display: flex;
-        margin-bottom: 20px;
         font-size: 20px;
         justify-content: center;
         align-items: center;
@@ -282,6 +243,12 @@ menu{
                 border-radius: 10px;
                 font-weight: bold;
                 line-height: normal;
+                .no-bg{
+                    background-color: transparent;
+                    color: white;
+                    padding: 0;
+                    font-size: 2.4rem;
+                }
             }
         }
         .text-marker {
@@ -295,7 +262,7 @@ menu{
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translateY(10px);
+        padding: 20px 0;
         .contact-phone__number {
             font-size: 60px;
             font-weight: bold;
@@ -303,7 +270,6 @@ menu{
             align-items: center;
             justify-content: center;
             gap: 15px;
-            margin-top: 20px;
         }
         .contact-phone__text {
             text-align: left;
@@ -311,13 +277,11 @@ menu{
             color: #d0d0d0;
             margin: 0;
             line-height: 1.2;
-            transform: translateY(-20px);
             padding: 0 10px;
             font-weight: bold;
         }
     }
     .contact-btn {
-        margin-top: 30px;
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -336,6 +300,7 @@ menu{
                 height: 40px;
             }
         }
+        
         .contact-btn__orange {
             background-color: #F67600;
         }
@@ -375,7 +340,6 @@ menu{
 
     }
     .contact__footer{
-        width: 100%;
         max-width: 834px;
         height: 212px;
         color: white;
@@ -406,6 +370,8 @@ menu{
 
                     margin-left: 10px;
                     display: flex;
+                    padding-bottom: 20px;
+                    line-height: 1.5;
                 }
                 .p__footer{
                     padding-right: 35px;
@@ -418,32 +384,42 @@ menu{
                 }
             }
         }
-    .nav__footer {
-        width: 100%;
-        max-width: 834px;
-        height: 140px;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 15px;
-        line-height: 2;
-        font-size: 15px;
-        ul {
-            list-style-type: none;
-            padding: 5px;
+        .nav__footer {
+            width: 100%;
+            max-width: 834px;
+            height: 140px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            line-height: 2;
+            font-size: 15px;
+            .nav__list {
+                display: flex;
+                flex-direction: column;
+                ul {
+                    list-style-type: none;
+                    padding: 5px;
+                    margin: 0;
+                    li:hover{
+                        opacity: 70%;
+                    }
+                }
+                &:nth-child(1) ul,
+                :nth-child(5) ul {
+                    padding: 0;
+                }
+                &:nth-child(2) ul,
+                :nth-child(3) ul,
+                :nth-child(4) ul {
+                    padding: 0 10px;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
         }
-        .nav__list1 ul,
-        .nav__list5 ul {
-            margin: 0;
-            padding: 0;
-        }
-        .nav__list2 ul,
-        .nav__list3 ul,
-        .nav__list4 ul {
-            margin: 0;
-            padding: 0 10px;
-        }
-    }
     .copy{
         color: #969696;
         text-align: center;

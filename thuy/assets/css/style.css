@@ -1,5 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans JP", serif;
 }
 
 img {
@@ -12,13 +30,13 @@ img {
   display: flex;
   flex-direction: column;
   padding: 32px 30px;
-}
-.header .logo {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: white;
 }
 .header .logo img {
   width: 100%;
-  max-width: 260px;
 }
 .header .contact1 {
   width: 100%;
@@ -26,18 +44,16 @@ img {
   display: flex;
 }
 .header .contact1 .phone {
-  width: 100%;
   max-width: 272px;
   font-size: 36px;
   color: #F67600;
   font-weight: bold;
 }
 .header .contact1 .time {
-  width: 100%;
   max-width: 150px;
   font-size: 11px;
   padding: 10px 0;
-  transform: translateY(-5px);
+  transform: translateY(5px);
 }
 .header .contact1 img {
   width: 32px;
@@ -76,10 +92,14 @@ img {
 
 .banner {
   position: relative;
-  display: inline-block;
-  margin-top: 10px;
-  margin-left: 38px;
+  display: flex;
   font-weight: bold;
+  background: url("../img/AdobeStock_279597158_Preview 1.png") no-repeat center center;
+  width: min(100% - var(--space-around) * 2, var(--max-width));
+  max-width: 1360px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 0 20px;
 }
 .banner .reason {
   position: absolute;
@@ -87,47 +107,41 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  line-height: 2;
   text-align: center;
 }
 .banner .reason p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   color: #F67600;
 }
 
-.banner img {
-  width: 1360px;
-  height: 300px;
-  border-radius: 20px;
-}
-
-menu {
-  width: 100%;
-  max-width: 1440px;
-}
-menu .section-1 .container {
-  width: 100%;
-  margin: 0 auto;
-}
-menu .section-1 .container .list {
+.list {
   max-width: 1120px;
+  --space-around: 4rem;
+  width: min(100% - var(--space-around) * 2, var(--max-width));
   font-size: 12px;
   color: #606060;
   margin: 0 auto;
 }
-menu .section-1 .container .list .list-ul {
+.list .list-ul {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   line-height: 1;
   gap: 0.8rem;
   list-style-type: none;
+  padding: 20px 0;
 }
-menu .section-1 .container .list .list-ul a {
+.list .list-ul a {
   text-decoration: none;
 }
-menu .section-1 .container .list .list-ul .item-1 a {
+.list .list-ul .item-1 a {
   color: #F67600;
+}
+
+menu {
+  width: 100%;
+  max-width: 1440px;
 }
 menu .section-2 {
   margin: 20px 0;
@@ -141,7 +155,6 @@ menu .section-2 .container {
   margin: 0 auto;
 }
 menu .section-2 .container .list-item {
-  width: 100%;
   max-width: 1120px;
   display: block;
   flex-wrap: wrap;
@@ -150,104 +163,47 @@ menu .section-2 .container .list-item {
 menu .section-2 .container .list-item .item {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  align-items: flex-start;
-  padding: 50px 0;
+  gap: 40px;
+  align-items: center;
 }
-menu .section-2 .container .list-item .item .img {
-  width: 100%;
+menu .section-2 .container .list-item .item img {
   max-width: 480px;
   height: 320px;
 }
 menu .section-2 .container .list-item .item .article {
-  width: 100%;
   max-width: 600px;
-  margin: 0 20px;
 }
-menu .section-2 .container .list-item .item .article .title-1 {
-  display: flex;
+menu .section-2 .container .list-item .item .article .title {
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   background: url("/assets/img/illust.png") no-repeat center center;
   background-size: contain;
-  width: 100%;
-  max-width: 298px;
-  padding: 20px;
 }
-menu .section-2 .container .list-item .item .article .title-1 .number {
-  width: 100%;
+menu .section-2 .container .list-item .item .article .title .number {
   max-width: 59px;
   font-size: 64px;
   font-weight: bold;
   color: #F67600;
+  font-family: "Oswald", sans-serif;
 }
-menu .section-2 .container .list-item .item .article .title-1 p {
-  width: 100%;
+menu .section-2 .container .list-item .item .article .title p {
   max-width: 296px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.072rem;
+  line-height: 1.8;
 }
-menu .section-2 .container .list-item .item .article .title-1 p span {
+menu .section-2 .container .list-item .item .article .title p span {
   color: #F67600;
+  font-weight: 700;
 }
-menu .section-2 .container .list-item .item .article .title-2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: url("/assets/img/illust.png") no-repeat center center;
-  background-size: contain;
-  width: 100%;
-  max-width: 279px;
-  padding: 20px;
-}
-menu .section-2 .container .list-item .item .article .title-2 .number {
-  width: 100%;
-  max-width: 66px;
-  font-size: 64px;
-  font-weight: bold;
-  color: #F67600;
-}
-menu .section-2 .container .list-item .item .article .title-2 p {
-  width: 100%;
-  max-width: 173px;
-  font-size: 18px;
-  font-weight: bold;
-}
-menu .section-2 .container .list-item .item .article .title-2 p span {
-  color: #F67600;
-}
-menu .section-2 .container .list-item .item .article .title-3 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: url("/assets/img/illust.png") no-repeat center center;
-  background-size: contain;
-  width: 100%;
-  max-width: 295px;
-  padding: 20px;
-}
-menu .section-2 .container .list-item .item .article .title-3 .number {
-  width: 100%;
-  max-width: 66px;
-  font-size: 64px;
-  font-weight: bold;
-  color: #F67600;
-}
-menu .section-2 .container .list-item .item .article .title-3 p {
-  width: 100%;
-  max-width: 189px;
-  font-size: 18px;
-  font-weight: bold;
-}
-menu .section-2 .container .list-item .item .article .title-3 p span {
-  color: #F67600;
-}
-menu .section-2 .container .list-item .item .text {
+menu .section-2 .container .list-item .item .article .text {
   font-size: 16px;
   line-height: 1.6;
   color: #555;
 }
-menu .section-2 .container .list-item .item .text span {
+menu .section-2 .container .list-item .item .article .text span {
   font-weight: bold;
   color: #F67600;
 }
@@ -265,7 +221,6 @@ menu .section-2 .container .list-item .item .text span {
 }
 .contact2 .contact-list {
   display: flex;
-  margin-bottom: 20px;
   font-size: 20px;
   justify-content: center;
   align-items: center;
@@ -288,6 +243,12 @@ menu .section-2 .container .list-item .item .text span {
   font-weight: bold;
   line-height: normal;
 }
+.contact2 .contact-list .contact-list__btn span .no-bg {
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  font-size: 2.4rem;
+}
 .contact2 .contact-list .text-marker {
   font-size: 28px;
   font-weight: bold;
@@ -298,7 +259,7 @@ menu .section-2 .container .list-item .item .text span {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(10px);
+  padding: 20px 0;
 }
 .contact2 .contact-phone .contact-phone__number {
   font-size: 60px;
@@ -307,7 +268,6 @@ menu .section-2 .container .list-item .item .text span {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
 }
 .contact2 .contact-phone .contact-phone__text {
   text-align: left;
@@ -315,12 +275,10 @@ menu .section-2 .container .list-item .item .text span {
   color: #d0d0d0;
   margin: 0;
   line-height: 1.2;
-  transform: translateY(-20px);
   padding: 0 10px;
   font-weight: bold;
 }
 .contact2 .contact-btn {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -376,7 +334,6 @@ menu .section-2 .container .list-item .item .text span {
   max-width: 515px;
 }
 .footer .contact__footer {
-  width: 100%;
   max-width: 834px;
   height: 212px;
   color: white;
@@ -407,6 +364,8 @@ menu .section-2 .container .list-item .item .text span {
 .footer .contact__footer .nd__footer .nd__footer2 {
   margin-left: 10px;
   display: flex;
+  padding-bottom: 20px;
+  line-height: 1.5;
 }
 .footer .contact__footer .nd__footer .p__footer {
   padding-right: 35px;
@@ -428,20 +387,30 @@ menu .section-2 .container .list-item .item .text span {
   line-height: 2;
   font-size: 15px;
 }
-.footer .nav__footer ul {
+.footer .nav__footer .nav__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer .nav__footer .nav__list ul {
   list-style-type: none;
   padding: 5px;
-}
-.footer .nav__footer .nav__list1 ul,
-.footer .nav__footer .nav__list5 ul {
   margin: 0;
+}
+.footer .nav__footer .nav__list ul li:hover {
+  opacity: 70%;
+}
+.footer .nav__footer .nav__list:nth-child(1) ul,
+.footer .nav__footer .nav__list :nth-child(5) ul {
   padding: 0;
 }
-.footer .nav__footer .nav__list2 ul,
-.footer .nav__footer .nav__list3 ul,
-.footer .nav__footer .nav__list4 ul {
-  margin: 0;
+.footer .nav__footer .nav__list:nth-child(2) ul,
+.footer .nav__footer .nav__list :nth-child(3) ul,
+.footer .nav__footer .nav__list :nth-child(4) ul {
   padding: 0 10px;
+}
+.footer .nav__footer .nav__list a {
+  color: white;
+  text-decoration: none;
 }
 .footer .copy {
   color: #969696;

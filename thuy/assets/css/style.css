@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+.header, .footer, menu, .contact2, .banner, .contact-phone {
+  margin: 0 auto;
+}
+
 li {
   list-style: none;
 }
@@ -24,6 +28,60 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+.btns {
+  position: fixed;
+  z-index: 98;
+  right: 0;
+  top: 30rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+.btns a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 8px;
+  padding: 16px 12px 20px 12px;
+  border-radius: 16px 0 0 16px;
+  font-family: "Oswald", sans-serif;
+  background-color: #f39c12;
+  text-decoration: none;
+}
+.btns a img {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+}
+.btns a span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.042rem;
+}
+.btns a small {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.033rem;
+  color: black;
+  border-radius: 8px;
+  background: #ffe344;
+  display: inline-block;
+  padding: 0 8px;
+}
+.btns .bg-orange {
+  background-color: #F67600;
+}
+.btns .bg-red {
+  background-color: #DD1D1D;
+}
+
 .header {
   width: 100%;
   max-width: 1440px;
@@ -34,6 +92,7 @@ img {
   top: 0;
   z-index: 1000;
   background-color: white;
+  gap: 10px;
 }
 .header .logo img {
   width: 100%;
@@ -52,8 +111,12 @@ img {
 .header .contact1 .time {
   max-width: 150px;
   font-size: 11px;
-  padding: 10px 0;
+  padding: 7px 3px;
   transform: translateY(5px);
+}
+.header .contact1 .phone:hover, .header .contact1 .time:hover {
+  opacity: 70%;
+  transition: all 0.5s;
 }
 .header .contact1 img {
   width: 32px;
@@ -99,7 +162,7 @@ img {
   max-width: 1360px;
   height: 300px;
   border-radius: 20px;
-  margin: 0 20px;
+  background-color: skyblue;
 }
 .banner .reason {
   position: absolute;
@@ -157,8 +220,6 @@ menu .section-2 .container {
 menu .section-2 .container .list-item {
   max-width: 1120px;
   display: block;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 menu .section-2 .container .list-item .item {
   display: flex;
@@ -261,6 +322,10 @@ menu .section-2 .container .list-item .item .article .text span {
   align-items: center;
   padding: 20px 0;
 }
+.contact2 .contact-phone:hover {
+  opacity: 60%;
+  transition: all 0.5s;
+}
 .contact2 .contact-phone .contact-phone__number {
   font-size: 60px;
   font-weight: bold;
@@ -301,8 +366,16 @@ menu .section-2 .container .list-item .item .article .text span {
 .contact2 .contact-btn .contact-btn__orange {
   background-color: #F67600;
 }
+.contact2 .contact-btn .contact-btn__orange:hover {
+  opacity: 80%;
+  transition: all 0.5s;
+}
 .contact2 .contact-btn .contact-btn__red {
   background-color: #DD1D1D;
+}
+.contact2 .contact-btn .contact-btn__red:hover {
+  opacity: 80%;
+  transition: all 0.5s;
 }
 
 .footer {
@@ -321,8 +394,10 @@ menu .section-2 .container .list-item .item .article .text span {
   align-items: center;
   justify-content: center;
   padding: 35px;
-  width: 100%;
-  max-width: 358px;
+}
+.footer .logo__footer:hover {
+  opacity: 60%;
+  transition: all 0.5s;
 }
 .footer span {
   display: flex;
@@ -357,6 +432,11 @@ menu .section-2 .container .list-item .item .article .text span {
 .footer .contact__footer .nd__footer .nd__footer1 .bnr__footer1 {
   width: 397px;
   height: 100px;
+}
+.footer .contact__footer .nd__footer .nd__footer1 .bnr__footer2:hover,
+.footer .contact__footer .nd__footer .nd__footer1 .bnr__footer1:hover {
+  opacity: 80%;
+  transition: all 0.5s;
 }
 .footer .contact__footer .nd__footer .nd__footer1 .bnr__footer2 {
   margin-left: 20px;

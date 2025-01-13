@@ -16,8 +16,9 @@ $font-dm: "DM Serif Text", serif;
   box-sizing: border-box;
 }
 
-
-
+.header, .footer,menu, .contact2, .banner, .contact-phone {
+    margin: 0 auto;
+}
 li {
   list-style: none;
 }
@@ -27,6 +28,58 @@ body {
 }
 img {
     max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.btns {
+    position: fixed;
+    z-index: 98;
+    right: 0;
+    top: 30rem; 
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        gap: 8px; 
+        padding: 16px 12px 20px 12px;
+        border-radius:16px 0 0 16px;
+        font-family: "Oswald", sans-serif;
+        background-color: #f39c12;
+        text-decoration: none;
+        img {
+            width: 24px;
+            height: 24px; 
+            aspect-ratio: 1; 
+        }
+        span {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: 0.042rem;
+        }
+        small {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: 0.033rem;
+            color: black;
+            border-radius: 8px;
+            background: #ffe344; 
+            display: inline-block;
+            padding: 0 8px;
+        }
+    }
+    .bg-orange{
+        background-color: #F67600;
+    }
+    .bg-red{
+        background-color: #DD1D1D;
+    }
 }
 .header{
     width: 100%;
@@ -38,6 +91,7 @@ img {
     top: 0;
     z-index: 1000; 
     background-color: white;
+    gap: 10px;
     .logo{
         img{
             width: 100%;
@@ -56,8 +110,12 @@ img {
         .time{
             max-width: 150px;
             font-size: 11px;
-            padding: 10px 0;
+            padding: 7px 3px;
             transform: translateY(5px);
+        }
+        .phone:hover, .time:hover{
+            opacity: 70%;
+            transition: all 0.5s;
         }
         img{
             width: 32px;
@@ -69,7 +127,6 @@ img {
         align-items: center;
         justify-content: space-between;
     }
-
     .nav{
         display: flex;
         justify-content: space-between;
@@ -97,7 +154,7 @@ img {
         }
     }
 }
-.banner {
+.banner{
     position: relative;
     display: flex;
     font-weight: bold;
@@ -106,7 +163,7 @@ img {
     max-width: 1360px;
     height: 300px;
     border-radius: 20px;
-    margin: 0 20px;
+    background-color: skyblue;
     .reason{
         position: absolute;
         top: 50%;
@@ -159,8 +216,6 @@ menu{
             .list-item {
                 max-width: 1120px;
                 display: block;
-                flex-wrap: wrap;
-                gap: 20px;
                 .item{
                     display: flex;
                     flex-direction: row;
@@ -263,6 +318,10 @@ menu{
         justify-content: center;
         align-items: center;
         padding: 20px 0;
+        &:hover{
+            opacity: 60%;
+            transition: all 0.5s;
+        }
         .contact-phone__number {
             font-size: 60px;
             font-weight: bold;
@@ -300,13 +359,20 @@ menu{
                 height: 40px;
             }
         }
-        
         .contact-btn__orange {
             background-color: #F67600;
+            &:hover{
+                opacity: 80%;
+                transition: all 0.5s;
+            }
         }
         
         .contact-btn__red {
             background-color: #DD1D1D;
+            &:hover{
+                opacity: 80%;
+                transition: all 0.5s;
+            }
         }
     }
 }
@@ -325,9 +391,10 @@ menu{
         align-items: center;
         justify-content: center;
         padding: 35px;
-        width: 100%;
-        max-width: 358px;
-        
+        &:hover{
+            opacity: 60%;
+            transition: all 0.5s;
+        }
     }
     span{
         display: flex;
@@ -360,6 +427,10 @@ menu{
                 .bnr__footer1{
                     width: 397px;
                     height: 100px;
+                    &:hover{
+                        opacity: 80%;
+                        transition: all 0.5s;
+                    }
                 }
                 .bnr__footer2{
 

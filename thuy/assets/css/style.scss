@@ -92,40 +92,41 @@ a{
     z-index: 1000; 
     background-color: white;
     gap: 10px;
-    .logo{
-        img{
-            width: 100%;
-        }
-    }
-    .contact1{
-        width: 100%;
-        max-width: 434px;
-        display: flex;
-        .phone{
-            max-width: 272px;
-            font-size: 36px;
-            color: #F67600;
-            font-weight: bold;
-        }
-        .time{
-            max-width: 150px;
-            font-size: 11px;
-            padding: 7px 3px;
-            transform: translateY(5px);
-        }
-        .phone:hover, .time:hover{
-            opacity: 70%;
-            transition: all 0.5s;
-        }
-        img{
-            width: 32px;
-            height: 32px;
-        }
-    }
     .above {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .logo{
+            img{
+                width: 100%;
+            }
+        }
+        .contact1{
+            width: 100%;
+            max-width: 434px;
+            display: flex;
+            .phone{
+                max-width: 272px;
+                font-size: 36px;
+                color: #F67600;
+                font-weight: bold;
+            }
+            .time{
+                max-width: 150px;
+                font-size: 11px;
+                padding: 7px 3px;
+                transform: translateY(5px);
+                color: #000000;
+            }
+            .phone:hover, .time:hover{
+                opacity: 70%;
+                transition: all 0.5s;
+            }
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }
     }
     .nav{
         display: flex;
@@ -144,7 +145,8 @@ a{
         li {
             margin: auto;
             &:hover{
-                color: #F67600;
+                opacity: 75%;
+                transition: all 0.5s;
             }
         }
         a{
@@ -158,7 +160,7 @@ a{
     position: relative;
     display: flex;
     font-weight: bold;
-    background: url('../img/AdobeStock_279597158_Preview\ 1.png')no-repeat center center;
+    background: url(../img/AdobeStock_279597158_Preview\ 1.png)no-repeat center center;
     width: min(100% - var(--space-around)* 2, var(--max-width));
     max-width: 1360px;
     height: 300px;
@@ -195,6 +197,7 @@ a{
         padding: 20px 0;
         a{
             text-decoration: none;
+            color: #000000;
         }
         .item-1 a{
             color: #F67600;
@@ -231,7 +234,7 @@ menu{
                             display: inline-flex;
                             align-items: center;
                             gap: 20px;
-                            background: url('/assets/img/illust.png') no-repeat center center;
+                            background: url(../img/illust.png) no-repeat center center;
                             background-size: contain;
                             .number {
                                 max-width: 59px;
@@ -268,13 +271,12 @@ menu{
     }
 }
 .contact2{
-    background: url('/assets/img/Rectangle\ 11.png') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/Rectangle\ 11.png) no-repeat center center;
     background-size: cover;
     padding: 60px 0;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    position: relative;
-    margin-bottom: 0;
+    position: relative; 
     width: 100%;
     max-width: 1440px;
     .contact-list {
@@ -293,24 +295,34 @@ menu{
                 justify-content: center;
                 height: 40px;
                 padding: 10px 15px;
-                background: white;
-                color: black;
+                background: #FFFFFFCC;
+                color: #000000;
                 border-radius: 10px;
-                font-weight: bold;
+                font-weight: 700;
                 line-height: normal;
-                .no-bg{
-                    background-color: transparent;
-                    color: white;
-                    padding: 0;
-                    font-size: 2.4rem;
-                }
+                
+            }
+            .no-bg{
+                background: transparent;
+                color: #FFFFFF;
+                padding: 0;
+                font-size: 24px;
             }
         }
         .text-marker {
-            font-size: 28px;
+            font-size: 44px;
             font-weight: bold;
             color: #ffe344;
             margin-left: 10px;
+            small{
+                position: relative;
+                img{
+                    border-radius: 50%;
+                    background-color: #ffe344;
+                    position: absolute;
+                    transform: translateX(-20px);
+                    }
+            }
         }
     }
     .contact-phone{
@@ -318,6 +330,7 @@ menu{
         justify-content: center;
         align-items: center;
         padding: 20px 0;
+        color: #FFFFFF;
         &:hover{
             opacity: 60%;
             transition: all 0.5s;
@@ -333,25 +346,25 @@ menu{
         .contact-phone__text {
             text-align: left;
             font-size: 12px;
-            color: #d0d0d0;
+            color: #FFFFFF;
             margin: 0;
             line-height: 1.2;
             padding: 0 10px;
-            font-weight: bold;
+            transform: translateY(7px);
         }
     }
     .contact-btn {
         display: flex;
         justify-content: center;
         gap: 20px;
-        a {
+        a{
             display: flex;
             align-items: center;
             justify-content: center;
             width: 453px;
             height: 108px;
             font-size: 24px;
-            color: #fff;
+            color: #FFFFFF;
             text-decoration: none;
             border-radius: 50px;
             img{
@@ -359,14 +372,18 @@ menu{
                 height: 40px;
             }
         }
+        .contact-btn__img{
+            position: absolute;
+            transform: translate(190px, 3px);
+            flex-shrink: 0; 
+        }
         .contact-btn__orange {
             background-color: #F67600;
             &:hover{
                 opacity: 80%;
                 transition: all 0.5s;
             }
-        }
-        
+        } 
         .contact-btn__red {
             background-color: #DD1D1D;
             &:hover{
@@ -377,7 +394,6 @@ menu{
     }
 }
 .footer{
-    margin-top: 0;
     width: 100%;
     max-width: 1440px;
     height: 664px;
@@ -386,13 +402,16 @@ menu{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .container{
+        display: grid;
+        row-gap: 1.5rem;
+    }
     .logo__footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 35px;
         &:hover{
-            opacity: 60%;
+            opacity: 70%;
             transition: all 0.5s;
         }
     }
@@ -402,14 +421,12 @@ menu{
         font-size: 20px;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        max-width: 515px;
-
+        transform: translateY(20px);
     }
     .contact__footer{
         max-width: 834px;
         height: 212px;
-        color: white;
+        color: #FFFFFF;
         line-height: 1.5;
         display: flex;
         align-items: center;
@@ -462,7 +479,6 @@ menu{
             color: white;
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
             line-height: 2;
             font-size: 15px;
             .nav__list {
@@ -494,7 +510,6 @@ menu{
     .copy{
         color: #969696;
         text-align: center;
-        margin-top: 20px;
         font-size: 11px;
     }
 }

@@ -94,38 +94,39 @@ a {
   background-color: white;
   gap: 10px;
 }
-.header .logo img {
+.header .above {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .above .logo img {
   width: 100%;
 }
-.header .contact1 {
+.header .above .contact1 {
   width: 100%;
   max-width: 434px;
   display: flex;
 }
-.header .contact1 .phone {
+.header .above .contact1 .phone {
   max-width: 272px;
   font-size: 36px;
   color: #F67600;
   font-weight: bold;
 }
-.header .contact1 .time {
+.header .above .contact1 .time {
   max-width: 150px;
   font-size: 11px;
   padding: 7px 3px;
   transform: translateY(5px);
+  color: #000000;
 }
-.header .contact1 .phone:hover, .header .contact1 .time:hover {
+.header .above .contact1 .phone:hover, .header .above .contact1 .time:hover {
   opacity: 70%;
   transition: all 0.5s;
 }
-.header .contact1 img {
+.header .above .contact1 img {
   width: 32px;
   height: 32px;
-}
-.header .above {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .header .nav {
   display: flex;
@@ -145,7 +146,8 @@ a {
   margin: auto;
 }
 .header .nav li:hover {
-  color: #F67600;
+  opacity: 75%;
+  transition: all 0.5s;
 }
 .header .nav a {
   text-decoration: none;
@@ -157,7 +159,7 @@ a {
   position: relative;
   display: flex;
   font-weight: bold;
-  background: url("../img/AdobeStock_279597158_Preview 1.png") no-repeat center center;
+  background: url(../img/AdobeStock_279597158_Preview\ 1.png) no-repeat center center;
   width: min(100% - var(--space-around) * 2, var(--max-width));
   max-width: 1360px;
   height: 300px;
@@ -197,6 +199,7 @@ a {
 }
 .list .list-ul a {
   text-decoration: none;
+  color: #000000;
 }
 .list .list-ul .item-1 a {
   color: #F67600;
@@ -238,7 +241,7 @@ menu .section-2 .container .list-item .item .article .title {
   display: inline-flex;
   align-items: center;
   gap: 20px;
-  background: url("/assets/img/illust.png") no-repeat center center;
+  background: url(../img/illust.png) no-repeat center center;
   background-size: contain;
 }
 menu .section-2 .container .list-item .item .article .title .number {
@@ -270,13 +273,12 @@ menu .section-2 .container .list-item .item .article .text span {
 }
 
 .contact2 {
-  background: url("/assets/img/Rectangle 11.png") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/Rectangle\ 11.png) no-repeat center center;
   background-size: cover;
   padding: 60px 0;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   position: relative;
-  margin-bottom: 0;
   width: 100%;
   max-width: 1440px;
 }
@@ -298,29 +300,39 @@ menu .section-2 .container .list-item .item .article .text span {
   justify-content: center;
   height: 40px;
   padding: 10px 15px;
-  background: white;
-  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000000;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: normal;
 }
-.contact2 .contact-list .contact-list__btn span .no-bg {
-  background-color: transparent;
-  color: white;
+.contact2 .contact-list .contact-list__btn .no-bg {
+  background: transparent;
+  color: #FFFFFF;
   padding: 0;
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 .contact2 .contact-list .text-marker {
-  font-size: 28px;
+  font-size: 44px;
   font-weight: bold;
   color: #ffe344;
   margin-left: 10px;
+}
+.contact2 .contact-list .text-marker small {
+  position: relative;
+}
+.contact2 .contact-list .text-marker small img {
+  border-radius: 50%;
+  background-color: #ffe344;
+  position: absolute;
+  transform: translateX(-20px);
 }
 .contact2 .contact-phone {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  color: #FFFFFF;
 }
 .contact2 .contact-phone:hover {
   opacity: 60%;
@@ -337,11 +349,11 @@ menu .section-2 .container .list-item .item .article .text span {
 .contact2 .contact-phone .contact-phone__text {
   text-align: left;
   font-size: 12px;
-  color: #d0d0d0;
+  color: #FFFFFF;
   margin: 0;
   line-height: 1.2;
   padding: 0 10px;
-  font-weight: bold;
+  transform: translateY(7px);
 }
 .contact2 .contact-btn {
   display: flex;
@@ -355,13 +367,18 @@ menu .section-2 .container .list-item .item .article .text span {
   width: 453px;
   height: 108px;
   font-size: 24px;
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
   border-radius: 50px;
 }
 .contact2 .contact-btn a img {
   width: 40px;
   height: 40px;
+}
+.contact2 .contact-btn .contact-btn__img {
+  position: absolute;
+  transform: translate(190px, 3px);
+  flex-shrink: 0;
 }
 .contact2 .contact-btn .contact-btn__orange {
   background-color: #F67600;
@@ -379,7 +396,6 @@ menu .section-2 .container .list-item .item .article .text span {
 }
 
 .footer {
-  margin-top: 0;
   width: 100%;
   max-width: 1440px;
   height: 664px;
@@ -389,14 +405,17 @@ menu .section-2 .container .list-item .item .article .text span {
   align-items: center;
   justify-content: center;
 }
+.footer .container {
+  display: grid;
+  row-gap: 1.5rem;
+}
 .footer .logo__footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 35px;
 }
 .footer .logo__footer:hover {
-  opacity: 60%;
+  opacity: 70%;
   transition: all 0.5s;
 }
 .footer span {
@@ -405,13 +424,12 @@ menu .section-2 .container .list-item .item .article .text span {
   font-size: 20px;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 515px;
+  transform: translateY(20px);
 }
 .footer .contact__footer {
   max-width: 834px;
   height: 212px;
-  color: white;
+  color: #FFFFFF;
   line-height: 1.5;
   display: flex;
   align-items: center;
@@ -463,7 +481,6 @@ menu .section-2 .container .list-item .item .article .text span {
   color: white;
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
   line-height: 2;
   font-size: 15px;
 }
@@ -495,6 +512,5 @@ menu .section-2 .container .list-item .item .article .text span {
 .footer .copy {
   color: #969696;
   text-align: center;
-  margin-top: 20px;
   font-size: 11px;
 }/*# sourceMappingURL=style.css.map */

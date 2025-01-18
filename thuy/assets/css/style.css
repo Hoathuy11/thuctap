@@ -50,7 +50,6 @@ a {
   padding: 16px 12px 20px 12px;
   border-radius: 16px 0 0 16px;
   font-family: "Oswald", sans-serif;
-  background-color: #f39c12;
   text-decoration: none;
 }
 .btns a img {
@@ -418,26 +417,26 @@ menu .section-2 .container .list-item .item .article .text span {
   opacity: 70%;
   transition: all 0.5s;
 }
-.footer span {
-  display: flex;
-  color: #F67600;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(20px);
-}
 .footer .contact__footer {
-  max-width: 834px;
   height: 212px;
   color: #FFFFFF;
   line-height: 1.5;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
+}
+.footer .contact__footer span {
+  display: block;
+  color: #F67600;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .footer .contact__footer .nd__footer {
   width: 100%;
   display: flex;
+  gap: 7px;
 }
 .footer .contact__footer .nd__footer .nd__footer1 {
   width: 50%;

@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: min(10px, 2.4vw);
+}
+
 .header, .footer, menu, .contact2, .banner, .contact-phone {
   margin: 0 auto;
 }
@@ -278,7 +282,6 @@ menu .section-2 .container .list-item .item .article .text span {
   text-align: center;
   position: relative;
   width: 100%;
-  max-width: 1440px;
 }
 .contact2 .contact-list {
   display: flex;
@@ -320,11 +323,17 @@ menu .section-2 .container .list-item .item .article .text span {
 .contact2 .contact-list .text-marker small {
   position: relative;
 }
-.contact2 .contact-list .text-marker small img {
-  border-radius: 50%;
-  background-color: #ffe344;
+.contact2 .contact-list .text-marker small::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
   position: absolute;
-  transform: translateX(-20px);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffe344;
+  border-radius: 50%;
 }
 .contact2 .contact-phone {
   display: flex;
@@ -396,7 +405,6 @@ menu .section-2 .container .list-item .item .article .text span {
 
 .footer {
   width: 100%;
-  max-width: 1440px;
   height: 664px;
   background-color: #2c2c2c;
   display: flex;

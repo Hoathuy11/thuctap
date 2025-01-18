@@ -15,6 +15,9 @@ $font-dm: "DM Serif Text", serif;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+    font-size: min(10px, 2.4vw);
+}
 
 .header, .footer,menu, .contact2, .banner, .contact-phone {
     margin: 0 auto;
@@ -276,7 +279,6 @@ menu{
     text-align: center;
     position: relative; 
     width: 100%;
-    max-width: 1440px;
     .contact-list {
         display: flex;
         font-size: 20px;
@@ -315,15 +317,21 @@ menu{
             margin-left: 10px;
             small{
                 position: relative;
-                img{
-                    border-radius: 50%;
-                    background-color: #ffe344;
+                &::after{
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    display: block;
                     position: absolute;
-                    transform: translateX(-20px);
-                    }
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #ffe344;
+                    border-radius: 50%;
+                }
             }
         }
-    }
+
     .contact-phone{
         display: flex;
         justify-content: center;
@@ -366,6 +374,7 @@ menu{
             color: #FFFFFF;
             text-decoration: none;
             border-radius: 50px;
+            position: relative;
             img{
                 width: 40px;
                 height: 40px;
@@ -373,8 +382,8 @@ menu{
         }
         .contact-btn__img{
             position: absolute;
-            transform: translate(190px, 3px);
             flex-shrink: 0; 
+            right: 20px20px;
         }
         .contact-btn__orange {
             background-color: #F67600;
@@ -394,13 +403,12 @@ menu{
 }
 .footer{
     width: 100%;
-    max-width: 1440px;
-    height: 664px;
     background-color: #2c2c2c;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 92px 0;
     .container{
         display: grid;
         row-gap: 1.5rem;

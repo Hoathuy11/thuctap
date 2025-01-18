@@ -245,7 +245,6 @@ menu .section-2 .container .list-item .item .article .title {
   background-size: contain;
 }
 menu .section-2 .container .list-item .item .article .title .number {
-  max-width: 59px;
   font-size: 64px;
   font-weight: bold;
   color: #F67600;
@@ -287,6 +286,7 @@ menu .section-2 .container .list-item .item .article .text span {
   font-size: 20px;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
 }
 .contact2 .contact-list .contact-list__btn {
   display: flex;

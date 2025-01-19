@@ -16,7 +16,7 @@ $font-dm: "DM Serif Text", serif;
   box-sizing: border-box;
 }
 html {
-    font-size: min(10px, 2.4vw);
+    font-size: min(15px, 2.4vw);
 }
 
 .header, .footer,menu, .contact2, .banner, .contact-phone {
@@ -43,7 +43,7 @@ a{
     display: flex;
     flex-direction: column;
     row-gap: 0.8rem;
-    a {
+    a{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -85,48 +85,52 @@ a{
 }
 .header{
     width: 100%;
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
-    padding: 32px 30px;
+    padding: 32px 0px;
     position: sticky;
     top: 0;
     z-index: 1000; 
     background-color: white;
     gap: 10px;
-    .above {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .logo{
-            img{
-                width: 100%;
-            }
-        }
-        .contact1{
-            width: 100%;
-            max-width: 434px;
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        row-gap: 15px;
+        .above {
             display: flex;
-            .phone{
-                max-width: 272px;
-                font-size: 36px;
-                color: #F67600;
-                font-weight: bold;
+            align-items: center;
+            justify-content: space-between;
+            .logo{
+                img{
+                    width: 100%;
+                }
             }
-            .time{
-                max-width: 150px;
-                font-size: 11px;
-                padding: 7px 3px;
-                transform: translateY(5px);
-                color: #000000;
-            }
-            .phone:hover, .time:hover{
-                opacity: 70%;
-                transition: all 0.5s;
-            }
-            img{
-                width: 32px;
-                height: 32px;
+            .contact1{
+                width: 100%;
+                max-width: 434px;
+                display: flex;
+                .phone{
+                    max-width: 272px;
+                    font-size: 36px;
+                    color: #F67600;
+                    font-weight: bold;
+                }
+                .time{
+                    max-width: 150px;
+                    font-size: 11px;
+                    padding: 7px 3px;
+                    transform: translateY(5px);
+                    color: #000000;
+                }
+                .phone:hover, .time:hover{
+                    opacity: 70%;
+                    transition: all 0.5s;
+                }
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
             }
         }
     }
@@ -142,7 +146,7 @@ a{
             list-style-type: none;
             margin: 0;
             padding: 0;
-            
+            font-size: 15px;
         }
         li {
             margin: auto;
@@ -236,7 +240,7 @@ menu{
                             display: inline-flex;
                             align-items: center;
                             gap: 20px;
-                            background: url(../img/illust.png) no-repeat center center;
+                            background: url(../img/illust.png) no-repeat center bottom;
                             background-size: contain;
                             .number {
                                 font-size: 64px;
@@ -245,8 +249,7 @@ menu{
                                 font-family: "Oswald", sans-serif;
                             }
                             p {
-                                max-width: 296px;
-                                font-size: 18px;
+                                font-size: 24px;
                                 font-weight: 700;
                                 letter-spacing: 0.072rem;
                                 line-height: 1.8;
@@ -274,7 +277,7 @@ menu{
 .contact2{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/Rectangle\ 11.png) no-repeat center center;
     background-size: cover;
-    padding: 60px 0;
+    padding: 70px 0;
     color: #FFFFFF;
     text-align: center;
     position: relative; 
@@ -301,7 +304,6 @@ menu{
                 border-radius: 10px;
                 font-weight: 700;
                 line-height: normal;
-                
             }
             .no-bg{
                 background: transparent;
@@ -331,7 +333,7 @@ menu{
                 }
             }
         }
-
+    }
     .contact-phone{
         display: flex;
         justify-content: center;
@@ -383,7 +385,7 @@ menu{
         .contact-btn__img{
             position: absolute;
             flex-shrink: 0; 
-            right: 20px20px;
+            right: 20px;
         }
         .contact-btn__orange {
             background-color: #F67600;
@@ -408,10 +410,10 @@ menu{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 92px 0;
+    padding: 65px 0;
     .container{
         display: grid;
-        row-gap: 1.5rem;
+        row-gap: 2.5rem;
     }
     .logo__footer{
         display: flex;
@@ -434,13 +436,11 @@ menu{
             display: block;
             color: #F67600;
             font-size: 20px;
-            justify-content: center;
-            align-items: center;
         }
         .nd__footer{
             width: 100%;
             display: flex;
-            gap: 7px;
+            gap: 20px;
             .nd__footer1{
                 width: 50%;
                 display: flex;
@@ -462,11 +462,10 @@ menu{
                 }
                 }
                 .nd__footer2{
-
-                    margin-left: 10px;
                     display: flex;
                     padding-bottom: 20px;
                     line-height: 1.5;
+                    gap: 10px;
                 }
                 .p__footer{
                     padding-right: 35px;

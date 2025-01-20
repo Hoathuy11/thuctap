@@ -49,7 +49,7 @@ a{
         align-items: center;
         color: white;
         gap: 8px; 
-        padding: 16px 12px 20px 12px;
+        padding: 18px 12px;
         border-radius:16px 0 0 16px;
         font-family: "Oswald", sans-serif;
         text-decoration: none;
@@ -59,13 +59,13 @@ a{
             aspect-ratio: 1; 
         }
         span {
-            font-size: 1.4rem;
+            font-size: 14px;
             font-weight: 600;
             line-height: 1.5;
             letter-spacing: 0.042rem;
         }
         small {
-            font-size: 1.1rem;
+            font-size: 11px;
             font-weight: 600;
             line-height: 1.5;
             letter-spacing: 0.033rem;
@@ -83,6 +83,7 @@ a{
         background-color: #DD1D1D;
     }
 }
+
 .header{
     width: 100%;
     padding: 32px 0px;
@@ -96,7 +97,7 @@ a{
         margin: 0 auto;
         width: 100%;
         display: grid;
-        row-gap: 15px;
+        row-gap: 30px;
         .above {
             display: flex;
             align-items: center;
@@ -139,7 +140,6 @@ a{
         justify-content: space-between;
         align-items: center;
         font-weight: bold;
-        margin-top: 10px;
         ul{
             width: 100%;
             display: flex;
@@ -465,7 +465,6 @@ menu{
                     display: flex;
                     padding-bottom: 20px;
                     line-height: 1.5;
-                    gap: 10px;
                 }
                 .p__footer{
                     padding-right: 35px;
@@ -519,3 +518,4 @@ menu{
         font-size: 11px;
     }
 }
+  

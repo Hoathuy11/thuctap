@@ -40,7 +40,7 @@ a{
         padding: 20px 0;
     }
     .header .container .above {
-        font-size: 30.72px;
+        display: block;
         text-align: center;
     }
     .above .logo img {
@@ -48,19 +48,6 @@ a{
     }
     .contact1 {
         display: none !important;
-    }
-    .above .btn-icon {
-        display: flex;
-        justify-content: space-between; /* Căn chỉnh các icon */
-        align-items: center;
-        position: absolute;
-        top: 20px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 0 20px;
-        gap: 20px; /* Khoảng cách giữa các icon */
-        z-index: 1002;
     }
     .phone-icon {
         display: block !important;
@@ -73,8 +60,8 @@ a{
     }
 
     .phone-icon img {
-        width: 44px;
-        height: 44px;
+        width: 49.15px;
+        height: 49.15px;
     }
     .nav {
         display: none !important;
@@ -117,15 +104,15 @@ a{
     }
     .menu-icon {
         display: block;
-        width: 44px;
-        height: 44px;
+        width: 40px;
+        height: 40px;
     }
     .menu-icon span {
         display: block;
         width: 100%;
         height: 4px;
         background-color: black;
-        margin: 10px 0;
+        margin: 6px 0;
         transition: all 0.3s ease;
         position: relative;
     }

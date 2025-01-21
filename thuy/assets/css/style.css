@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
 *,
@@ -36,6 +37,130 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 0;
+  }
+  .header .container .above {
+    font-size: 30.72px;
+    text-align: center;
+  }
+  .above .logo img {
+    max-width: 201px;
+  }
+  .contact1 {
+    display: none !important;
+  }
+  .above .btn-icon {
+    display: flex;
+    justify-content: space-between; /* Căn chỉnh các icon */
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 20px;
+    gap: 20px; /* Khoảng cách giữa các icon */
+    z-index: 1002;
+  }
+  .phone-icon {
+    display: block !important;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    padding: 5px;
+  }
+  .phone-icon img {
+    width: 44px;
+    height: 44px;
+  }
+  .nav {
+    display: none !important;
+    position: fixed;
+    top: 12%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav.open {
+    display: flex !important;
+  }
+  .nav ul {
+    position: fixed;
+    margin-top: 20px;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+  }
+  .nav li {
+    width: 50%;
+    height: 100px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 0;
+  }
+  .menu-icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+  }
+  .menu-icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -11px;
+  }
+  .btns {
+    position: fixed;
+    z-index: 98;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+  }
+  .btns a {
+    padding: 12px 10px;
+  }
+  .btns a img {
+    width: 22px;
+    height: 22px;
+  }
+  .btns a span {
+    font-size: 12px;
+  }
+}
 .btns {
   position: fixed;
   z-index: 98;
@@ -108,6 +233,17 @@ a {
 }
 .header .container .above .logo img {
   width: 100%;
+}
+.header .container .above .menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  cursor: pointer;
+}
+.header .container .above .phone-icon {
+  display: none;
+  cursor: pointer;
 }
 .header .container .above .contact1 {
   width: 100%;

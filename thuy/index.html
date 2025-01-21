@@ -30,6 +30,16 @@
                     <div class="time">受付時間：<br>
                         10:00~18:00（水曜日を除く）</div>
                 </a>
+                <div class="btn-icon">
+                    <div class="phone-icon">
+                        <img src="https://testkaitai.speedkaitai.com/wp-content/themes/speed-kaitai/assets/images/icn_phone-black.png" alt="043-400-3370">
+                    </div>
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
@@ -244,5 +254,11 @@
             Copyright © 2024 千葉スピード解体 All Rights Reserved.
         </div></div>
     </footer>
+    <script>
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav').classList.toggle('open');
+    document.querySelector('.menu-icon').classList.toggle('open');
+});
+    </script>
 </body>
 </html>

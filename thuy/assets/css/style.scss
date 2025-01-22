@@ -160,15 +160,20 @@ a{
         flex-shrink: 0; 
         right: 20px;
     }
-
     .contact-btn__orange {
         background-color: #F67600;
     }
-
     .contact-btn__red {
         background-color: #DD1D1D;
     }
-
+    .btns.open a .btn-img{
+        display: flex;
+        position: absolute;
+        flex-shrink: 0; 
+        top: 20px;
+        right: 20px;
+        color: #FFFFFF;
+    }
     .btns.open a:hover {
         opacity: 80%;
         transition: all 0.5s;
@@ -196,6 +201,9 @@ a{
             width: 24px;
             height: 24px; 
             aspect-ratio: 1; 
+        }
+        .btn-img{
+            display: none;
         }
         span {
             font-size: 14px;

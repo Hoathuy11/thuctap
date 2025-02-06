@@ -569,6 +569,7 @@ menu{
         width: 100%;
         z-index: 1000;
         flex-direction: column;
+        overflow-y: auto;
     }
 
     .header .nav.open {
@@ -636,6 +637,7 @@ menu{
         width: 100%;
         background-color: #FFFFFF;
         bottom: 0;
+        overflow: auto;
     }
     .btns.open a {
         display: block !important;
@@ -690,32 +692,55 @@ menu{
         line-height: 1.5;;
     }
     menu .section-2 .container .list-item .item {
-        display: flex;
         flex-direction: column;
-        gap: 40px;
-        align-items: center;
+        gap:0;
     }
     menu .section-2 .container .list-item .item img{
         display: none;
     }
     menu .section-2 .container .list-item .item .article img{
         display: block;
-        margin: auto;
+        width: 100%;
+        max-width: 100%;
     }
     menu .section-2 .container .list-item .item .article .title{
-        display: block;
+        flex-direction: column;
         text-align: center;
-        background: none;
+        background: url(../img/illust.png) no-repeat center bottom / 100%;
+        padding-bottom: 5px;
+        gap: 0;
+        margin: 0 auto;
     }
-    menu .section-2 .container .list-item .item .article .title p{
-        background: url(../img/illust.png) no-repeat center bottom;
-        background-size: contain;
-        background-position: center 20px;
+    .contact2 .container .contact-list,.contact2 .container .contact-phone,.contact2 .container .contact-btn{
+        flex-direction: column;
+    }
+    .contact2 .container .contact-list{
+        display: block;
+    }
+    .contact2 .container .contact-phone p br{
+        display: none;
+    }
+    .contact2 .container .contact-btn .contact-btn__orange, .contact2 .container .contact-btn .contact-btn__red{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer .container{
+        width: 100%;
     }
     .footer .container .nd__footer{
         flex-direction: column;
     }
     .footer .container .nav__footer{
         display: none;
+    }
+    footer .contact__footer .nd__footer .nd__footer1 .nd__footer2{
+        flex-direction: column;
+    }
+    footer .contact__footer .nd__footer .nd__footer1 .nd__footer2 p{
+        width: 100%;
+    }
+    footer .contact__footer .nd__footer .nd__footer1 .nd__footer2 .bnr__footer1 img{
+        align-items: center;
+        justify-content: center;
     }
 }

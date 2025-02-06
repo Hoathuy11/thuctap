@@ -56,6 +56,20 @@
                     <li><a href="#">お客様の声</a></li>
                     <li><a href="#">補助金情報</a></li>
                 </ul>
+                <div class="btns">
+                    <a href="#" class="btn bg-orange">
+                        <img src="./assets/img/mingcute_mail-fill.png" alt="お問い合わせ">
+                        <span>お問い合わせ</span>
+                        <small>無料</small>
+                        <img class="btn-img" src="./assets/img/chevron.png" alt="">
+                    </a>
+                    <a href="#" class="btn bg-red">
+                        <img src="./assets/img/vaadin_office.png" alt="来店予約">
+                        <span>来店予約</span>
+                        <small>無料</small>
+                        <img class="btn-img" src="./assets/img/chevron.png" alt="">
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -84,6 +98,9 @@
                                 <span class="number">01</span>
                                 <p><span>土地活用</span>までフルサポート</p>
                             </div>
+                            <div class="img">
+                                <img src="./assets/img/Rectangle 5.png" alt="">
+                            </div>
                             <div class="text">
                                 <p>千葉スピード解体では、解体して終わりではありません。解体とは
                                     <span>その土地の新しい始まり</span>
@@ -103,6 +120,9 @@
                             <div class="title">
                                 <span class="number">02</span>
                                 <p><span>明瞭な</span>料金設定</p>
+                            </div>
+                            <div class="img">
+                                <img src="./assets/img/Rectangle 6.png" alt="">
                             </div>
                             <div class="text">
                                 <p>解体工事は費用の目安が把握しづらいですが、千葉スピード解体では、皆様に
@@ -125,6 +145,9 @@
                             <div class="title">
                                 <span class="number">03</span>
                                 <p><span>＋α</span>のサービス力</p>
+                            </div>
+                            <div class="img">
+                                <img src="./assets/img/Frame 18.png" alt="">
                             </div>
                             <div class="text">
                                 <p>解体工事には、粉じんや泥、工事音などがつきものです。工事が始まる前から終わるまでのフォローを会社が怠ってしまうと、
@@ -258,14 +281,21 @@
     </footer>
     <script>
 document.querySelector('.menu-icon').addEventListener('click', function() {
-    // Toggle mở/đóng nav
-    document.querySelector('.nav').classList.toggle('open');
+    let nav = document.querySelector('.nav');
+    let btns = document.querySelector('.header .btns');
     
-    // Toggle mở/đóng menu-icon (để thay đổi hình dạng thành dấu X)
+    // Toggle mở/đóng nav và btns
+    nav.classList.toggle('open');
     document.querySelector('.menu-icon').classList.toggle('open');
+    btns.classList.toggle('open');
     
-    // Toggle mở/đóng các nút .btns
-    document.querySelector('.btns').classList.toggle('open');
+    // Cập nhật vị trí top cho btns khi nav mở
+    if (nav.classList.contains('open')) {
+        let navHeight = nav.offsetHeight; // Chiều cao của nav khi mở
+        btns.style.top = (95 + navHeight) + "px"; // Đặt top cho btns dưới nav
+    } else {
+        btns.style.top = ''; // Đặt lại top nếu nav đóng
+    }
 });
     </script>
 </body>

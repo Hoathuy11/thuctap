@@ -35,150 +35,6 @@ img {
 a{
     text-decoration: none;
 }
-@media screen and (max-width: 768px) {
-    .header .container .above {
-        text-align: center;
-    }
-    .above .logo img {
-        max-width: 201px;
-    }
-    .contact1 {
-        display: none !important;
-    }
-    .btn-icon{
-        display: flex !important;
-        gap: 50px;
-    }
-    .phone-icon {
-        display: block !important;
-        text-align: center;
-    }
-    .phone-icon img{
-        width: 49.15px;
-        height: 49.15px;
-    }
-    .nav {
-        display: none !important;
-        position: fixed;
-        top: 15%;
-        right: 0;
-        background-color: white;
-        width: 100%;
-        z-index: 1000;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .nav.open {
-        display: flex !important;
-    }
-    .nav ul {
-        position: fixed;
-        margin-top: 20px;
-        background-color: white;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        gap: 0;
-    }
-    
-    .nav li {
-        width: 50%;
-        height: 80px;
-        border: 1px solid #cccccc;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 10px;
-        margin: 0;
-    }
-    .menu-icon {
-        display: block;
-        width: 49.15px;
-        height: 49.15px;
-    }
-    .menu-icon span {
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: black;
-        margin: 9px 0;
-        transition: all 0.3s ease;
-        position: relative;
-    }
-    .menu-icon.open span:nth-child(1) {
-        transform: rotate(45deg);
-        top: 9px; 
-    }
-    .menu-icon.open span:nth-child(2) {
-        opacity: 0;
-    }
-    .menu-icon.open span:nth-child(3) {
-        transform: rotate(-45deg);
-        top: -17px;
-    }
-    .bg-orange, .bg-red{
-        display: none !important;
-    }
-    .btns.open {
-        display: block;
-        position: fixed;
-        z-index: 9999;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 509px;
-        width: 100%;
-        background-color: #FFFFFF;
-    }
-
-    .btns.open a {
-        display: block !important;
-        width: 100%;
-        height: 80px;
-        font-size: 24px;
-        color: #FFFFFF;
-        text-decoration: none;
-        border-radius: 50px;
-        position: relative;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .btns.open a img {
-        width: 40px;
-        height: 40px;
-    }
-    .btns.open a small{
-        display: none;
-    }
-    .btns.open a .contact-btn__img {
-        position: absolute;
-        flex-shrink: 0; 
-        right: 20px;
-    }
-    .contact-btn__orange {
-        background-color: #F67600;
-    }
-    .contact-btn__red {
-        background-color: #DD1D1D;
-    }
-    .btns.open a .btn-img{
-        display: flex;
-        position: absolute;
-        flex-shrink: 0; 
-        top: 20px;
-        right: 20px;
-        color: #FFFFFF;
-    }
-    .btns.open a:hover {
-        opacity: 80%;
-        transition: all 0.5s;
-    } 
-}
 .btns {
     position: fixed;
     z-index: 98;
@@ -260,7 +116,6 @@ a{
                     cursor: pointer;
                 }
             }
-            
             .contact1{
                 width: 100%;
                 max-width: 434px;
@@ -314,6 +169,9 @@ a{
             color: black;
             padding: 12px;
         }
+    }
+    .btns{
+        display: none;
     }
 }
 .banner{
@@ -421,6 +279,9 @@ menu{
                                 font-weight: bold;
                                 color:#F67600;
                             }
+                        }
+                        img{
+                            display: none;
                         }
                     }
                 }
@@ -579,7 +440,6 @@ menu{
         }
     }
     .contact__footer{
-        height: 212px;
         color: #FFFFFF;
         line-height: 1.5;
         display: flex;
@@ -590,6 +450,7 @@ menu{
             display: block;
             color: #F67600;
             font-size: 20px;
+            padding-bottom: 20px;
         }
         .nd__footer{
             width: 100%;
@@ -672,4 +533,189 @@ menu{
         font-size: 11px;
     }
 }
-  
+@media screen and (max-width: 768px) {
+    .header .container .above {
+        text-align: center;
+    }
+
+    .above .logo img {
+        max-width: 201px;
+    }
+
+    .contact1 {
+        display: none !important;
+    }
+
+    .btn-icon {
+        display: flex !important;
+        gap: 50px;
+    }
+
+    .phone-icon {
+        display: block !important;
+        text-align: center;
+    }
+
+    .phone-icon img {
+        width: 49.15px;
+        height: 49.15px;
+    }
+
+    .header .nav {
+        display: none;
+        position: fixed;
+        top: 95px;
+        background-color: white;
+        width: 100%;
+        z-index: 1000;
+        flex-direction: column;
+    }
+
+    .header .nav.open {
+        display: flex;
+    }
+
+    .header .nav ul {
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav li {
+        width: 50%;
+        height: 80px;
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 49.15px;
+        height: 49.15px;
+    }
+
+    .menu-icon span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: black;
+        margin: 9px 0;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .menu-icon.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .menu-icon.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -17px;
+    }
+
+    .bg-orange, .bg-red {
+        display: none !important;
+    }
+    .header .btns {
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        background-color: #FFFFFF;
+        bottom: 0;
+    }
+    .btns.open a {
+        display: block !important;
+        width: 100%;
+        height: 80px;
+        font-size: 24px;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-radius: 50px;
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .btns.open a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btns.open a small {
+        display: none;
+    }
+
+    .btns.open a .contact-btn__img {
+        position: absolute;
+        flex-shrink: 0;
+        right: 20px;
+    }
+
+    .contact-btn__orange {
+        background-color: #F67600;
+    }
+
+    .contact-btn__red {
+        background-color: #DD1D1D;
+    }
+
+    .btns.open a .btn-img {
+        display: flex;
+        position: absolute;
+        flex-shrink: 0;
+        top: 20px;
+        right: 20px;
+        color: #FFFFFF;
+    }
+
+    .btns.open a:hover {
+        opacity: 80%;
+        transition: all 0.5s;
+    }
+    menu .section-2 .container .list-item{
+        line-height: 1.5;;
+    }
+    menu .section-2 .container .list-item .item {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    menu .section-2 .container .list-item .item img{
+        display: none;
+    }
+    menu .section-2 .container .list-item .item .article img{
+        display: block;
+        margin: auto;
+    }
+    menu .section-2 .container .list-item .item .article .title{
+        display: block;
+        text-align: center;
+        background: none;
+    }
+    menu .section-2 .container .list-item .item .article .title p{
+        background: url(../img/illust.png) no-repeat center bottom;
+        background-size: contain;
+        background-position: center 20px;
+    }
+    .footer .container .nd__footer{
+        flex-direction: column;
+    }
+    .footer .container .nav__footer{
+        display: none;
+    }
+}

@@ -596,7 +596,9 @@ menu{
         text-align: center;
         margin-bottom: 10px;
     }
-
+    .list{
+        font-size: 20px;
+    }
     .menu-icon {
         display: block;
         width: 49.15px;
@@ -626,9 +628,8 @@ menu{
         transform: rotate(-45deg);
         top: -17px;
     }
-
-    .bg-orange, .bg-red {
-        display: none !important;
+    .btns .bg-orange,.btns .bg-red {
+        display: none;
     }
     .header .btns {
         display: block;
@@ -636,8 +637,8 @@ menu{
         z-index: 9999;
         width: 100%;
         background-color: #FFFFFF;
-        bottom: 0;
         overflow: auto;
+        padding: 0 20px;
     }
     .btns.open a {
         display: block !important;
@@ -705,9 +706,9 @@ menu{
     }
     menu .section-2 .container .list-item .item .article .title{
         flex-direction: column;
-        text-align: center;
-        background: url(../img/illust.png) no-repeat center bottom / 100%;
-        padding-bottom: 5px;
+        display: flex;
+        background: url(../img/illust.png) no-repeat center bottom / 50%;
+        padding-bottom: 15px;
         gap: 0;
         margin: 0 auto;
     }
@@ -733,14 +734,13 @@ menu{
     .footer .container .nav__footer{
         display: none;
     }
-    footer .contact__footer .nd__footer .nd__footer1 .nd__footer2{
-        flex-direction: column;
-    }
-    footer .contact__footer .nd__footer .nd__footer1 .nd__footer2 p{
-        width: 100%;
-    }
-    footer .contact__footer .nd__footer .nd__footer1 .nd__footer2 .bnr__footer1 img{
-        align-items: center;
-        justify-content: center;
+    footer .contact__footer .nd__footer .nd__footer1{
+        align-items: normal;
+        .nd__footer2{
+            flex-direction: column;
+            p{
+                width: 100%;
+            }
+        }
     }
 }

@@ -170,6 +170,9 @@ a{
             padding: 12px;
         }
     }
+    .contact-btn{
+        display: none;
+    }
 }
 .banner{
     position: relative;
@@ -596,53 +599,53 @@ menu{
         padding: 1.12rem;
     }
 
-    .header .contact-btn {
-        display: none;
-    }
+    // .header .contact-btn {
+    //     display: none;
+    // }
     
-    .header .contact-btn.open {
-        display: flex;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px 20px;
-        background-color: white;
-        z-index: 1000;
-    }
+    // .header .contact-btn.open {
+    //     display: flex;
+    //     left: 0;
+    //     width: 100%;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     gap: 10px;
+    //     padding: 10px 20px;
+    //     background-color: white;
+    //     z-index: 1000;
+    // }
     
-    .header .contact-btn.open a {
-        width: 80%; 
-        height: 50px;
-        font-size: 16px;
-        color: #FFFFFF;
-        text-decoration: none;
-        border-radius: 50px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
+    // .header .contact-btn.open a {
+    //     width: 80%; 
+    //     height: 50px;
+    //     font-size: 16px;
+    //     color: #FFFFFF;
+    //     text-decoration: none;
+    //     border-radius: 50px;
+    //     text-align: center;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     gap: 10px;
+    // }
 
-    .header .contact-btn__orange {
-        background-color: #F67600;
-    }
+    // .header .contact-btn__orange {
+    //     background-color: #F67600;
+    // }
 
-    .header .contact-btn__red {
-        background-color: #DD1D1D;
-    }
+    // .header .contact-btn__red {
+    //     background-color: #DD1D1D;
+    // }
 
-    .header .contact-btn__img img {
-        width: 20px;
-        height: 20px;
-    }
+    // .header .contact-btn__img img {
+    //     width: 20px;
+    //     height: 20px;
+    // }
 
-    .header .contact-btn.open a:hover {
-        opacity: 80%;
-        transition: all 0.5s;
-    }
+    // .header .contact-btn.open a:hover {
+    //     opacity: 80%;
+    //     transition: all 0.5s;
+    // }
     .banner{
         width: 100%;
         max-width: 700px;

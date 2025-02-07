@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -58,18 +58,21 @@
                 </ul>
                 
             </nav>
-            <div class="btns">
-                <a href="#" class="btn bg-orange">
-                    <img src="./assets/img/mingcute_mail-fill.png" alt="お問い合わせ">
+            <div class="contact-btn">
+                <a class="contact-btn__orange" href="#">
+                    <div class="contact-btn__img"></div>
+                    <img src="./assets/img/mingcute_mail-fill.png" alt="">
                     <span>お問い合わせ</span>
-                    <small>無料</small>
-                    <img class="btn-img" src="./assets/img/chevron.png" alt="">
+                    <div class="contact-btn__img">
+                        <img src="./assets/img/chevron.png" alt="">
+                    </div>
                 </a>
-                <a href="#" class="btn bg-red">
-                    <img src="./assets/img/vaadin_office.png" alt="来店予約">
+                <a class="contact-btn__red" href="#">
+                    <img src="./assets/img/vaadin_office.png" alt="">
                     <span>来店予約</span>
-                    <small>無料</small>
-                    <img class="btn-img" src="./assets/img/chevron.png" alt="">
+                    <div class="contact-btn__img">
+                        <img src="./assets/img/chevron.png" alt="">
+                    </div>
                 </a>
             </div>
         </div>
@@ -281,22 +284,16 @@
         </div></div>
     </footer>
     <script>
-document.querySelector('.menu-icon').addEventListener('click', function() {
-    let nav = document.querySelector('.nav');
-    let btns = document.querySelector('.header .btns');
-    
-    // Toggle mở/đóng nav và btns
-    nav.classList.toggle('open');
-    document.querySelector('.menu-icon').classList.toggle('open');
-    btns.classList.toggle('open');
-    
-    // Cập nhật vị trí top cho btns khi nav mở
-    if (nav.classList.contains('open')) {
-        let navHeight = nav.offsetHeight; // Chiều cao của nav khi mở
-        btns.style.top = (95 + navHeight) + "px"; // Đặt top cho btns dưới nav
-    } else {
-        btns.style.top = ''; // Đặt lại top nếu nav đóng
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.menu-icon'); // Biểu tượng menu
+    const nav = document.querySelector('.header .nav'); // Menu chính
+    const contactBtn = document.querySelector('.header .contact-btn'); // Nút liên hệ
+
+    menuIcon.addEventListener('click', () => {
+        nav.classList.toggle('open'); // Hiển thị menu
+        contactBtn.classList.toggle('open'); // Hiển thị nút liên hệ
+        menuIcon.classList.toggle('open'); // Hiệu ứng cho biểu tượng menu
+    });
 });
     </script>
 </body>

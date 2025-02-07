@@ -171,9 +171,6 @@ a {
   color: black;
   padding: 12px;
 }
-.header .btns {
-  display: none;
-}
 
 .banner {
   position: relative;
@@ -539,8 +536,11 @@ menu .section-2 .container .list-item .item .article img {
   font-size: 11px;
 }
 
-@media screen and (max-width: 768px) {
-  .header .container .above {
+@media (max-width: 768px) {
+  .btns {
+    display: none;
+  }
+  .header .container {
     text-align: center;
   }
   .above .logo img {
@@ -565,11 +565,12 @@ menu .section-2 .container .list-item .item .article img {
     display: none;
     position: fixed;
     top: 95px;
+    left: 0;
     background-color: white;
     width: 100%;
     z-index: 1000;
-    flex-direction: column;
     overflow-y: auto;
+    padding-bottom: 90px;
   }
   .header .nav.open {
     display: flex;
@@ -584,14 +585,57 @@ menu .section-2 .container .list-item .item .article img {
   }
   .nav li {
     width: 50%;
-    height: 80px;
     border: 1px solid #cccccc;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.12rem;
+  }
+  .header .contact-btn {
+    display: none;
+  }
+  .header .contact-btn.open {
+    display: flex;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    z-index: 1000;
+  }
+  .header .contact-btn.open a {
+    width: 80%;
+    height: 50px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 50px;
     text-align: center;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .header .contact-btn__orange {
+    background-color: #F67600;
+  }
+  .header .contact-btn__red {
+    background-color: #DD1D1D;
+  }
+  .header .contact-btn__img img {
+    width: 20px;
+    height: 20px;
+  }
+  .header .contact-btn.open a:hover {
+    opacity: 80%;
+    transition: all 0.5s;
+  }
+  .banner {
+    width: 100%;
+    max-width: 700px;
   }
   .list {
     font-size: 20px;
@@ -621,60 +665,6 @@ menu .section-2 .container .list-item .item .article img {
     transform: rotate(-45deg);
     top: -17px;
   }
-  .btns .bg-orange, .btns .bg-red {
-    display: none;
-  }
-  .header .btns {
-    display: block;
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    background-color: #FFFFFF;
-    overflow: auto;
-    padding: 0 20px;
-  }
-  .btns.open a {
-    display: block !important;
-    width: 100%;
-    height: 80px;
-    font-size: 24px;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 50px;
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-  }
-  .btns.open a img {
-    width: 40px;
-    height: 40px;
-  }
-  .btns.open a small {
-    display: none;
-  }
-  .btns.open a .contact-btn__img {
-    position: absolute;
-    flex-shrink: 0;
-    right: 20px;
-  }
-  .contact-btn__orange {
-    background-color: #F67600;
-  }
-  .contact-btn__red {
-    background-color: #DD1D1D;
-  }
-  .btns.open a .btn-img {
-    display: flex;
-    position: absolute;
-    flex-shrink: 0;
-    top: 20px;
-    right: 20px;
-    color: #FFFFFF;
-  }
-  .btns.open a:hover {
-    opacity: 80%;
-    transition: all 0.5s;
-  }
   menu .section-2 .container .list-item {
     line-height: 1.5;
   }
@@ -689,6 +679,7 @@ menu .section-2 .container .list-item .item .article img {
     display: block;
     width: 100%;
     max-width: 100%;
+    margin: 20px 0;
   }
   menu .section-2 .container .list-item .item .article .title {
     flex-direction: column;
@@ -696,9 +687,13 @@ menu .section-2 .container .list-item .item .article img {
     background: url(../img/illust.png) no-repeat center bottom/50%;
     padding-bottom: 15px;
     gap: 0;
-    margin: 0 auto;
   }
-  .contact2 .container .contact-list, .contact2 .container .contact-phone, .contact2 .container .contact-btn {
+  menu .section-2 .container .list-item .item .article p {
+    font-size: 20px;
+  }
+  .contact2 .container .contact-list,
+  .contact2 .container .contact-phone,
+  .contact2 .container .contact-btn {
     flex-direction: column;
   }
   .contact2 .container .contact-list {
@@ -707,7 +702,8 @@ menu .section-2 .container .list-item .item .article img {
   .contact2 .container .contact-phone p br {
     display: none;
   }
-  .contact2 .container .contact-btn .contact-btn__orange, .contact2 .container .contact-btn .contact-btn__red {
+  .contact2 .container .contact-btn .contact-btn__orange,
+  .contact2 .container .contact-btn .contact-btn__red {
     width: 90%;
     margin: 0 auto;
   }
@@ -720,13 +716,19 @@ menu .section-2 .container .list-item .item .article img {
   .footer .container .nav__footer {
     display: none;
   }
-  footer .contact__footer .nd__footer .nd__footer1 {
-    align-items: normal;
+  .footer .contact__footer .nd__footer .nd__footer1 {
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    row-gap: 0.4rem;
+    margin: 0 auto;
   }
-  footer .contact__footer .nd__footer .nd__footer1 .nd__footer2 {
-    flex-direction: column;
+  .footer .contact__footer .nd__footer .nd__footer1 .nd__footer2 {
+    display: block;
   }
-  footer .contact__footer .nd__footer .nd__footer1 .nd__footer2 p {
+  .footer .contact__footer .nd__footer .nd__footer1 p {
     width: 100%;
+  }
+  .footer .contact__footer .nd__footer .nd__footer1 img {
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */

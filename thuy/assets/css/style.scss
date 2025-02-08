@@ -537,8 +537,11 @@ menu{
     .btns{
         display: none;
     }
-    .header .container {
-        text-align: center;
+    .header{
+        padding: 32px 20px;
+        .container {
+            text-align: center;
+        }
     }
 
     .above .logo img {
@@ -557,11 +560,10 @@ menu{
     .phone-icon {
         display: block !important;
         text-align: center;
-    }
-
-    .phone-icon img {
-        width: 49.15px;
-        height: 49.15px;
+        img {
+            width: 49.15px;
+            height: 49.15px;
+        }
     }
 
     .header .nav {
@@ -646,13 +648,6 @@ menu{
     //     opacity: 80%;
     //     transition: all 0.5s;
     // }
-    .banner{
-        width: 100%;
-        max-width: 700px;
-    }
-    .list {
-        font-size: 20px;
-    }
 
     .menu-icon {
         display: block;
@@ -684,43 +679,54 @@ menu{
         top: -17px;
     }
 
-    
-
-    menu .section-2 .container .list-item {
-        line-height: 1.5;
-    }
-
-    menu .section-2 .container .list-item .item {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    menu .section-2 .container .list-item .item img {
-        display: none;
-    }
-
-    menu .section-2 .container .list-item .item .article img {
-        display: block;
+    .banner{
         width: 100%;
-        max-width: 100%;
-        margin: 20px 0;
+        max-width: 700px;
+    }
+    .list {
+        font-size: 20px;
+        padding: 0 40px;
     }
 
-    menu .section-2 .container .list-item .item .article .title {
-        flex-direction: column;
-        display: flex;
-        background: url(../img/illust.png) no-repeat center bottom / 50%;
-        padding-bottom: 15px;
-        gap: 0;
-    }
-    menu .section-2 .container .list-item .item .article p{
-        font-size: 20px;
+    menu .section-2 .container{
+        width: 100%;
+        .list-item {
+            line-height: 1.5;
+            .item {
+                flex-direction: column;
+                gap: 0;
+                img {
+                    display: none;
+                }
+                .article{
+                    img {
+                        display: block;
+                        width: 100%;
+                        max-width: 100%;
+                        margin: 20px 0;
+                    }
+                    .title {
+                        flex-direction: column;
+                        display: flex;
+                        background: url(../img/illust.png) no-repeat center bottom / 50%;
+                        padding-bottom: 15px;
+                        gap: 0;
+                    }
+                    p{
+                        font-size: 20px;
+                        line-height: 2;
+                        letter-spacing: 0.15rem;
+                    }
+                } 
+            }
+        }
     }
 
     .contact2 .container .contact-list,
     .contact2 .container .contact-phone,
     .contact2 .container .contact-btn {
         flex-direction: column;
+        padding-top: 0;
     }
 
     .contact2 .container .contact-list {
@@ -739,32 +745,28 @@ menu{
 
     .footer .container {
         width: 100%;
-    }
-
-    .footer .container .nd__footer {
-        flex-direction: column;
-    }
-
-    .footer .container .nav__footer {
-        display: none;
-    }
-
-    .footer .contact__footer .nd__footer .nd__footer1 {
-        flex-wrap: wrap;
-        font-size: 1.2rem;
-        row-gap: 0.4rem;
-        margin: 0 auto;
-        .nd__footer2{
-            display: block;
+        .nd__footer {
+            flex-direction: column;
+            .nd__footer1 {
+                flex-wrap: wrap;
+                font-size: 1.2rem;
+                row-gap: 0.4rem;
+                margin: 0 auto;
+                p {
+                    width: 100%;
+                }
+                .nd__footer2{
+                    display: block;
+                    align-self: flex-start;
+                }
+                .bnr__footer2{
+                    margin-left: 0;
+                }
+            }
         }
-    }
-
-    .footer .contact__footer .nd__footer .nd__footer1 p {
-        width: 100%;
-    }
-
-    .footer .contact__footer .nd__footer .nd__footer1 img {
-        justify-content: center;
+        .nav__footer {
+            display: none;
+        }
     }
 }
 

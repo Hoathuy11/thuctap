@@ -56,25 +56,25 @@
                     <li><a href="#">お客様の声</a></li>
                     <li><a href="#">補助金情報</a></li>
                 </ul>
-                
+                <div class="contact-btn">
+                    <a class="contact-btn__orange" href="#">
+                        <div class="contact-btn__img"></div>
+                        <img src="./assets/img/mingcute_mail-fill.png" alt="">
+                        <span>お問い合わせ</span>
+                        <div class="contact-btn__img">
+                            <img src="./assets/img/chevron.png" alt="">
+                        </div>
+                    </a>
+                    <a class="contact-btn__red" href="#">
+                        <img src="./assets/img/vaadin_office.png" alt="">
+                        <span>来店予約</span>
+                        <div class="contact-btn__img">
+                            <img src="./assets/img/chevron.png" alt="">
+                        </div>
+                    </a>
+                </div>
             </nav>
-            <div class="contact-btn">
-                <a class="contact-btn__orange" href="#">
-                    <div class="contact-btn__img"></div>
-                    <img src="./assets/img/mingcute_mail-fill.png" alt="">
-                    <span>お問い合わせ</span>
-                    <div class="contact-btn__img">
-                        <img src="./assets/img/chevron.png" alt="">
-                    </div>
-                </a>
-                <a class="contact-btn__red" href="#">
-                    <img src="./assets/img/vaadin_office.png" alt="">
-                    <span>来店予約</span>
-                    <div class="contact-btn__img">
-                        <img src="./assets/img/chevron.png" alt="">
-                    </div>
-                </a>
-            </div>
+            
         </div>
     </header>
     <div class="banner">
@@ -236,8 +236,9 @@
                         <p>〒830-0055 福岡県久留米市上津１丁目5-26<br>
                         TEL：043-400-3370</p>
                     </div>
-                        <a class="bnr__footer2" href="#"><img src="./assets/img/プロパティ1=saga.png" alt="">
-                        </a>
+                    <a class="bnr__footer2" href="#">
+                        <img src="./assets/img/プロパティ1=saga.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -286,7 +287,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon'); // Biểu tượng menu
     const nav = document.querySelector('.header .nav'); // Menu chính
-    const contactBtn = document.querySelector('.header .contact-btn'); // Nút liên hệ
+    const contactBtn = document.querySelector('.nav .contact-btn'); // Nút liên hệ
 
     menuIcon.addEventListener('click', () => {
         nav.classList.toggle('open'); // Hiển thị menu

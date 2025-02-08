@@ -546,9 +546,6 @@ menu .section-2 .container .list-item .item .article img {
   .header {
     padding: 32px 20px;
   }
-  .header .container {
-    text-align: center;
-  }
   .above .logo img {
     max-width: 201px;
   }
@@ -579,7 +576,7 @@ menu .section-2 .container .list-item .item .article img {
     padding-bottom: 90px;
   }
   .header .nav.open {
-    display: flex;
+    display: block;
   }
   .header .nav ul {
     margin-top: 20px;
@@ -597,6 +594,36 @@ menu .section-2 .container .list-item .item .article img {
     justify-content: center;
     align-items: center;
     padding: 1.12rem;
+  }
+  .nav .contact-btn.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: white;
+  }
+  .nav .contact-btn.open a {
+    width: 80%;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .nav .contact-btn__orange {
+    background-color: #F67600;
+  }
+  .nav .contact-btn__red {
+    background-color: #DD1D1D;
+  }
+  .nav .contact-btn.open a:hover {
+    opacity: 80%;
+    transition: all 0.5s;
   }
   .menu-icon {
     display: block;

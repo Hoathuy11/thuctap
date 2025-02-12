@@ -570,8 +570,9 @@ menu{
         left: 0;
         background-color: white;
         width: 100%;
-        z-index: 1000; 
         padding-bottom: 90px;
+        max-height: calc(100vh - 95px);
+        overflow-y: auto;
     }
     
     .header .nav.open {
@@ -594,7 +595,8 @@ menu{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1.12rem;
+        padding: 2.4rem;
+        font-size: 32px;
     }
     
     .nav .contact-btn.open {
@@ -602,14 +604,18 @@ menu{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        padding: 30px 0;
+        row-gap: 1.6rem;
+        padding: 50px 0;
         background-color: white;
+        img{
+            width: 49.15px;
+            height: 49.15px;
+        }
     }
     
     .nav .contact-btn.open a {
         width: 90%; 
-        font-size: 16px;
+        font-size: 32px;
         color: #FFFFFF;
         text-decoration: none;
         border-radius: 50px;
@@ -618,6 +624,7 @@ menu{
         align-items: center;
         justify-content: center;
         gap: 10px;
+        padding: 2rem;
     }
 
     .nav .contact-btn__orange {
@@ -634,6 +641,10 @@ menu{
     .nav .contact-btn .contact-btn__img{
         position: absolute;
         right: 50px;
+        img{
+            width: 49.15px;
+            height: 49.15px;
+        }
     }
     .menu-icon {
         display: block;

@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: min(15px, 2.4vw);
+  font-size: min(10px, 2.4vw);
 }
 
 .header, .footer, menu, .contact2, .banner, .contact-phone {
@@ -195,6 +195,9 @@ a {
   line-height: 2;
   text-align: center;
 }
+.banner .reason br {
+  display: none;
+}
 .banner .reason p {
   font-size: 22px;
   color: #F67600;
@@ -252,7 +255,6 @@ menu .section-2 .container .list-item .item {
 }
 menu .section-2 .container .list-item .item img {
   max-width: 480px;
-  height: 320px;
 }
 menu .section-2 .container .list-item .item .article {
   max-width: 600px;
@@ -465,7 +467,6 @@ menu .section-2 .container .list-item .item .article img {
   gap: 20px;
 }
 .footer .contact__footer .nd__footer .nd__footer1 {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -554,26 +555,31 @@ menu .section-2 .container .list-item .item .article img {
   }
   .btn-icon {
     display: flex !important;
-    gap: 50px;
+    gap: 20px;
   }
   .phone-icon {
     display: block !important;
     text-align: center;
   }
   .phone-icon img {
-    width: 49.15px;
-    height: 49.15px;
+    width: 24px;
+    height: 24px;
   }
   .header .nav {
     display: none;
     position: fixed;
-    top: 95px;
+    top: 90px;
     left: 0;
     background-color: white;
     width: 100%;
     padding-bottom: 90px;
-    max-height: calc(100vh - 95px);
+    max-width: 100vw;
+    max-height: calc(100vh - 90px);
     overflow-y: auto;
+  }
+  .header .nav a {
+    display: block;
+    padding: 2.4rem;
   }
   .header .nav.open {
     display: block;
@@ -593,8 +599,6 @@ menu .section-2 .container .list-item .item .article img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.4rem;
-    font-size: 32px;
   }
   .nav .contact-btn.open {
     display: flex;
@@ -605,13 +609,8 @@ menu .section-2 .container .list-item .item .article img {
     padding: 50px 0;
     background-color: white;
   }
-  .nav .contact-btn.open img {
-    width: 49.15px;
-    height: 49.15px;
-  }
   .nav .contact-btn.open a {
     width: 90%;
-    font-size: 32px;
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 50px;
@@ -621,6 +620,7 @@ menu .section-2 .container .list-item .item .article img {
     justify-content: center;
     gap: 10px;
     padding: 2rem;
+    font-size: 15px;
   }
   .nav .contact-btn__orange {
     background-color: #F67600;
@@ -636,45 +636,44 @@ menu .section-2 .container .list-item .item .article img {
     position: absolute;
     right: 50px;
   }
-  .nav .contact-btn .contact-btn__img img {
-    width: 49.15px;
-    height: 49.15px;
-  }
   .menu-icon {
     display: block;
-    width: 49.15px;
-    height: 49.15px;
+    width: 24px;
+    height: 24px;
   }
   .menu-icon span {
     display: block;
     width: 100%;
     height: 4px;
     background-color: black;
-    margin: 9px 0;
+    margin: 3.5px 0;
     transition: all 0.3s ease;
     position: relative;
   }
   .menu-icon.open span:nth-child(1) {
     transform: rotate(45deg);
-    top: 9px;
+    top: 6px;
   }
   .menu-icon.open span:nth-child(2) {
     opacity: 0;
   }
   .menu-icon.open span:nth-child(3) {
     transform: rotate(-45deg);
-    top: -17px;
+    top: -9px;
   }
   .banner {
     width: 100%;
     max-width: 700px;
+  }
+  .banner .reason h1 br {
+    display: block;
   }
   .list {
     font-size: 20px;
     padding: 0 40px;
   }
   menu .section-2 .container {
-    width: 100%;
+    width: 96%;
   }
   menu .section-2 .container .list-item {
     line-height: 1.5;
@@ -745,5 +744,30 @@ menu .section-2 .container .list-item .item .article img {
   }
   .footer .container .nav__footer {
     display: none;
+  }
+}
+@media (max-width: 425px) {
+  .contact-list,
+  .contact-phone,
+  .contact-btn {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+  }
+  .footer .container {
+    transform: scale(0.8);
+    width: 125%;
+  }
+}
+@media (max-width: 375px) {
+  .contact-list,
+  .contact-phone,
+  .contact-btn {
+    transform: scale(0.8);
+    width: 125%;
+  }
+  .footer .container {
+    transform: scale(0.8);
+    width: 125%;
   }
 }/*# sourceMappingURL=style.css.map */

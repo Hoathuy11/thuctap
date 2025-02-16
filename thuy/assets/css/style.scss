@@ -484,6 +484,7 @@ menu{
                     display: flex;
                     padding-bottom: 20px;
                     line-height: 1.5;
+                    font-size: 15px;
                 }
                 .p__footer{
                     padding-right: 35px;
@@ -580,8 +581,10 @@ menu{
         overflow-y: auto;
     }
     .header .nav a{
-        display: block;
         padding: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .header .nav.open {
         display: block; 
@@ -600,9 +603,6 @@ menu{
         width: 50%;
         border: 1px solid #cccccc;
         box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
     .nav .contact-btn.open {
@@ -676,14 +676,14 @@ menu{
     }
 
     .banner{
-        width: 100%;
-        max-width: 700px;
+        width: 90%;
+        max-width: none;
     }
     .banner .reason h1 br{
         display: block;
     }
     .list {
-        font-size: 20px;
+        font-size: 12px;
         padding: 0 40px;
     }
 
@@ -715,10 +715,10 @@ menu{
                             gap: 0;
                         }
                         p {
-                            font-size: 16px;
+                            font-size: 15px;
                             line-height: 1.8;
                             text-align: justify;
-                            margin: 10px 0;
+                            letter-spacing: 0.11rem;
                         }
                     } 
                 }
@@ -787,6 +787,30 @@ menu{
     } 
 }
 @media (max-width: 425px) {
+    .nav .contact-btn.open a {
+        font-size: 18px;
+        height: 64px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .nav .contact-btn .contact-btn__img {
+        position: absolute;
+        right: 30px;
+        transform: translateY(2px);
+    }
+    .banner{
+        height: 148px;
+        .reason{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    .list{
+        padding: 0 20px;
+    }
     menu .section-2{
         width: 96%;
         margin: 0 auto;
@@ -795,19 +819,25 @@ menu{
             padding-bottom: 5px;
         }
     }
-    .contact-list,
-    .contact-phone,
-    .contact-btn {
-        transform: scale(0.8);
-        transform-origin: top left;
-        width: 125%;
-    }
+
     .contact2 .contact-phone .contact-phone__number{
-        font-size: 50px;
+        font-size: 40px;
         img{
             width: 40px;
             height: 40px;
         }
+    }
+    .contact2 .container .contact-btn a{
+        span{
+            font-size: 18px;
+        }
+        img{
+            width: 24px;
+            height: 24px;        
+        }
+    }
+    .contact2 .container .contact-btn .contact-btn__orange, .contact2 .container .contact-btn .contact-btn__red {
+        height: 64px;
     }
     .footer{
         padding: 0;

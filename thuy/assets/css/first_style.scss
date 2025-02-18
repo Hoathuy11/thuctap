@@ -263,6 +263,9 @@ menu{
                 font-weight: 700;
                 line-height: 1.8;
                 color: #000;
+                .sp{
+                    display: none;
+                }
             }
         }
     }
@@ -311,6 +314,9 @@ menu{
                     span{
                         color: #F67600;
                     }
+                    .sp{
+                        display: none;
+                    }
                 }
                 .image{
                     margin-top: 2rem;
@@ -341,6 +347,9 @@ menu{
                         letter-spacing: 0.96px;
                         span{
                             color: #F67600;
+                        }
+                        br{
+                            display: none;
                         }
                     }
                     .text-1 p{
@@ -757,43 +766,52 @@ menu{
         font-size: 12px;
         padding: 0 40px;
     }
-
-    menu .section-2{
-        width: 96%;
-        margin: 0 auto;
-        .container{
-            width: 96%;
-            // .list-item {
-            //     line-height: 1.5;
-            //     .item {
-            //         flex-direction: column;
-            //         gap: 0;
-            //         img {
-            //             display: none;
-            //         }
-            //         .article{
-            //             img {
-            //                 display: block;
-            //                 width: 100%;
-            //                 max-width: 100%;
-            //                 margin: 20px 0;
-            //             }
-            //             .title {
-            //                 flex-direction: column;
-            //                 display: flex;
-            //                 background: url(../img/illust.png) no-repeat center bottom / 50%;
-            //                 padding-bottom: 5px;
-            //                 gap: 0;
-            //             }
-            //             p {
-            //                 font-size: 15px;
-            //                 line-height: 1.8;
-            //                 text-align: justify;
-            //                 letter-spacing: 0.11rem;
-            //             }
-            //         } 
-            //     }
-            // }
+    menu .section-1 .container{
+        transform: scale(0.8);
+        width: 125%;
+        transform-origin: top left;
+    }
+    menu .section-2 .container .list {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 32px;
+        column-gap: 16px;
+        margin-top: 4rem;
+        .item {
+            padding: 65px 32px 32px 32px;
+            .icon span {
+                top: 17%;
+            }
+            .text {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+            .image {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    menu .section-3 .container .group{
+        gap: 0;
+        .group-item {
+            .title{
+                br {
+                    display: block;
+                }
+                p{
+                    font-size: 24px;
+                    line-height: 1.5;
+                }
+            }
+            .text-1{
+                font-size: 15px;
+                line-height: 1.6;
+                letter-spacing: 0.45px;
+            }
+            .text-2{
+            font-size: 15px;
+            line-height: 1.8;
+            letter-spacing: 0.45px;
+            }
         }
     }
     .contact2{
@@ -873,23 +891,54 @@ menu{
     }
     .banner{
         height: 148px;
-        .reason{
-            p{
-                font-size: 18px;
-            }
+        .reason h1 {
+            font-size: 28px;
+          }
+          .reason p {
+            font-size: 18px;
+            font-family: Oswald;
         }
     }
     .list{
         padding: 0 20px;
     }
-    // menu .section-2{
-    //     width: 96%;
-    //     margin: 0 auto;
-    //     .container .list-item .item .article .title{
-    //         background: url(../img/illust.png) no-repeat center bottom / 85%;
-    //         padding-bottom: 5px;
-    //     }
-    // }
+    menu .section-1 .container .text-main p .sp{
+        display: block;
+    }
+    menu .section-2 .container .list {
+        row-gap: 20px;
+        column-gap: 16px;
+        margin-top: 4rem;
+        .item {
+            padding: 32px 16px 16px 16px;
+            .icon{
+                position: absolute;
+                top: -10px;
+                span {
+                    font-size: 16px;
+                    top: 18%;
+                }
+                img{
+                    width: 33px;
+                    height: 36px;
+                }
+            }
+            .text {
+                font-size: 13px;
+                line-height: 1.4;
+                letter-spacing: 0.42px;
+                .sp-1{
+                    display: none;
+                }
+                .sp{
+                    display: block;
+                }
+            }
+            .image {
+                margin-top: 1.5rem;
+            }
+        }
+    }
 
     .contact2 .contact-phone .contact-phone__number{
         font-size: 40px;

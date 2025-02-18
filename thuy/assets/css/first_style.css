@@ -268,6 +268,9 @@ menu .section-1 .container .text-main p {
   line-height: 1.8;
   color: #000;
 }
+menu .section-1 .container .text-main p .sp {
+  display: none;
+}
 menu .section-2 .container {
   width: 100%;
   max-width: 1120px;
@@ -316,6 +319,9 @@ menu .section-2 .container .item .text {
 menu .section-2 .container .item .text span {
   color: #F67600;
 }
+menu .section-2 .container .item .text .sp {
+  display: none;
+}
 menu .section-2 .container .item .image {
   margin-top: 2rem;
 }
@@ -347,6 +353,9 @@ menu .section-3 .container .group .group-item .title {
 }
 menu .section-3 .container .group .group-item .title span {
   color: #F67600;
+}
+menu .section-3 .container .group .group-item .title br {
+  display: none;
 }
 menu .section-3 .container .group .group-item .text-1 p {
   text-align: center;
@@ -743,12 +752,50 @@ menu .section-3 .container .group .group-item .text-2 p {
     font-size: 12px;
     padding: 0 40px;
   }
-  menu .section-2 {
-    width: 96%;
-    margin: 0 auto;
+  menu .section-1 .container {
+    transform: scale(0.8);
+    width: 125%;
+    transform-origin: top left;
   }
-  menu .section-2 .container {
-    width: 96%;
+  menu .section-2 .container .list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    margin-top: 4rem;
+  }
+  menu .section-2 .container .list .item {
+    padding: 65px 32px 32px 32px;
+  }
+  menu .section-2 .container .list .item .icon span {
+    top: 17%;
+  }
+  menu .section-2 .container .list .item .text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  menu .section-2 .container .list .item .image {
+    margin-top: 1.5rem;
+  }
+  menu .section-3 .container .group {
+    gap: 0;
+  }
+  menu .section-3 .container .group .group-item .title br {
+    display: block;
+  }
+  menu .section-3 .container .group .group-item .title p {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  menu .section-3 .container .group .group-item .text-1 {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.45px;
+  }
+  menu .section-3 .container .group .group-item .text-2 {
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0.45px;
   }
   .contact2 {
     padding: 40px 0 0 0;
@@ -825,11 +872,53 @@ menu .section-3 .container .group .group-item .text-2 p {
   .banner {
     height: 148px;
   }
+  .banner .reason h1 {
+    font-size: 28px;
+  }
   .banner .reason p {
     font-size: 18px;
+    font-family: Oswald;
   }
   .list {
     padding: 0 20px;
+  }
+  menu .section-1 .container .text-main p .sp {
+    display: block;
+  }
+  menu .section-2 .container .list {
+    row-gap: 20px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    margin-top: 4rem;
+  }
+  menu .section-2 .container .list .item {
+    padding: 32px 16px 16px 16px;
+  }
+  menu .section-2 .container .list .item .icon {
+    position: absolute;
+    top: -10px;
+  }
+  menu .section-2 .container .list .item .icon span {
+    font-size: 16px;
+    top: 18%;
+  }
+  menu .section-2 .container .list .item .icon img {
+    width: 33px;
+    height: 36px;
+  }
+  menu .section-2 .container .list .item .text {
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0.42px;
+  }
+  menu .section-2 .container .list .item .text .sp-1 {
+    display: none;
+  }
+  menu .section-2 .container .list .item .text .sp {
+    display: block;
+  }
+  menu .section-2 .container .list .item .image {
+    margin-top: 1.5rem;
   }
   .contact2 .contact-phone .contact-phone__number {
     font-size: 40px;

@@ -16,7 +16,7 @@ html {
   font-size: min(10px, 2.4vw);
 }
 
-.header, .footer, menu, .contact2, .banner, .contact-phone {
+.header, .footer, menu, .contact2, .banner {
   margin: 0 auto;
 }
 
@@ -220,6 +220,7 @@ a {
   gap: 0.8rem;
   list-style-type: none;
   padding: 20px 0;
+  margin-bottom: 75px;
 }
 .list .list-ul a {
   text-decoration: none;
@@ -233,15 +234,13 @@ menu {
   width: 100%;
   max-width: 1440px;
 }
-menu section {
-  display: block;
-}
 menu .section-1 .container {
-  width: 80%;
+  width: 100%;
+  max-width: 1120px;
   display: flex;
   flex-direction: column;
   gap: 48px;
-  margin: 0 160px;
+  margin: 0 auto;
 }
 menu .section-1 .container .title-main p {
   text-align: center;
@@ -270,8 +269,9 @@ menu .section-1 .container .text-main p {
   color: #000;
 }
 menu .section-2 .container {
-  width: 80%;
-  margin: 0 160px;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 menu .section-2 .container .list {
   display: grid;
@@ -295,7 +295,7 @@ menu .section-2 .container .item .icon {
   position: absolute;
   top: -26px;
 }
-menu .section-2 .container .item .icon .group span {
+menu .section-2 .container .item .icon span {
   position: absolute;
   color: #F67600;
   font-size: 28px;
@@ -318,6 +318,49 @@ menu .section-2 .container .item .text span {
 }
 menu .section-2 .container .item .image {
   margin-top: 2rem;
+}
+menu .section-3 {
+  margin-top: 80px;
+}
+menu .section-3 .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+menu .section-3 .container .group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+menu .section-3 .container .group .group-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+menu .section-3 .container .group .group-item .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.96px;
+}
+menu .section-3 .container .group .group-item .title span {
+  color: #F67600;
+}
+menu .section-3 .container .group .group-item .text-1 p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.45px;
+}
+menu .section-3 .container .group .group-item .text-2 p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.48px;
 }
 
 .contact2 {

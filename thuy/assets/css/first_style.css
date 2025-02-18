@@ -220,7 +220,7 @@ a {
   gap: 0.8rem;
   list-style-type: none;
   padding: 20px 0;
-  margin-bottom: 75px;
+  margin-bottom: 4.8rem;
 }
 .list .list-ul a {
   text-decoration: none;
@@ -370,6 +370,148 @@ menu .section-3 .container .group .group-item .text-2 p {
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.48px;
+}
+menu .section-3 .container .group .group-item .text-1 .sp, menu .section-3 .container .group .group-item .text-2 .sp {
+  display: none;
+}
+menu .section-3 .container .group .vector-2 img {
+  rotate: 180deg;
+}
+menu .section-4 {
+  margin-top: 8rem;
+}
+menu .section-4 .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+menu .section-4 .container .group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+menu .section-4 .container .group .card .group-title {
+  border-radius: 16px 16px 0px 0px;
+  background: #F67600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 1.6rem 4.8rem;
+}
+menu .section-4 .container .group .card .group-title .icon span {
+  position: relative;
+  color: #F67600;
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 500;
+  text-align: center;
+  top: -25px;
+  left: 45px;
+}
+menu .section-4 .container .group .card .group-title .title {
+  color: white;
+  font-weight: 700;
+  line-height: 1.5;
+}
+menu .section-4 .container .group .card .group-title .title span {
+  font-size: 16px;
+  letter-spacing: 0.48px;
+}
+menu .section-4 .container .group .card .group-title .title p {
+  font-size: 32px;
+  letter-spacing: 0.96px;
+}
+menu .section-4 .container .group .content {
+  padding: 48px;
+  border-radius: 0px 0px 16px 16px;
+  border-right: 4px solid #F67600;
+  border-bottom: 4px solid #F67600;
+  border-left: 4px solid #F67600;
+}
+menu .section-4 .container .group .content .above {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+menu .section-4 .container .group .content .above .group-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title .title-above {
+  display: flex;
+  align-items: self-end;
+  font-weight: 700;
+  line-height: 1.5;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title .title-above small {
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title .title-above p {
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  position: relative;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title .title-above p::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 3px;
+  width: 100%;
+  height: 12px;
+  display: block;
+  background-color: #ffe344;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.39px;
+}
+menu .section-4 .container .group .content .above .group-left .text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.45px;
+}
+menu .section-4 .container .group .content .above .group-left .text span {
+  color: #F67600;
+}
+menu .section-4 .container .group .content .above .right img {
+  max-width: 38rem;
+}
+menu .section-4 .container .group .content .below {
+  margin-top: 32px;
+}
+menu .section-4 .container .group .content .below .button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid;
+  width: 350px;
+  border-radius: 99px;
+  padding: 24px 64px 24px 48px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+}
+menu .section-4 .container .group .content .below .button a {
+  color: #000;
+}
+menu .section-4 .container .group .content .below .button::after {
+  content: "";
+  width: 2.2rem;
+  aspect-ratio: 1;
+  background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
 }
 
 .contact2 {
@@ -777,25 +919,61 @@ menu .section-3 .container .group .group-item .text-2 p {
   menu .section-2 .container .list .item .image {
     margin-top: 1.5rem;
   }
+  menu .section-3 {
+    margin-top: 0;
+  }
   menu .section-3 .container .group {
     gap: 0;
   }
+  menu .section-3 .container .group .vector-1, menu .section-3 .container .group .vector-2 {
+    display: none;
+  }
+  menu .section-3 .container .group .group-item .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4rem;
+  }
   menu .section-3 .container .group .group-item .title br {
-    display: block;
+    display: flex;
   }
   menu .section-3 .container .group .group-item .title p {
     font-size: 24px;
     line-height: 1.5;
+    letter-spacing: 0.72px;
+    width: 100%;
+  }
+  menu .section-3 .container .group .group-item .title::before, menu .section-3 .container .group .group-item .title::after {
+    content: "";
+    width: 11.4rem;
+    background: url(../img/vecto1.png) no-repeat center center/cover;
+    height: 200px;
+  }
+  menu .section-3 .container .group .group-item .title::after {
+    rotate: 180deg;
   }
   menu .section-3 .container .group .group-item .text-1 {
-    font-size: 15px;
     line-height: 1.6;
-    letter-spacing: 0.45px;
   }
   menu .section-3 .container .group .group-item .text-2 {
-    font-size: 15px;
     line-height: 1.8;
+  }
+  menu .section-3 .container .group .group-item .text-1, menu .section-3 .container .group .group-item .text-2 {
+    font-size: 15px;
     letter-spacing: 0.45px;
+  }
+  menu .section-3 .container .group .group-item .text-1 .sp, menu .section-3 .container .group .group-item .text-2 .sp {
+    display: block;
+  }
+  menu .section-4 .container .group {
+    transform: scale(0.8);
+  }
+  menu .section-4 .container .group .content .above {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contact2 {
     padding: 40px 0 0 0;
@@ -919,6 +1097,9 @@ menu .section-3 .container .group .group-item .text-2 p {
   }
   menu .section-2 .container .list .item .image {
     margin-top: 1.5rem;
+  }
+  menu .section-3 .container {
+    transform: scale(0.9);
   }
   .contact2 .contact-phone .contact-phone__number {
     font-size: 40px;

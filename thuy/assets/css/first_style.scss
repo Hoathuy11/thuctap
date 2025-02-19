@@ -380,6 +380,7 @@ menu{
     }
     .section-4{
         margin-top: 8rem;
+        margin-bottom: 120px;
         .container{
             width: 100%;
             max-width: 1120px;
@@ -588,7 +589,6 @@ menu{
     text-align: center;
     position: relative; 
     width: 100%;
-    margin-top: 120px;
     .contact-list {
         display: flex;
         font-size: 20px;
@@ -1049,7 +1049,9 @@ menu{
             }
         }
     }
-    
+    menu .section-4{
+        margin-bottom: -500px;
+    }
     menu .section-4 .container {
         transform: scale(0.8) translateY(-14%);
         transform-origin: center;
@@ -1243,19 +1245,26 @@ menu{
     menu .section-3 .container{
         transform: scale(0.9);
     }
-    menu .section-4 .container .group{
+    menu .section-4{
+        margin-bottom: -550px;
+    }
+    menu .section-4 .container{
+        .group{
        
-        .content{
-            .below .button{
-                width: auto;
+            .content{
+                .below .button{
+                    width: auto;
+                }
             }
         }
     }
-    .contact2 .contact-phone .contact-phone__number{
-        font-size: 40px;
-        img{
-            width: 40px;
-            height: 40px;
+    .contact2 {
+        .contact-phone .contact-phone__number{
+            font-size: 40px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
         }
     }
     .contact2 .container .contact-btn a{

@@ -1030,10 +1030,10 @@ menu .section-4 .container .group .content .below .button::after {
     display: block;
   }
   menu .section-4 {
-    margin-bottom: -500px;
+    margin-bottom: -210px;
   }
   menu .section-4 .container {
-    transform: scale(0.8) translateY(-14%);
+    transform: scale(0.9) translateY(-7%);
     transform-origin: center;
     width: 100%;
     display: flex;
@@ -1042,7 +1042,7 @@ menu .section-4 .container .group .content .below .button::after {
   }
   menu .section-4 .container .group .card .group-title .title span {
     font-size: 13px;
-    letter-spacing: 0.39px;
+    letter-spacing: 0.19px;
   }
   menu .section-4 .container .group .card .group-title .title p {
     font-size: 24px;
@@ -1214,7 +1214,7 @@ menu .section-4 .container .group .content .below .button::after {
     transform: scale(0.9);
   }
   menu .section-4 {
-    margin-bottom: -550px;
+    margin-bottom: -260px;
   }
   menu .section-4 .container .group .content .below .button {
     width: auto;

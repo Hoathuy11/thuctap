@@ -397,17 +397,20 @@ menu .section-4 .container .group .card .group-title {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  padding: 1.6rem 4.8rem;
+  padding: 16px 48px;
+}
+menu .section-4 .container .group .card .group-title .icon {
+  position: relative;
 }
 menu .section-4 .container .group .card .group-title .icon span {
-  position: relative;
+  position: absolute;
   color: #F67600;
   font-size: 28px;
   font-family: Oswald;
   font-weight: 500;
   text-align: center;
-  top: -25px;
-  left: 45px;
+  top: 13px;
+  left: 15px;
 }
 menu .section-4 .container .group .card .group-title .title {
   color: white;
@@ -476,6 +479,65 @@ menu .section-4 .container .group .content .above .group-left .group-image .titl
   line-height: 1.5;
   letter-spacing: 0.39px;
 }
+menu .section-4 .container .group .content .above .group-left .group-image .title-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.8rem;
+  -moz-column-gap: 2.4rem;
+       column-gap: 2.4rem;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-list p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  margin-right: 3rem;
+  position: relative;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-list p span {
+  color: #F67600;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-list p::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -3px;
+  width: 100%;
+  height: 12px;
+  display: block;
+  background-color: #ffe344;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col {
+  display: flex;
+  gap: 24px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 span {
+  font-size: 15px;
+  color: #F67600;
+  letter-spacing: 0.45px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p {
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p span {
+  color: #F67600;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -3px;
+  width: 100%;
+  height: 12px;
+  display: block;
+  background-color: #ffe344;
+}
 menu .section-4 .container .group .content .above .group-left .text {
   font-size: 15px;
   font-weight: 400;
@@ -522,6 +584,7 @@ menu .section-4 .container .group .content .below .button::after {
   text-align: center;
   position: relative;
   width: 100%;
+  margin-top: 120px;
 }
 .contact2 .contact-list {
   display: flex;
@@ -966,14 +1029,60 @@ menu .section-4 .container .group .content .below .button::after {
   menu .section-3 .container .group .group-item .text-1 .sp, menu .section-3 .container .group .group-item .text-2 .sp {
     display: block;
   }
-  menu .section-4 .container .group {
-    transform: scale(0.8);
+  menu .section-4 .container {
+    transform: scale(0.8) translateY(-14%);
+    transform-origin: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  menu .section-4 .container .group .content .above {
+  menu .section-4 .container .group .card .group-title .title span {
+    font-size: 13px;
+    letter-spacing: 0.39px;
+  }
+  menu .section-4 .container .group .card .group-title .title p {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
+  menu .section-4 .container .group .card .content {
+    padding: 20px 24px 32px 24px;
+  }
+  menu .section-4 .container .group .card .content .above {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image {
+    justify-content: center;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above {
+    display: block;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above small {
+    font-size: 15px;
+    letter-spacing: 0.45px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above p {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title span {
+    font-size: 11px;
+    letter-spacing: 0.33px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-list p {
+    font-size: 15px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-col {
+    display: block;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-col .title-col-1 p {
+    font-size: 15px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .text {
+    letter-spacing: 2.5px;
   }
   .contact2 {
     padding: 40px 0 0 0;
@@ -1085,9 +1194,9 @@ menu .section-4 .container .group .content .below .button::after {
     height: 36px;
   }
   menu .section-2 .container .list .item .text {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.4;
-    letter-spacing: 0.42px;
+    letter-spacing: 0;
   }
   menu .section-2 .container .list .item .text .sp-1 {
     display: none;
@@ -1100,6 +1209,9 @@ menu .section-4 .container .group .content .below .button::after {
   }
   menu .section-3 .container {
     transform: scale(0.9);
+  }
+  menu .section-4 .container .group .content .below .button {
+    width: auto;
   }
   .contact2 .contact-phone .contact-phone__number {
     font-size: 40px;

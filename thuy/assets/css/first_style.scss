@@ -396,17 +396,18 @@ menu{
                         justify-content: center;
                         align-items: center;
                         gap: 16px;
-                        padding: 1.6rem 4.8rem;
+                        padding: 16px 48px;
                         .icon{
+                            position: relative;
                             span{
-                                position: relative;
+                                position: absolute;
                                 color: #F67600;
                                 font-size: 28px;
                                 font-family: Oswald;
                                 font-weight: 500;
                                 text-align: center;
-                                top: -25px;
-                                left: 45px
+                                top: 13px;
+                                left: 15px;
                             }
                         }
                         .title{
@@ -476,6 +477,64 @@ menu{
                                         letter-spacing: 0.39px;
                                     }
                                 }
+                                .title-list{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    row-gap: 0.8rem;
+                                    column-gap: 2.4rem;
+                                    p{
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        line-height: 1.5;
+                                        letter-spacing: 0.6px;
+                                        margin-right: 3rem;
+                                        position: relative;
+                                        span{
+                                            color: #F67600;
+                                        }
+                                        &::after{
+                                            content: "";
+                                            position: absolute;
+                                            z-index: -1;
+                                            bottom: -3px;
+                                            width: 100%;
+                                            height: 12px;
+                                            display: block;
+                                            background-color: #ffe344;
+                                        }
+                                    }
+                                }
+                                .title-col{
+                                    display: flex;
+                                    gap: 24px;
+                                    .title-col-1{
+                                        font-weight: 700;
+                                        line-height: 1.5;
+                                        span{
+                                            font-size: 15px;
+                                            color: #F67600;
+                                            letter-spacing: 0.45px;
+                                        }
+                                        p{
+                                            font-size: 20px;
+                                            letter-spacing: 0.6px;
+                                            position: relative;
+                                            span{
+                                                color:#F67600;
+                                            }
+                                            &::after{
+                                                content: "";
+                                                position: absolute;
+                                                z-index: -1;
+                                                bottom: -3px;
+                                                width: 100%;
+                                                height: 12px;
+                                                display: block;
+                                                background-color: #ffe344;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                             .text{
                                 font-size: 15px;
@@ -529,6 +588,7 @@ menu{
     text-align: center;
     position: relative; 
     width: 100%;
+    margin-top: 120px;
     .contact-list {
         display: flex;
         font-size: 20px;
@@ -989,16 +1049,72 @@ menu{
             }
         }
     }
-    menu .section-4 .container .group{
-        transform: scale(0.8);
-    }
-    menu .section-4 .container .group .content .above {
+    
+    menu .section-4 .container {
+        transform: scale(0.8) translateY(-14%);
+        transform-origin: center;
+        width: 100%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-      }
+        .group{
+            .card{
+                .group-title .title{
+                    span{
+                        font-size: 13px;
+                        letter-spacing: 0.39px;
+                    }
+                    p{
+                        font-size: 24px;
+                        letter-spacing: 0.72px;
+                    }
+                }
+                .content{
+                    padding: 20px 24px 32px 24px;
+                    .above {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .left .group-left{
+                            .group-image{
+                                justify-content: center;
+                                .title{
+                                    .title-above{
+                                        display: block;
+                                        small{
+                                            font-size: 15px;
+                                            letter-spacing: 0.45px;
+                                        }
+                                        p{
+                                            font-size: 24px;
+                                            letter-spacing: 0.72px;
+                                        }
+                                    }
+                                    span{
+                                        font-size: 11px;
+                                        letter-spacing: 0.33px;
+                                    }
+                                }
+                                .title-list p{
+                                    font-size: 15px;
+                                }
+                                .title-col{
+                                    display: block;
+                                    .title-col-1 p{
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                            .text{
+                                letter-spacing: 2.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .contact2{
         padding: 40px 0 0 0;
     }
@@ -1109,9 +1225,9 @@ menu{
                 }
             }
             .text {
-                font-size: 13px;
+                font-size: 14px;
                 line-height: 1.4;
-                letter-spacing: 0.42px;
+                letter-spacing: 0;
                 .sp-1{
                     display: none;
                 }
@@ -1126,6 +1242,14 @@ menu{
     }
     menu .section-3 .container{
         transform: scale(0.9);
+    }
+    menu .section-4 .container .group{
+       
+        .content{
+            .below .button{
+                width: auto;
+            }
+        }
     }
     .contact2 .contact-phone .contact-phone__number{
         font-size: 40px;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -194,6 +195,10 @@ a {
   color: white;
   line-height: 2;
   text-align: center;
+  width: 100%;
+}
+.banner .reason h1 {
+  font-size: 48px;
 }
 .banner .reason br {
   display: none;
@@ -232,10 +237,10 @@ menu {
   width: 100%;
   max-width: 1440px;
 }
-menu .section-2 {
+menu .section-v2 {
   margin: 20px 0;
 }
-menu .section-2 .container {
+menu .section-v2 .container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -243,56 +248,398 @@ menu .section-2 .container {
   flex-direction: column;
   margin: 0 auto;
 }
-menu .section-2 .container .list-item {
+menu .section-v2 .container .list-item {
   max-width: 1120px;
   display: block;
 }
-menu .section-2 .container .list-item .item {
+menu .section-v2 .container .list-item .item {
   display: flex;
   flex-direction: row;
   gap: 40px;
   align-items: center;
 }
-menu .section-2 .container .list-item .item img {
+menu .section-v2 .container .list-item .item img {
   max-width: 480px;
 }
-menu .section-2 .container .list-item .item .article {
+menu .section-v2 .container .list-item .item .article {
   max-width: 600px;
 }
-menu .section-2 .container .list-item .item .article .title {
+menu .section-v2 .container .list-item .item .article .title {
   display: inline-flex;
   align-items: center;
   gap: 20px;
   background: url(../img/illust.png) no-repeat center bottom;
   background-size: contain;
 }
-menu .section-2 .container .list-item .item .article .title .number {
+menu .section-v2 .container .list-item .item .article .title .number {
   font-size: 64px;
   font-weight: bold;
   color: #F67600;
   font-family: "Oswald", sans-serif;
 }
-menu .section-2 .container .list-item .item .article .title p {
+menu .section-v2 .container .list-item .item .article .title p {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.072rem;
   line-height: 1.8;
 }
-menu .section-2 .container .list-item .item .article .title p span {
+menu .section-v2 .container .list-item .item .article .title p span {
   color: #F67600;
   font-weight: 700;
 }
-menu .section-2 .container .list-item .item .article .text {
+menu .section-v2 .container .list-item .item .article .text {
   font-size: 16px;
   line-height: 1.6;
   color: #555;
 }
-menu .section-2 .container .list-item .item .article .text span {
+menu .section-v2 .container .list-item .item .article .text span {
   font-weight: bold;
   color: #F67600;
 }
-menu .section-2 .container .list-item .item .article img {
+menu .section-v2 .container .list-item .item .article img {
   display: none;
+}
+menu .section-1 .container {
+  width: 100%;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 0 auto;
+}
+menu .section-1 .container .title-main p {
+  text-align: center;
+  color: #F67600;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  position: relative;
+  padding-bottom: 1.6rem;
+}
+menu .section-1 .container .title-main p::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #F67600;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+menu .section-1 .container .text-main p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #000;
+}
+menu .section-1 .container .text-main p .sp {
+  display: none;
+}
+menu .section-2 .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+menu .section-2 .container .list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30rem, 1fr));
+  row-gap: 56px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-top: 8rem;
+}
+menu .section-2 .container .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 32px 32px 32px;
+  background-color: #fef8e9;
+  border-radius: 24px;
+  position: relative;
+  flex-shrink: 0;
+}
+menu .section-2 .container .item .icon {
+  position: absolute;
+  top: -26px;
+}
+menu .section-2 .container .item .icon span {
+  position: absolute;
+  color: #F67600;
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 500;
+  text-align: center;
+  top: 10%;
+  left: 23%;
+}
+menu .section-2 .container .item .text {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  font-size: 20px;
+  color: #000;
+}
+menu .section-2 .container .item .text span {
+  color: #F67600;
+}
+menu .section-2 .container .item .text .sp {
+  display: none;
+}
+menu .section-2 .container .item .image {
+  margin-top: 2rem;
+}
+menu .section-3 {
+  margin-top: 80px;
+}
+menu .section-3 .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+menu .section-3 .container .group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+menu .section-3 .container .group .group-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+menu .section-3 .container .group .group-item .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.96px;
+}
+menu .section-3 .container .group .group-item .title span {
+  color: #F67600;
+}
+menu .section-3 .container .group .group-item .title br {
+  display: none;
+}
+menu .section-3 .container .group .group-item .text-1 p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.45px;
+}
+menu .section-3 .container .group .group-item .text-2 p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.48px;
+}
+menu .section-3 .container .group .group-item .text-1 .sp, menu .section-3 .container .group .group-item .text-2 .sp {
+  display: none;
+}
+menu .section-3 .container .group .vector-2 img {
+  rotate: 180deg;
+}
+menu .section-4 {
+  margin-top: 8rem;
+  margin-bottom: 120px;
+}
+menu .section-4 .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+menu .section-4 .container .group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+menu .section-4 .container .group .card .group-title {
+  border-radius: 16px 16px 0px 0px;
+  background: #F67600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 48px;
+}
+menu .section-4 .container .group .card .group-title .icon {
+  position: relative;
+}
+menu .section-4 .container .group .card .group-title .icon span {
+  position: absolute;
+  color: #F67600;
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 500;
+  text-align: center;
+  top: 10%;
+  left: 24%;
+}
+menu .section-4 .container .group .card .group-title .title {
+  color: white;
+  font-weight: 700;
+  line-height: 1.5;
+}
+menu .section-4 .container .group .card .group-title .title span {
+  font-size: 16px;
+  letter-spacing: 0.48px;
+}
+menu .section-4 .container .group .card .group-title .title p {
+  font-size: 32px;
+  letter-spacing: 0.96px;
+}
+menu .section-4 .container .group .content {
+  padding: 48px;
+  border-radius: 0px 0px 16px 16px;
+  border-right: 4px solid #F67600;
+  border-bottom: 4px solid #F67600;
+  border-left: 4px solid #F67600;
+}
+menu .section-4 .container .group .content .above {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+menu .section-4 .container .group .content .above .group-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title .title-above {
+  display: flex;
+  align-items: self-end;
+  font-weight: 700;
+  line-height: 1.5;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title .title-above small {
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title .title-above p {
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  position: relative;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title .title-above p::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 3px;
+  width: 100%;
+  height: 12px;
+  display: block;
+  background-color: #ffe344;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.39px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.8rem;
+  -moz-column-gap: 2.4rem;
+       column-gap: 2.4rem;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-list p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  margin-right: 3rem;
+  position: relative;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-list p span {
+  color: #F67600;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-list p::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -3px;
+  width: 100%;
+  height: 12px;
+  display: block;
+  background-color: #ffe344;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col {
+  display: flex;
+  gap: 24px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 span {
+  font-size: 15px;
+  color: #F67600;
+  letter-spacing: 0.45px;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p {
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p span {
+  color: #F67600;
+}
+menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -3px;
+  width: 100%;
+  height: 12px;
+  display: block;
+  background-color: #ffe344;
+}
+menu .section-4 .container .group .content .above .group-left .text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.45px;
+}
+menu .section-4 .container .group .content .above .group-left .text span {
+  color: #F67600;
+}
+menu .section-4 .container .group .content .above .right img {
+  max-width: 38rem;
+}
+menu .section-4 .container .group .content .below {
+  margin-top: 32px;
+}
+menu .section-4 .container .group .content .below .button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid;
+  width: 350px;
+  border-radius: 99px;
+  padding: 24px 64px 24px 48px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+}
+menu .section-4 .container .group .content .below .button a {
+  color: #000;
+}
+menu .section-4 .container .group .content .below .button::after {
+  content: "";
+  width: 2.2rem;
+  aspect-ratio: 1;
+  background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
 }
 
 .contact2 {
@@ -667,6 +1014,10 @@ menu .section-2 .container .list-item .item .article img {
   .banner {
     width: 90%;
     max-width: none;
+    height: 148px;
+  }
+  .banner .reason h1 {
+    font-size: 28px;
   }
   .banner .reason h1 br {
     display: block;
@@ -675,41 +1026,171 @@ menu .section-2 .container .list-item .item .article img {
     font-size: 12px;
     padding: 0 40px;
   }
-  menu .section-2 {
+  menu .section-v2 {
     width: 96%;
     margin: 0 auto;
   }
-  menu .section-2 .container {
+  menu .section-v2 .container {
     width: 96%;
   }
-  menu .section-2 .container .list-item {
+  menu .section-v2 .container .list-item {
     line-height: 1.5;
   }
-  menu .section-2 .container .list-item .item {
+  menu .section-v2 .container .list-item .item {
     flex-direction: column;
     gap: 0;
   }
-  menu .section-2 .container .list-item .item img {
+  menu .section-v2 .container .list-item .item img {
     display: none;
   }
-  menu .section-2 .container .list-item .item .article img {
+  menu .section-v2 .container .list-item .item .article img {
     display: block;
     width: 100%;
     max-width: 100%;
     margin: 20px 0;
   }
-  menu .section-2 .container .list-item .item .article .title {
+  menu .section-v2 .container .list-item .item .article .title {
     flex-direction: column;
     display: flex;
     background: url(../img/illust.png) no-repeat center bottom/50%;
     padding-bottom: 5px;
     gap: 0;
   }
-  menu .section-2 .container .list-item .item .article p {
+  menu .section-v2 .container .list-item .item .article p {
     font-size: 15px;
     line-height: 1.8;
     text-align: justify;
     letter-spacing: 0.11rem;
+  }
+  menu .section-1 .container {
+    transform: scale(0.8);
+    width: 125%;
+    transform-origin: top left;
+  }
+  menu .section-2 .container .list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    margin-top: 4rem;
+  }
+  menu .section-2 .container .list .item {
+    padding: 65px 32px 32px 32px;
+  }
+  menu .section-2 .container .list .item .icon span {
+    top: 10%;
+  }
+  menu .section-2 .container .list .item .text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  menu .section-2 .container .list .item .image {
+    margin-top: 1.5rem;
+  }
+  menu .section-3 {
+    margin-top: 0;
+  }
+  menu .section-3 .container .group {
+    gap: 0;
+  }
+  menu .section-3 .container .group .vector-1, menu .section-3 .container .group .vector-2 {
+    display: none;
+  }
+  menu .section-3 .container .group .group-item .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4rem;
+  }
+  menu .section-3 .container .group .group-item .title br {
+    display: flex;
+  }
+  menu .section-3 .container .group .group-item .title p {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.72px;
+    width: 100%;
+  }
+  menu .section-3 .container .group .group-item .title::before, menu .section-3 .container .group .group-item .title::after {
+    content: "";
+    width: 11.4rem;
+    background: url(../img/vecto1.png) no-repeat center center/cover;
+    height: 200px;
+  }
+  menu .section-3 .container .group .group-item .title::after {
+    rotate: 180deg;
+  }
+  menu .section-3 .container .group .group-item .text-1 {
+    line-height: 1.6;
+  }
+  menu .section-3 .container .group .group-item .text-2 {
+    line-height: 1.8;
+  }
+  menu .section-3 .container .group .group-item .text-1, menu .section-3 .container .group .group-item .text-2 {
+    font-size: 15px;
+    letter-spacing: 0.45px;
+  }
+  menu .section-3 .container .group .group-item .text-1 .sp, menu .section-3 .container .group .group-item .text-2 .sp {
+    display: block;
+  }
+  menu .section-4 {
+    margin-bottom: -210px;
+  }
+  menu .section-4 .container {
+    transform: scale(0.9) translateY(-7%);
+    transform-origin: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  menu .section-4 .container .group .card .group-title .title span {
+    font-size: 13px;
+    letter-spacing: 0.19px;
+  }
+  menu .section-4 .container .group .card .group-title .title p {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
+  menu .section-4 .container .group .card .content {
+    padding: 20px 24px 32px 24px;
+  }
+  menu .section-4 .container .group .card .content .above {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image {
+    justify-content: center;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above {
+    display: block;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above small {
+    font-size: 15px;
+    letter-spacing: 0.45px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above p {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title span {
+    font-size: 11px;
+    letter-spacing: 0.33px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-list p {
+    font-size: 15px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-col {
+    display: block;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-col .title-col-1 p {
+    font-size: 15px;
+  }
+  menu .section-4 .container .group .card .content .above .left .group-left .text {
+    letter-spacing: 2.5px;
   }
   .contact2 {
     padding: 40px 0 0 0;
@@ -783,22 +1264,63 @@ menu .section-2 .container .list-item .item .article img {
     right: 30px;
     transform: translateY(2px);
   }
-  .banner {
-    height: 148px;
-  }
-  .banner .reason p {
-    font-size: 18px;
-  }
   .list {
     padding: 0 20px;
   }
-  menu .section-2 {
+  menu .section-v2 {
     width: 96%;
     margin: 0 auto;
   }
-  menu .section-2 .container .list-item .item .article .title {
+  menu .section-v2 .container .list-item .item .article .title {
     background: url(../img/illust.png) no-repeat center bottom/85%;
     padding-bottom: 5px;
+  }
+  menu .section-1 .container .text-main p .sp {
+    display: block;
+  }
+  menu .section-2 .container .list {
+    row-gap: 20px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    margin-top: 4rem;
+  }
+  menu .section-2 .container .list .item {
+    padding: 32px 16px 16px 16px;
+  }
+  menu .section-2 .container .list .item .icon {
+    position: absolute;
+    top: -10px;
+  }
+  menu .section-2 .container .list .item .icon span {
+    font-size: 16px;
+    top: 10%;
+  }
+  menu .section-2 .container .list .item .icon img {
+    width: 33px;
+    height: 36px;
+  }
+  menu .section-2 .container .list .item .text {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+  menu .section-2 .container .list .item .text .sp-1 {
+    display: none;
+  }
+  menu .section-2 .container .list .item .text .sp {
+    display: block;
+  }
+  menu .section-2 .container .list .item .image {
+    margin-top: 1.5rem;
+  }
+  menu .section-3 .container {
+    transform: scale(0.9);
+  }
+  menu .section-4 {
+    margin-bottom: -260px;
+  }
+  menu .section-4 .container .group .content .below .button {
+    width: auto;
   }
   .contact2 .contact-phone .contact-phone__number {
     font-size: 40px;

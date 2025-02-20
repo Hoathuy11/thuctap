@@ -326,6 +326,10 @@ menu .section-1 .container .title-main p::after {
   left: 50%;
   transform: translateX(-50%);
 }
+menu .section-1 .container .title-main p span {
+  font-size: 64px;
+  letter-spacing: 0.96px;
+}
 menu .section-1 .container .text-main p {
   text-align: center;
   font-size: 16px;
@@ -491,6 +495,33 @@ menu .section-4 .container .group .card .group-title .title p {
   font-size: 32px;
   letter-spacing: 0.96px;
 }
+menu .section-4 .container .group .card .title-group {
+  border-radius: 16px 16px 0px 0px;
+  background: #FDE3CC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 48px;
+}
+menu .section-4 .container .group .card .title-group .title-group-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+menu .section-4 .container .group .card .title-group .title-group-1 span {
+  color: #F67600;
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 500;
+}
+menu .section-4 .container .group .card .title-group .title-group-1 p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+}
 menu .section-4 .container .group .content {
   padding: 48px;
   border-radius: 0px 0px 16px 16px;
@@ -631,6 +662,7 @@ menu .section-4 .container .group .content .below .button {
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.54px;
+  gap: 8px;
 }
 menu .section-4 .container .group .content .below .button a {
   color: #000;
@@ -640,6 +672,64 @@ menu .section-4 .container .group .content .below .button::after {
   width: 2.2rem;
   aspect-ratio: 1;
   background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
+}
+menu .section-4 .container .group .content2 {
+  padding: 48px;
+  border-radius: 0px 0px 16px 16px;
+  border-right: 4px solid #FDE3CC;
+  border-bottom: 4px solid #FDE3CC;
+  border-left: 4px solid #FDE3CC;
+}
+menu .section-4 .container .group .content2 .above {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+menu .section-4 .container .group .content2 .above .group-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+menu .section-4 .container .group .content2 .above .group-left span {
+  color: #F67600;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.54px;
+}
+menu .section-4 .container .group .content2 .above .group-left .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.48px;
+}
+menu .section-4 .container .group .content2 .above .group-left .below .button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid;
+  width: 350px;
+  border-radius: 99px;
+  padding: 16px 32px 16px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+  gap: 8px;
+}
+menu .section-4 .container .group .content2 .above .group-left .below .button a {
+  color: #000;
+}
+menu .section-4 .container .group .content2 .above .group-left .below .button::after {
+  content: "";
+  width: 2.2rem;
+  aspect-ratio: 1;
+  background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
+}
+menu .section-4 .container .group .content2 .above .right img {
+  max-width: 38rem;
 }
 
 .contact2 {

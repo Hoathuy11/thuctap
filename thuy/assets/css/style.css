@@ -690,6 +690,9 @@ menu .section-5 .container .group .card .title-group .title-group-1 p {
   line-height: 1.5;
   letter-spacing: 0.6px;
 }
+menu .section-5 .container .group .card .title-group .toggleArrow img {
+  transition: all 0.5s;
+}
 menu .section-5 .container .group .content2 {
   padding: 48px;
   border-radius: 0px 0px 16px 16px;
@@ -1141,6 +1144,9 @@ menu .section-5 .container .group .content2.close {
   .banner .reason h1 br {
     display: block;
   }
+  .banner .reason p {
+    font-size: 18px;
+  }
   .list {
     font-size: 12px;
     padding: 0 40px;
@@ -1355,10 +1361,10 @@ menu .section-5 .container .group .content2.close {
     margin: 0;
   }
   menu .section-5 {
-    margin-bottom: -460px;
+    margin-bottom: -930px;
   }
   menu .section-5 .container {
-    transform: scale(0.9) translateY(-7%);
+    transform: scale(0.8) translateY(-14%);
     transform-origin: center;
     width: 100%;
     display: flex;
@@ -1571,7 +1577,7 @@ menu .section-5 .container .group .content2.close {
     width: auto;
   }
   menu .section-5 {
-    margin-bottom: -530px;
+    margin-bottom: -1030px;
   }
   .contact2 .contact-phone .contact-phone__number {
     font-size: 40px;

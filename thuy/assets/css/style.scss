@@ -692,6 +692,9 @@ menu{
                                 letter-spacing: 0.6px;
                             }
                         }
+                        .toggleArrow img{
+                            transition: all 0.5s;
+                        }
                     }
                 }
                 .content2{
@@ -1161,10 +1164,15 @@ menu{
         max-width: none;
         height: 148px;
     }
-    .banner .reason h1{
-        font-size: 28px;
-        br{
-            display: block;
+    .banner .reason{
+        h1{
+            font-size: 28px;
+            br{
+                display: block;
+            }
+        }
+        p{
+            font-size: 18px;
         }
     }
     .list {
@@ -1400,10 +1408,10 @@ menu{
     }
     //FLOW
     menu .section-5{
-        margin-bottom: -460px;
+        margin-bottom: -930px;
     }
     menu .section-5 .container {
-        transform: scale(0.9) translateY(-7%);
+        transform: scale(0.8) translateY(-14%);
         transform-origin: center;
         width: 100%;
         display: flex;
@@ -1634,7 +1642,7 @@ menu{
         }
     }
     menu .section-5{
-        margin-bottom: -530px;
+        margin-bottom: -1030px;
     }
     // menu .section-5 .container{
     //     .group{

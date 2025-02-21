@@ -92,11 +92,11 @@
         <section class="section-1">
             <div class="container">
                 <div class="title-main">
-                    <p>解体工事の流れ<span>8</span>つのステップ</p>
+                    <p class="p">解体工事の流れ<br><span>8</span>つのステップ</p>
                 </div>
             </div>
         </section>
-        <section class="section-4">
+        <section class="section-5">
             <div class="container">
                 <div class="group">
                     <div class="card">
@@ -104,6 +104,9 @@
                             <div class="title-group-1">
                                 <span>01</span>
                                 <p>お問い合わせ</p>
+                            </div>
+                            <div class="toggleArrow">
+                                <img src="./assets/img/arrow.png" alt="">
                             </div>
                         </div>
                         <div class="content2">
@@ -124,6 +127,11 @@
                                 <div class="right">
                                     <img src="./assets/img/flow1.png" alt="">
                                 </div>
+                                <div class="below1">
+                                    <div class="button">
+                                        <a href="#">解体費用を見る</a>
+                                    </div>
+                                </div>
                             </div>
                             
                         </div>
@@ -133,6 +141,9 @@
                             <div class="title-group-1">
                                 <span>02</span>
                                 <p>現場調査・ご要望ヒアリング</p>
+                            </div>
+                            <div class="toggleArrow">
+                                <img src="./assets/img/arrow.png" alt="">
                             </div>
                         </div>
                         <div class="content2">
@@ -156,7 +167,10 @@
                         <div class="title-group">
                             <div class="title-group-1">
                                 <span>03</span>
-                                <p>お見積りのご提出/p>
+                                <p>お見積りのご提出</p>
+                            </div>
+                            <div class="toggleArrow">
+                                <img src="./assets/img/arrow.png" alt="">
                             </div>
                         </div>
                         <div class="content2">
@@ -183,6 +197,9 @@
                                 <span>04</span>
                                 <p>ご契約</p>
                             </div>
+                            <div class="toggleArrow">
+                                <img src="./assets/img/arrow.png" alt="">
+                            </div>
                         </div>
                         <div class="content2">
                             <div class="above">
@@ -207,6 +224,9 @@
                             <div class="title-group-1">
                                 <span>05</span>
                                 <p>各自治体への届け出・ライフラインの停止</p>
+                            </div>
+                            <div class="toggleArrow">
+                                <img src="./assets/img/arrow.png" alt="">
                             </div>
                         </div>
                         <div class="content2">
@@ -234,6 +254,9 @@
                                 <span>06</span>
                                 <p>近隣挨拶の実施</p>
                             </div>
+                            <div class="toggleArrow">
+                                <img src="./assets/img/arrow.png" alt="">
+                            </div>
                         </div>
                         <div class="content2">
                             <div class="above">
@@ -257,6 +280,9 @@
                             <div class="title-group-1">
                                 <span>07</span>
                                 <p>解体工事の着工～完工</p>
+                            </div>
+                            <div class="toggleArrow">
+                                <img src="./assets/img/arrow.png" alt="">
                             </div>
                         </div>
                         <div class="content2">
@@ -282,6 +308,9 @@
                             <div class="title-group-1">
                                 <span>08</span>
                                 <p>整地・土地の引き渡し・建物滅失登記</p>
+                            </div>
+                            <div class="toggleArrow">
+                                <img src="./assets/img/arrow.png" alt="">
                             </div>
                         </div>
                         <div class="content2">
@@ -430,6 +459,23 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('open'); // Hiển thị menu
         contactBtn.classList.toggle('open'); // Hiển thị nút liên hệ
         menuIcon.classList.toggle('open'); // Hiệu ứng cho biểu tượng menu
+    });
+});
+    </script>
+    <script>
+       document.querySelectorAll(".toggleArrow").forEach((arrow) => {
+    arrow.addEventListener("click", function() {
+        var parent = this.closest(".card"); // Lấy phần tử cha chứa nội dung
+        var content = parent.querySelector(".content2"); // Lấy nội dung cần ẩn/hiện
+        var img = this.querySelector("img"); // Lấy icon mũi tên
+
+        if (content.classList.contains("close")) {
+            content.classList.remove("close");
+            img.style.transform = "rotate(180deg)";
+        } else {
+            content.classList.add("close");
+            img.style.transform = "rotate(0deg)";
+        }
     });
 });
     </script>

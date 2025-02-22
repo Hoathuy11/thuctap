@@ -1361,11 +1361,11 @@ menu .section-5 .container .group .content2.close {
     margin: 0;
   }
   menu .section-5 {
-    margin-bottom: -470px;
+    margin-bottom: -400px;
   }
   menu .section-5 .container {
-    transform: scale(0.9) translateY(-7%);
-    transform-origin: center;
+    transform: scale(0.9);
+    transform-origin: top center;
     width: 100%;
     display: inline-block;
   }
@@ -1579,7 +1579,7 @@ menu .section-5 .container .group .content2.close {
     width: auto;
   }
   menu .section-5 {
-    margin-bottom: -530px;
+    margin-bottom: -450px;
   }
   .contact2 .contact-phone .contact-phone__number {
     font-size: 40px;

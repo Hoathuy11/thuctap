@@ -769,6 +769,7 @@ menu{
                 .content2.close {
                     max-height: 0;
                     padding: 0 48px;
+                    
                 }                                       
                 
             }
@@ -1408,11 +1409,11 @@ menu{
     }
     //FLOW
     menu .section-5{
-        margin-bottom: -470px;
+        margin-bottom: -400px;
     }
     menu .section-5 .container {
-        transform: scale(0.9) translateY(-7%);
-        transform-origin: center;
+        transform: scale(0.9);
+        transform-origin: top center;
         width: 100%;
         display: inline-block;
         .group{
@@ -1643,7 +1644,7 @@ menu{
         }
     }
     menu .section-5{
-        margin-bottom: -530px;
+        margin-bottom: -450px;
     }
     // menu .section-5 .container{
     //     .group{

@@ -1073,6 +1073,7 @@ menu{
     }
     .header .nav.open {
         display: block; 
+        bottom:0;
     }
 
     .header .nav ul {
@@ -1409,13 +1410,11 @@ menu{
     }
     //FLOW
     menu .section-5{
-        margin-bottom: -400px;
+        margin-top: 32px;
+        margin-bottom: 48px;
     }
     menu .section-5 .container {
-        transform: scale(0.9);
-        transform-origin: top center;
-        width: 100%;
-        display: inline-block;
+        width: 90%;
         .group{
             gap:24px;
             .card{
@@ -1428,7 +1427,7 @@ menu{
                         }
                         p{
                             font-size: 16px;
-                            letter-spacing: 2.0px;
+                            letter-spacing: 0.48px;
                             line-height: 1.3;
                         }
                     }
@@ -1448,11 +1447,11 @@ menu{
                             }
                             span{
                                 font-size: 16px;
-                                letter-spacing: 1.75px;
+                                letter-spacing: 0.48px;
                             }
                             .text p{
                                 line-height: 1.6;
-                                letter-spacing: 1.2px;
+                                letter-spacing: -0.5px;
                                 
                             }
                         }
@@ -1461,7 +1460,7 @@ menu{
                             justify-content: center;
                             margin: 0 auto;
                             border: 2px solid;
-                            width: 350px;
+                            width: auto;
                             border-radius: 99px;
                             padding: 16px 32px 16px 40px;
                             font-size: 18px;
@@ -1478,6 +1477,9 @@ menu{
                                 aspect-ratio: 1;
                                 background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center / 100%;
                             }
+                        }
+                        .right img{
+                            max-width: 31rem;
                         }
                     }
                 }
@@ -1644,17 +1646,9 @@ menu{
         }
     }
     menu .section-5{
-        margin-bottom: -450px;
+        margin-top: 32px;
+        margin-bottom: 48px;
     }
-    // menu .section-5 .container{
-    //     .group{
-    //         .content{
-    //             .below .button{
-    //                 // width: auto;
-    //             }
-    //         }
-    //     }
-    // }
     .contact2 .contact-phone .contact-phone__number{
         font-size: 40px;
         img{

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 $font-noto: "Noto Sans JP", serif;
 $font-dm: "DM Serif Text", serif;
 
@@ -201,8 +202,9 @@ a{
         }
     }
     .reason p {
-        font-size: 22px;
+        font-size: 24px;
         color: #F67600;
+        font-family: "Oswald",serif;
     }
 }
 .list{
@@ -819,7 +821,7 @@ menu{
                         width: 100%;
                         flex-wrap: nowrap;
                         gap: 24px;
-                        border-bottom: 0.8rem solid #f67600;
+                        border-bottom: 8px solid #f67600;
                         button{
                             width: 100%;
                             padding: 20px 16px;
@@ -844,6 +846,19 @@ menu{
                                     display: none;
                                 }
                             }
+                            .chevron{
+                                rotate: 180deg;
+                            }
+                        }
+                        .tablinks.active {
+                            color: #FFF;
+                            background-color: #F67600;
+                            .chevron svg path{
+                                fill: #FFF;
+                            }
+                            span small svg path{
+                                fill: #FFF;
+                            }
                         }
                     }
                 }
@@ -857,22 +872,29 @@ menu{
                                 align-items: flex-start;
                                 gap:12px;
                                 .item{
-                                    border-radius: 99px;
-                                    border: 2px solid #CCC;
-                                    background: #FFF;
-                                    padding: 12px 16px 12px 32px;
-                                    a{
+                                    a {
                                         color: #000;
                                         font-size: 15px;
                                         font-weight: 700;
                                         line-height: 1.4;
                                         letter-spacing: 0.45px;
-                                        &::after{
+                                        padding: 12px 16px 12px 32px;
+                                        border-radius: 99px;
+                                        border: 2px solid #CCC;
+                                        background: #FFF;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 4px;
+                                        &::after {
                                             content: "";
-                                            background: url("../img/arrow.png") no-repeat center center/cover;
-                                            display: flex;
+                                            width: 20px;
+                                            height: 20px;
+                                            rotate: 90deg;
+                                            background: url("../img/arrow.png") no-repeat center center / cover;
                                         }
                                     }
+                                    
                                 }
                             }
                             .list-item{
@@ -892,7 +914,6 @@ menu{
                                         padding: 16px 20px 24px 20px;
                                         background-color: #FEF8E9;
                                         border-radius: 0 0 16px 16px;
-                                        text-align: center;
                                         display: flex;
                                         flex-direction: column;
                                         gap: 12px;
@@ -902,6 +923,7 @@ menu{
                                             font-weight: 700;
                                             line-height: 1.5;
                                             letter-spacing: 0.48px;
+                                            text-align: center;
                                         }
                                         .item-content__p{
                                             color: #000;
@@ -909,10 +931,7 @@ menu{
                                             font-weight: 400;
                                             line-height: 1.5;
                                             letter-spacing: 0.39px;
-                                            p{
-                                                display: flex;
-                                                align-items: flex-start;
-                                            }
+                                            
                                         }
                                     }
                                 }
@@ -981,7 +1000,7 @@ menu{
                                 align-items: center;
                                 gap: 16px;
                                 p{
-                                    font-family: Roboto;
+                                    font-family: "Roboto",serif;
                                     font-size: 14px;
                                     color: #777;
                                     font-weight: 400;
@@ -1341,9 +1360,11 @@ menu{
         justify-content: center;
         align-items: center;
     }
+    
     .header .nav.open {
         display: block; 
         bottom:0;
+        
     }
 
     .header .nav ul {

@@ -850,9 +850,9 @@ menu{
                                 rotate: 180deg;
                             }
                         }
-                        .tablinks.active {
+                        .tablinks.active{
                             color: #FFF;
-                            background-color: #F67600;
+                            background-color: #F67600 !important;
                             .chevron svg path{
                                 fill: #FFF;
                             }
@@ -894,14 +894,22 @@ menu{
                                             background: url("../img/arrow.png") no-repeat center center / cover;
                                         }
                                     }
-                                    
+                                }
+                                .item.active a{
+                                    background-color: #606060;
+                                    color: white;
+                                    padding: 12px 32px 12px 32px;
+                                    &::after{
+                                        content: "";
+                                        display: none;
+                                    }
                                 }
                             }
                             .list-item{
                                 display: grid;
                                 grid-template-columns: repeat(4, 1fr);
                                 gap: 24px;
-                                .item{
+                                .item-list{
                                     display: flex;
                                     flex-direction: column;
                                     .item-img{
@@ -1030,7 +1038,10 @@ menu{
                                 white-space: nowrap;
                                 font-size: 14px;
                                 font-weight: 400;
-                                line-height: 1.7
+                                line-height: 1.7;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                width: 90%;
                             }
                         }
                     }

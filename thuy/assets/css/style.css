@@ -1892,7 +1892,7 @@ menu .sec-slide .container .below .button::after {
   }
   menu .section-tab .container .tab .tab-head .tab-head__button button {
     display: flex;
-    gap: 0;
+    gap: 75px;
     padding: 12px 12px 12px 20px;
   }
   menu .section-tab .container .tab .tab-head .tab-head__button button span {
@@ -1920,7 +1920,9 @@ menu .sec-slide .container .below .button::after {
   }
   menu .section-tab .container .tab .tab-body .tab-body__item .tab-head__list .list-item {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    row-gap: 12px;
+    -moz-column-gap: 13px;
+         column-gap: 13px;
   }
   menu .section-tab .container .tab .tab-body .tab-body__item .tab-head__list .list-item .item-list .item-img img {
     width: 100%;
@@ -2170,26 +2172,14 @@ menu .sec-slide .container .below .button::after {
   menu .section-tab .container {
     width: 90%;
   }
-  menu .section-tab .container .tab .tab-head .tab-head__button {
-    flex-wrap: nowrap;
-    gap: 8px;
-  }
   menu .section-tab .container .tab .tab-head .tab-head__button button {
     display: flex;
-    gap: 0;
-    padding: 12px 12px 12px 20px;
+    gap: 10px;
   }
-  menu .section-tab .container .tab .tab-head .tab-head__button button span {
-    font-family: "Oswald", serif;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 0.45px;
-  }
-  menu .section-tab .container .tab .tab-head .tab-head__button button span span .br {
+  menu .section-tab .container .tab .tab-head .tab-head__button button span .br {
     display: block;
   }
-  menu .section-tab .container .tab .tab-head .tab-head__button button span span small {
+  menu .section-tab .container .tab .tab-head .tab-head__button button span small {
     display: flex;
     gap: 16px;
   }

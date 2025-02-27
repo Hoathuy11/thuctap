@@ -1972,7 +1972,7 @@ menu{
                         gap: 8px;
                         button{
                             display: flex;
-                            gap: 0;
+                            gap: 75px;
                             padding: 12px 12px 12px 20px;
                             span{
                                 font-family: "Oswald",serif;
@@ -2007,7 +2007,8 @@ menu{
                             }
                             .list-item {
                                 grid-template-columns: repeat(2, 1fr);
-                                gap: 16px;
+                                row-gap: 12px;
+                                column-gap: 13px;
                                 .item-list {
                                     .item-img img {
                                         width: 100%;
@@ -2289,26 +2290,16 @@ menu{
             .tab {
                 .tab-head {
                     .tab-head__button {
-                        flex-wrap: nowrap;
-                        gap: 8px;
                         button{
-                            display: flex;
-                            gap: 0;
-                            padding: 12px 12px 12px 20px;
+                        display: flex;
+                        gap: 10px;
                             span{
-                                font-family: "Oswald",serif;
-                                font-size: 15px;
-                                font-weight: 600;
-                                line-height: 1.2;
-                                letter-spacing: 0.45px;
-                                span{
-                                    .br{
-                                        display: block;
-                                    }
-                                    small{
-                                        display: flex;
-                                        gap: 16px;
-                                    }
+                                .br{
+                                    display: block;
+                                }
+                                small{
+                                    display: flex;
+                                    gap: 16px;
                                 }
                             }
                         }

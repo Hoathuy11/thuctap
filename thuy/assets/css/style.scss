@@ -341,36 +341,6 @@ menu{
                     display: none;
                 }
             }
-            //WORKS
-            .content-main{
-                display: flex;
-                gap: 40px;
-                .left{
-                    .img{
-                        width: 479px;
-                        height: 320px;
-                        border-radius: 16px;
-                        img{
-                            width: 100%;
-                        }
-                    }
-                    p{
-                        font-size: 15px;
-                        font-weight: 400;
-                        line-height: 1.8;
-                        letter-spacing: 0.45px;
-                    }
-                }
-                .right{
-                    p{
-                        font-size: 15px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 1.8;
-                        letter-spacing: 0.45px;
-                    }
-                }
-            }
         }
     }
     .section-2{
@@ -839,7 +809,7 @@ menu{
                                 justify-content: center;
                                 align-items: center;
                                 gap: 12px;
-                                font-family: Oswald;
+                                font-family: "Oswald",serif;
                                 font-size: 20px;
                                 font-weight: 600;
                                 line-height: 1.4;
@@ -914,10 +884,13 @@ menu{
                                 .item-list{
                                     display: flex;
                                     flex-direction: column;
-                                    .item-img img{
-                                        width: 262px;
-                                        height: 175px;
-                                        border-radius: 16px 16px 0 0;
+                                    .item-img{
+                                        margin-bottom: -3px;
+                                        img{
+                                            width: 262px;
+                                            height: 175px;
+                                            border-radius: 16px 16px 0 0;
+                                        }
                                     }
                                     .item-content{
                                         padding: 16px 20px 24px 20px;
@@ -946,6 +919,83 @@ menu{
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .section-6 {
+        .container {
+            width: 100%;
+            max-width: 1120px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            margin: 0 auto;
+            .title-main p{
+                text-align: center;
+                color: #F67600;
+                font-size: 32px;
+                font-weight: 700;
+                letter-spacing: 0.96px;
+                position: relative;
+                padding-bottom: 1.6rem;
+                margin-top: 120px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 4rem;
+                    height: 0.2rem;
+                    background-color: #F67600;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                span{
+                    font-size: 64px;
+                    letter-spacing: 0.96px;
+                }
+                br{
+                    display: none;
+                }
+            }
+            .text-main p{
+                text-align: center;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.8;
+                color: #000;
+                .sp{
+                    display: none;
+                }
+            }
+            //WORKS
+            .content-main{
+                display: flex;
+                gap: 40px;
+                .left{
+                    .img{
+                        width: 479px;
+                        height: 320px;
+                        border-radius: 16px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    p{
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 1.8;
+                        letter-spacing: 0.45px;
+                    }
+                }
+                .right{
+                    p{
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.8;
+                        letter-spacing: 0.45px;
                     }
                 }
             }
@@ -1635,12 +1685,12 @@ menu{
             }
         }
     }
-    menu .section-1 .container{
-        transform: scale(0.8);
-        width: 125%;
-        transform-origin: top left;
-        .title-main p br{
-            display: block;
+    menu .section-1{
+        .container{
+            width: 90%;
+            .title-main p br{
+                display: block;
+            }
         }
     }
     menu .section-2 .container .list {
@@ -1910,6 +1960,173 @@ menu{
             }
         }
     }
+    //WORKS
+    menu .section-tab {
+        margin-top: 48px;
+        .container {
+            max-width: 90%;
+            .tab {
+                .tab-head {
+                    .tab-head__button {
+                        flex-wrap: nowrap;
+                        gap: 8px;
+                        button{
+                            display: flex;
+                            gap: 0;
+                            padding: 12px 12px 12px 20px;
+                            span{
+                                font-family: "Oswald",serif;
+                                font-size: 15px;
+                                font-weight: 600;
+                                line-height: 1.2;
+                                letter-spacing: 0.45px;
+                                span{
+                                    .br{
+                                        display: block;
+                                    }
+                                    small{
+                                        display: flex;
+                                        gap: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-body {
+                    .tab-body__item {
+                        .tab-head__list {
+                            .list {
+                                flex-wrap: wrap;
+                                width: 100%;
+                                gap: 8px;
+                                .item a {
+                                    font-size: 14px;
+                                    padding: 10px 14px;
+                                }
+                            }
+                            .list-item {
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 16px;
+                                .item-list {
+                                    .item-img img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                    .item-content {
+                                        padding: 12px;
+                                        span{
+                                            font-size: 15px;
+                                            font-weight: 400;
+                                            line-height: 1.5;
+                                            letter-spacing: 0.45px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    menu .section-6{
+        .container{
+            width: 90%;
+            .title-main p{
+                font-size: 24px;
+                margin-top: 48px;
+                br{
+                    display: block;
+                }
+            }
+            .content-main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .left{
+                    .img{
+                        width: 343px;
+                        height: 229px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    menu .blog {
+        margin-top: 48px;
+        .container {
+            width: 90%;
+            .title-blog p {
+                font-size: 28px;
+            }
+            .list-blog{
+                width: 100%;
+                .item-blog{
+                    .main-blog {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 24px;
+                        .left .img img {
+                            width: 100%; /* Ảnh full width */
+                            height: auto; /* Giữ tỷ lệ ảnh */
+                        }
+                        .right {
+                            width: 90%;
+                            .time{
+                                p{
+                                    font-family: "Roboto",serif;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 1.5;
+                                    letter-spacing: 0.7px
+                                }
+                            }
+                            span{
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                font-size: 15px;
+                                font-weight: 700;
+                                line-height: 1.7;
+                            }
+                            .text p {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 1.7;
+                            }
+                        }
+                    }
+                }
+            }
+            .below .button {
+                width: auto;
+                padding: 16px 20px 16px 20px;
+                font-size: 15px;
+            }
+        }
+    }
+    menu .sec-slide{
+        .container{
+            width: 90%;
+            .title-main p{
+                font-size: 24px;
+            }
+            .btn-slide {
+                width: 30px; /* Giảm kích thước nút bấm */
+                height: 30px;
+            }
+            .below .button {
+                padding: 16px 20px 16px 20px;
+                font-size: 15px;
+            }
+        }
+    }
     .contact2{
         padding: 40px 0 0 0;
     }
@@ -2064,7 +2281,111 @@ menu{
         margin-top: 32px;
         margin-bottom: 48px;
     }
-    
+    menu .section-tab {
+        .container{
+            width: 90%;
+            .tab {
+                .tab-head {
+                    .tab-head__button {
+                        flex-wrap: nowrap;
+                        gap: 8px;
+                        button{
+                            display: flex;
+                            gap: 0;
+                            padding: 12px 12px 12px 20px;
+                            span{
+                                font-family: "Oswald",serif;
+                                font-size: 15px;
+                                font-weight: 600;
+                                line-height: 1.2;
+                                letter-spacing: 0.45px;
+                                span{
+                                    .br{
+                                        display: block;
+                                    }
+                                    small{
+                                        display: flex;
+                                        gap: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-body {
+                    .tab-body__item {
+                        .tab-head__list {
+                            .list-item {
+                                .item-list {
+                                    .item-content {
+                                        .span{
+                                            text-align: left;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    menu .section-6 .container .content-main .right p{
+        letter-spacing: 0;
+    }
+    menu .blog {
+        .container {
+            width: 90%;
+            .title-blog p {
+                font-size: 28px;
+            }
+            .list-blog{
+                width: 100%;
+                .item-blog{
+                    .main-blog {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 24px;
+                        .left .img img {
+                            width: 303px;
+                            height: auto;
+                        }
+                        .right {
+                            .time{
+                                p{
+                                    font-family: "Roboto",serif;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 1.5;
+                                    letter-spacing: 0.7px
+                                }
+                            }
+                            span{
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                font-size: 15px;
+                                font-weight: 700;
+                                line-height: 1.7;
+                                white-space: nowrap;
+                            }
+                            .text p {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 1.7;
+                                width: 100%;
+                                br{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .contact2 .contact-phone .contact-phone__number{
         font-size: 40px;
         img{

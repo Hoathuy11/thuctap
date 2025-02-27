@@ -2071,8 +2071,8 @@ menu{
                         align-items: center;
                         gap: 24px;
                         .left .img img {
-                            width: 100%; /* Ảnh full width */
-                            height: auto; /* Giữ tỷ lệ ảnh */
+                            width: 100%;
+                            height: auto; 
                         }
                         .right {
                             width: 90%;
@@ -2086,8 +2086,6 @@ menu{
                                 }
                             }
                             span{
-                                overflow: hidden;
-                                text-overflow: ellipsis;
                                 font-size: 15px;
                                 font-weight: 700;
                                 line-height: 1.7;
@@ -2099,6 +2097,10 @@ menu{
                                 font-size: 13px;
                                 font-weight: 400;
                                 line-height: 1.7;
+                                width: 98%;
+                                br{
+                                    display: none;
+                                }
                             }
                         }
                     }

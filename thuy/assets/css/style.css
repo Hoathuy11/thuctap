@@ -1975,8 +1975,8 @@ menu .sec-slide .container .below .button::after {
     gap: 24px;
   }
   menu .blog .container .list-blog .item-blog .main-blog .left .img img {
-    width: 100%; /* Ảnh full width */
-    height: auto; /* Giữ tỷ lệ ảnh */
+    width: 100%;
+    height: auto;
   }
   menu .blog .container .list-blog .item-blog .main-blog .right {
     width: 90%;
@@ -1989,8 +1989,6 @@ menu .sec-slide .container .below .button::after {
     letter-spacing: 0.7px;
   }
   menu .blog .container .list-blog .item-blog .main-blog .right span {
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.7;
@@ -2002,6 +2000,10 @@ menu .sec-slide .container .below .button::after {
     font-size: 13px;
     font-weight: 400;
     line-height: 1.7;
+    width: 98%;
+  }
+  menu .blog .container .list-blog .item-blog .main-blog .right .text p br {
+    display: none;
   }
   menu .blog .container .below .button {
     width: auto;

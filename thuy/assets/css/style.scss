@@ -801,9 +801,8 @@ menu{
                             border-radius: 20px 20px 0px 0px;
                             background: #ECECEC;
                             display: flex;
-                            justify-content: center;
+                            justify-content: space-between;
                             align-items: center;
-                            gap: 130px;
                             span{
                                 display: flex;
                                 justify-content: center;
@@ -996,6 +995,9 @@ menu{
                         font-weight: 400;
                         line-height: 1.8;
                         letter-spacing: 0.45px;
+                        .br{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -1063,7 +1065,7 @@ menu{
                                     color: #777;
                                     font-weight: 400;
                                     line-height: 1.5;
-                                    letter-spacing: 0.7px;
+                                    letter-spacing: 0.7px; 
                                 }
                                 .btn{
                                     display: flex;
@@ -1971,9 +1973,8 @@ menu{
                         flex-wrap: nowrap;
                         gap: 8px;
                         button{
-                            display: flex;
-                            gap: 75px;
                             padding: 12px 12px 12px 20px;
+                            justify-content: center;
                             span{
                                 font-family: "Oswald",serif;
                                 font-size: 15px;
@@ -2061,11 +2062,13 @@ menu{
         margin-top: 48px;
         .container {
             width: 90%;
+            gap: 32px;
             .title-blog p {
                 font-size: 28px;
             }
             .list-blog{
                 width: 100%;
+                gap: 32px;
                 .item-blog{
                     .main-blog {
                         flex-direction: column;
@@ -2077,13 +2080,17 @@ menu{
                         }
                         .right {
                             width: 90%;
+                            gap: 8px;
                             .time{
                                 p{
                                     font-family: "Roboto",serif;
                                     font-size: 14px;
                                     font-weight: 400;
                                     line-height: 1.5;
-                                    letter-spacing: 0.7px
+                                    letter-spacing: 0.7px;
+                                    .br{
+                                        display: flex;
+                                    }
                                 }
                             }
                             span{
@@ -2286,14 +2293,12 @@ menu{
     }
     menu .section-tab {
         .container{
-            width: 90%;
             .tab {
                 .tab-head {
                     .tab-head__button {
                         button{
-                        display: flex;
-                        gap: 10px;
                             span{
+                                flex-shrink: 0;
                                 .br{
                                     display: block;
                                 }
@@ -2378,6 +2383,10 @@ menu{
                 }
             }
         }
+    }
+    menu .sec-slide{
+        margin-top: 48px;
+        margin-bottom: 48px;
     }
     .contact2 .contact-phone .contact-phone__number{
         font-size: 40px;

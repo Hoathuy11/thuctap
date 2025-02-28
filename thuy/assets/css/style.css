@@ -792,9 +792,8 @@ menu .section-tab .container .tab .tab-head .tab-head__button button {
   border-radius: 20px 20px 0px 0px;
   background: #ECECEC;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 130px;
 }
 menu .section-tab .container .tab .tab-head .tab-head__button button span {
   display: flex;
@@ -970,6 +969,9 @@ menu .section-6 .container .content-main .right p {
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.45px;
+}
+menu .section-6 .container .content-main .right p .br {
+  display: none;
 }
 menu .blog {
   margin-top: 120px;
@@ -1891,9 +1893,8 @@ menu .sec-slide .container .below .button::after {
     gap: 8px;
   }
   menu .section-tab .container .tab .tab-head .tab-head__button button {
-    display: flex;
-    gap: 75px;
     padding: 12px 12px 12px 20px;
+    justify-content: center;
   }
   menu .section-tab .container .tab .tab-head .tab-head__button button span {
     font-family: "Oswald", serif;
@@ -1964,12 +1965,14 @@ menu .sec-slide .container .below .button::after {
   }
   menu .blog .container {
     width: 90%;
+    gap: 32px;
   }
   menu .blog .container .title-blog p {
     font-size: 28px;
   }
   menu .blog .container .list-blog {
     width: 100%;
+    gap: 32px;
   }
   menu .blog .container .list-blog .item-blog .main-blog {
     flex-direction: column;
@@ -1982,6 +1985,7 @@ menu .sec-slide .container .below .button::after {
   }
   menu .blog .container .list-blog .item-blog .main-blog .right {
     width: 90%;
+    gap: 8px;
   }
   menu .blog .container .list-blog .item-blog .main-blog .right .time p {
     font-family: "Roboto", serif;
@@ -1989,6 +1993,9 @@ menu .sec-slide .container .below .button::after {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.7px;
+  }
+  menu .blog .container .list-blog .item-blog .main-blog .right .time p .br {
+    display: flex;
   }
   menu .blog .container .list-blog .item-blog .main-blog .right span {
     font-size: 15px;
@@ -2169,12 +2176,8 @@ menu .sec-slide .container .below .button::after {
     margin-top: 32px;
     margin-bottom: 48px;
   }
-  menu .section-tab .container {
-    width: 90%;
-  }
-  menu .section-tab .container .tab .tab-head .tab-head__button button {
-    display: flex;
-    gap: 10px;
+  menu .section-tab .container .tab .tab-head .tab-head__button button span {
+    flex-shrink: 0;
   }
   menu .section-tab .container .tab .tab-head .tab-head__button button span .br {
     display: block;
@@ -2233,6 +2236,10 @@ menu .sec-slide .container .below .button::after {
   }
   menu .blog .container .list-blog .item-blog .main-blog .right .text p br {
     display: none;
+  }
+  menu .sec-slide {
+    margin-top: 48px;
+    margin-bottom: 48px;
   }
   .contact2 .contact-phone .contact-phone__number {
     font-size: 40px;

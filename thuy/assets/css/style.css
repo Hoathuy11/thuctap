@@ -1127,21 +1127,25 @@ menu .sec-slide .container .title-main p::after {
 }
 menu .sec-slide .container .btn-slide {
   position: absolute;
-  top: 41%;
+  top: 45%;
   transform: translateY(-50%);
   z-index: 1;
 }
 menu .sec-slide .container .btn-slide.next {
-  right: 3rem;
+  right: 1rem;
 }
 menu .sec-slide .container .btn-slide.next img {
   transform: rotate(90deg);
+  width: 48px;
+  height: 48px;
 }
 menu .sec-slide .container .btn-slide.prev {
-  left: 3rem;
+  left: 1rem;
 }
 menu .sec-slide .container .btn-slide.prev img {
   transform: rotate(-90deg);
+  width: 48px;
+  height: 48px;
 }
 menu .sec-slide .container .slider {
   width: 100%;
@@ -1153,10 +1157,6 @@ menu .sec-slide .container .slider .item-slide {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-menu .sec-slide .container .slider .item-slide .image {
-  width: 262px;
-  height: 175px;
 }
 menu .sec-slide .container .slider .item-slide .image img {
   width: 100%;

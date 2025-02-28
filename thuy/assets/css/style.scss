@@ -1159,19 +1159,23 @@ menu{
             }
             .btn-slide{
                 position: absolute;
-                top: 41%;
+                top: 45%;
                 transform: translateY(-50%);
                 z-index: 1;
                 &.next{
-                    right: 3rem;
+                    right: 1rem;
                     img{
                         transform: rotate(90deg);
+                        width: 48px;
+                        height: 48px;
                     }
                 }
                 &.prev{
-                    left: 3rem;
+                    left: 1rem;
                     img{
                         transform: rotate(-90deg);
+                        width: 48px;
+                        height: 48px;
                     }
                 }
             }
@@ -1185,8 +1189,6 @@ menu{
                     flex-direction: column;
                     gap: 12px;
                     .image{
-                        width: 262px;
-                        height: 175px;
                         img{
                             width: 100%;;
                         }

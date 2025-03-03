@@ -7,7 +7,13 @@ $(document).ready(function(){
         nextArrow: ".sec-slide .next",
         responsive: [
             {
-                breakpoint: 425,
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 426,
                 settings: {
                     slidesToShow: 1
                 }
@@ -15,3 +21,4 @@ $(document).ready(function(){
         ]
     });
 });
+

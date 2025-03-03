@@ -787,7 +787,7 @@ menu .section-tab .container .tab .tab-head .tab-head__button {
 menu .section-tab .container .tab .tab-head .tab-head__button button {
   width: 100%;
   padding: 20px 16px;
-  border: 1px solid #ECECEC;
+  border: none;
   border-radius: 20px 20px 0px 0px;
   background: #ECECEC;
   display: flex;
@@ -823,7 +823,6 @@ menu .section-tab .container .tab .tab-head .tab-head__button .tablinks.active s
 }
 menu .section-tab .container .tab .tab-body .tab-body__item .tab-head__list .list {
   display: flex;
-  width: 1120px;
   padding: 24px 0px;
   align-items: flex-start;
   gap: 12px;
@@ -1025,6 +1024,8 @@ menu .blog .container .list-blog .item-blog .main-blog .right {
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  min-width: 0;
+  flex: 1;
 }
 menu .blog .container .list-blog .item-blog .main-blog .right .time {
   display: flex;
@@ -1178,9 +1179,6 @@ menu .sec-slide .container .slider .item-slide .des .text {
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.48px;
-}
-menu .sec-slide .container .below {
-  margin-top: 32px;
 }
 menu .sec-slide .container .below .button {
   display: flex;
@@ -2018,8 +2016,12 @@ menu .sec-slide .container .below .button::after {
     padding: 16px 20px 16px 20px;
     font-size: 15px;
   }
+  menu .sec-slide {
+    margin: 48px 0;
+  }
   menu .sec-slide .container {
     width: 90%;
+    gap: 32px;
   }
   menu .sec-slide .container .title-main p {
     font-size: 24px;
@@ -2031,6 +2033,9 @@ menu .sec-slide .container .below .button::after {
   menu .sec-slide .container .btn-slide.prev img {
     width: 32px;
     height: 32px;
+  }
+  menu .sec-slide .container .slider {
+    transform: scale(0.85);
   }
   menu .sec-slide .container .slider .item-slide {
     margin: 0 12px;
@@ -2259,9 +2264,8 @@ menu .sec-slide .container .below .button::after {
     top: 40%;
   }
   menu .sec-slide .container .slider {
-    width: 100%;
     max-width: 230px;
-    margin: 0 auto;
+    transform: scale(1.05);
   }
   menu .sec-slide .container .slider .item-slide {
     margin: 0 12px;

@@ -797,7 +797,7 @@ menu{
                         button{
                             width: 100%;
                             padding: 20px 16px;
-                            border: 1px solid #ECECEC;
+                            border: none;
                             border-radius: 20px 20px 0px 0px;
                             background: #ECECEC;
                             display: flex;
@@ -838,7 +838,6 @@ menu{
                         .tab-head__list{
                             .list{
                                 display: flex;
-                                width: 1120px;
                                 padding:24px 0px;
                                 align-items: flex-start;
                                 gap:12px;
@@ -1055,6 +1054,8 @@ menu{
                             flex-direction: column;
                             justify-content: center;
                             gap: 16px;
+                            min-width: 0;// Giúp text bị giới hạn và ẩn khi cần
+                            flex: 1;//Giúp phần tử mở rộng linh hoạt
                             .time{
                                 display: flex;
                                 align-items: center;
@@ -1215,7 +1216,6 @@ menu{
                 }
             }
             .below{
-                margin-top: 32px;
                 .button{
                     display: flex;
                     justify-content: center;
@@ -2123,8 +2123,10 @@ menu{
         }
     }
     menu .sec-slide{
+        margin: 48px 0;
         .container{
             width: 90%;
+            gap: 32px;
             .title-main p{
                 font-size: 24px;
             }
@@ -2143,6 +2145,7 @@ menu{
                 }
             }
             .slider{
+                transform: scale(0.85);
                 .item-slide{
                     margin: 0 12px;
                     display: flex;
@@ -2418,9 +2421,8 @@ menu{
                 top: 40%;
             }
             .slider{
-                width: 100%;
                 max-width: 230px;
-                margin: 0 auto;
+                transform: scale(1.05);
                 .item-slide{
                     margin: 0 12px;
                     display: flex;

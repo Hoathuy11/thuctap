@@ -1190,7 +1190,7 @@ menu{
                     gap: 12px;
                     .image{
                         img{
-                            width: 100%;;
+                            width: 100%;
                         }
                     }
                     .des{
@@ -1541,8 +1541,7 @@ menu{
     
     .header .nav.open {
         display: block; 
-        bottom:0;
-        
+        bottom:0;     
     }
 
     .header .nav ul {
@@ -2002,7 +2001,7 @@ menu{
                             .list {
                                 flex-wrap: wrap;
                                 width: 100%;
-                                gap: 8px;
+                                gap: 2px;
                                 .item a {
                                     font-size: 14px;
                                     padding: 10px 14px;
@@ -2130,12 +2129,36 @@ menu{
                 font-size: 24px;
             }
             .btn-slide {
-                width: 30px; /* Giảm kích thước nút bấm */
-                height: 30px;
+                &.next{
+                    img{
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                &.prev{
+                    img{
+                        width: 32px;
+                        height:32px;
+                    }
+                }
+            }
+            .slider{
+                .item-slide{
+                    margin: 0 12px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    .image{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
             }
             .below .button {
                 padding: 16px 20px 16px 20px;
                 font-size: 15px;
+                width: 199px;
             }
         }
     }
@@ -2336,6 +2359,7 @@ menu{
     menu .blog {
         .container {
             width: 90%;
+            padding: 40px 20px;
             .title-blog p {
                 font-size: 28px;
             }
@@ -2389,6 +2413,27 @@ menu{
     menu .sec-slide{
         margin-top: 48px;
         margin-bottom: 48px;
+        .container{
+            .btn-slide{
+                top: 40%;
+            }
+            .slider{
+                width: 100%;
+                max-width: 230px;
+                margin: 0 auto;
+                .item-slide{
+                    margin: 0 12px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    .image{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
     .contact2 .contact-phone .contact-phone__number{
         font-size: 40px;

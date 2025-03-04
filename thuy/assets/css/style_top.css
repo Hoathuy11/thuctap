@@ -325,290 +325,136 @@ menu .section-1 .container .text-main p {
 menu .section-1 .container .text-main p .sp {
   display: none;
 }
-menu .section-2 .container {
+menu .section-reason {
+  width: 100%;
+  max-width: 1360px;
+  background-color: #fef8e9;
+  margin: 0 auto;
+  padding: 80px 0;
+  border-radius: 24px;
+}
+menu .section-reason .container {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
-menu .section-2 .container .list {
+menu .section-reason .container .title-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+menu .section-reason .container .title-main .title-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+menu .section-reason .container .title-main .title-p p {
+  color: #606060;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+menu .section-reason .container .title-main .title-span {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+menu .section-reason .container .title-main .title-span p {
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+menu .section-reason .container .title-main .title-span .title-sp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+menu .section-reason .container .title-main .title-span .title-sp span {
+  color: #F67600;
+  text-align: center;
+  font-family: "Oswald", serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+menu .section-reason .container .title-main .title-span .title-sp .line {
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background-color: #F67600;
+}
+menu .section-reason .container .content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+menu .section-reason .container .content-main .list {
   display: grid;
   grid-template-columns: repeat(3, minmax(30rem, 1fr));
-  row-gap: 56px;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
-  margin-top: 8rem;
+  -moz-column-gap: 24.5px;
+       column-gap: 24.5px;
 }
-menu .section-2 .container .item {
+menu .section-reason .container .content-main .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 32px 32px 32px;
-  background-color: #fef8e9;
+  padding: 40px 24px 32px 24px;
+  background-color: #FFF;
   border-radius: 24px;
   position: relative;
   flex-shrink: 0;
+  gap: 32px;
 }
-menu .section-2 .container .item .icon {
+menu .section-reason .container .content-main .item .icon {
   position: absolute;
-  top: -26px;
+  top: -39px;
+  left: 150px;
 }
-menu .section-2 .container .item .icon span {
+menu .section-reason .container .content-main .item .icon span {
   position: absolute;
   color: #F67600;
-  font-size: 28px;
-  font-family: Oswald;
+  font-family: "Oswald", serif;
+  font-size: 48px;
   font-weight: 500;
-  text-align: center;
-  top: 10%;
-  left: 23%;
+  line-height: normal;
 }
-menu .section-2 .container .item .text {
+menu .section-reason .container .content-main .item .text {
   text-align: center;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.6px;
   font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.6px;
+}
+menu .section-reason .container .content-main .item .text p {
   color: #000;
 }
-menu .section-2 .container .item .text span {
+menu .section-reason .container .content-main .item .text span {
   color: #F67600;
 }
-menu .section-2 .container .item .text .sp {
-  display: none;
-}
-menu .section-2 .container .item .image {
-  margin-top: 2rem;
-}
-menu .section-3 {
-  margin-top: 80px;
-}
-menu .section-3 .container {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-}
-menu .section-3 .container .group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 48px;
-}
-menu .section-3 .container .group .group-item {
+menu .section-reason .container .content-main .item .text-image {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
 }
-menu .section-3 .container .group .group-item .title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.96px;
-}
-menu .section-3 .container .group .group-item .title span {
-  color: #F67600;
-}
-menu .section-3 .container .group .group-item .title br {
-  display: none;
-}
-menu .section-3 .container .group .group-item .text-1 p {
-  text-align: center;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.8;
-  letter-spacing: 0.45px;
-}
-menu .section-3 .container .group .group-item .text-2 p {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.8;
-  letter-spacing: 0.48px;
-}
-menu .section-3 .container .group .group-item .text-1 .sp, menu .section-3 .container .group .group-item .text-2 .sp {
-  display: none;
-}
-menu .section-3 .container .group .vector-2 img {
-  rotate: 180deg;
-}
-menu .section-4 {
-  margin-top: 8rem;
-  margin-bottom: 120px;
-}
-menu .section-4 .container {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-}
-menu .section-4 .container .group {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-menu .section-4 .container .group .card .group-title {
-  border-radius: 16px 16px 0px 0px;
-  background: #F67600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 48px;
-}
-menu .section-4 .container .group .card .group-title .icon {
-  position: relative;
-}
-menu .section-4 .container .group .card .group-title .icon span {
-  position: absolute;
-  color: #F67600;
-  font-size: 28px;
-  font-family: Oswald;
-  font-weight: 500;
-  text-align: center;
-  top: 10%;
-  left: 24%;
-}
-menu .section-4 .container .group .card .group-title .title {
-  color: white;
-  font-weight: 700;
-  line-height: 1.5;
-}
-menu .section-4 .container .group .card .group-title .title span {
-  font-size: 16px;
-  letter-spacing: 0.48px;
-}
-menu .section-4 .container .group .card .group-title .title p {
-  font-size: 32px;
-  letter-spacing: 0.96px;
-}
-menu .section-4 .container .group .content {
-  padding: 48px;
-  border-radius: 0px 0px 16px 16px;
-  border-right: 4px solid #F67600;
-  border-bottom: 4px solid #F67600;
-  border-left: 4px solid #F67600;
-}
-menu .section-4 .container .group .content .above {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-}
-menu .section-4 .container .group .content .above .group-left {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-menu .section-4 .container .group .content .above .group-left .group-image {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title .title-above {
-  display: flex;
-  align-items: self-end;
-  font-weight: 700;
-  line-height: 1.5;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title .title-above small {
-  font-size: 20px;
-  letter-spacing: 0.6px;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title .title-above p {
-  font-size: 36px;
-  letter-spacing: 1.08px;
-  position: relative;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title .title-above p::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 3px;
-  width: 100%;
-  height: 12px;
-  display: block;
-  background-color: #ffe344;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title span {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.39px;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 0.8rem;
-  -moz-column-gap: 2.4rem;
-       column-gap: 2.4rem;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-list p {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.6px;
-  margin-right: 3rem;
-  position: relative;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-list p span {
-  color: #F67600;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-list p::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: -3px;
-  width: 100%;
-  height: 12px;
-  display: block;
-  background-color: #ffe344;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-col {
-  display: flex;
-  gap: 24px;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 {
-  font-weight: 700;
-  line-height: 1.5;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 span {
-  font-size: 15px;
-  color: #F67600;
-  letter-spacing: 0.45px;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p {
-  font-size: 20px;
-  letter-spacing: 0.6px;
-  position: relative;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p span {
-  color: #F67600;
-}
-menu .section-4 .container .group .content .above .group-left .group-image .title-col .title-col-1 p::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: -3px;
-  width: 100%;
-  height: 12px;
-  display: block;
-  background-color: #ffe344;
-}
-menu .section-4 .container .group .content .above .group-left .text {
+menu .section-reason .container .content-main .item .text-image .text {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.45px;
+  text-align: justify;
 }
-menu .section-4 .container .group .content .above .group-left .text span {
-  color: #F67600;
-}
-menu .section-4 .container .group .content .above .right img {
-  max-width: 38rem;
-}
-menu .section-4 .container .group .content .below {
-  margin-top: 32px;
-}
-menu .section-4 .container .group .content .below .button {
+menu .section-reason .container .content-main .below .button {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -621,129 +467,16 @@ menu .section-4 .container .group .content .below .button {
   line-height: 1.5;
   letter-spacing: 0.54px;
   gap: 8px;
+  background-color: #FFF;
 }
-menu .section-4 .container .group .content .below .button a {
+menu .section-reason .container .content-main .below .button a {
   color: #000;
 }
-menu .section-4 .container .group .content .below .button::after {
+menu .section-reason .container .content-main .below .button::after {
   content: "";
   width: 2.2rem;
   aspect-ratio: 1;
   background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
-}
-menu .section-5 {
-  margin-top: 8rem;
-  margin-bottom: 120px;
-}
-menu .section-5 .container {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-}
-menu .section-5 .container .group {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-menu .section-5 .container .group .card .title-group {
-  border-radius: 16px 16px 0px 0px;
-  background: #FDE3CC;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 48px;
-}
-menu .section-5 .container .group .card .title-group .title-group-1 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-menu .section-5 .container .group .card .title-group .title-group-1 span {
-  color: #F67600;
-  font-size: 28px;
-  font-family: Oswald;
-  font-weight: 500;
-}
-menu .section-5 .container .group .card .title-group .title-group-1 p {
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.6px;
-}
-menu .section-5 .container .group .card .title-group .toggleArrow img {
-  transition: all 0.5s;
-}
-menu .section-5 .container .group .content2 {
-  padding: 48px;
-  border-radius: 0px 0px 16px 16px;
-  border-right: 4px solid #FDE3CC;
-  border-bottom: 4px solid #FDE3CC;
-  border-left: 4px solid #FDE3CC;
-}
-menu .section-5 .container .group .content2 .above {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-}
-menu .section-5 .container .group .content2 .above .group-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-}
-menu .section-5 .container .group .content2 .above .group-left span {
-  color: #F67600;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.8;
-  letter-spacing: 0.54px;
-}
-menu .section-5 .container .group .content2 .above .group-left .text p {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.8;
-  letter-spacing: 0.48px;
-}
-menu .section-5 .container .group .content2 .above .group-left .below .button {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  border: 2px solid;
-  width: 350px;
-  border-radius: 99px;
-  padding: 16px 32px 16px 40px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.54px;
-  gap: 8px;
-}
-menu .section-5 .container .group .content2 .above .group-left .below .button a {
-  color: #000;
-}
-menu .section-5 .container .group .content2 .above .group-left .below .button::after {
-  content: "";
-  width: 2.2rem;
-  aspect-ratio: 1;
-  background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
-}
-menu .section-5 .container .group .content2 .above .right img {
-  max-width: 38rem;
-}
-menu .section-5 .container .group .content2 .above .below1 .button {
-  display: none;
-}
-menu .section-5 .container .group .content2 {
-  max-height: 700px;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
-}
-menu .section-5 .container .group .content2.close {
-  max-height: 0;
-  padding: 0 48px;
 }
 menu .section-tab .container {
   width: 100%;
@@ -943,6 +676,7 @@ menu .section-tab .container .below .button {
   line-height: 1.5;
   letter-spacing: 0.54px;
   gap: 8px;
+  background-color: #FFF;
 }
 menu .section-tab .container .below .button a {
   color: #000;
@@ -1090,6 +824,7 @@ menu .sec-slide .container .below .button {
   line-height: 1.5;
   letter-spacing: 0.54px;
   gap: 8px;
+  background-color: #FFF;
 }
 menu .sec-slide .container .below .button a {
   color: #000;
@@ -1236,6 +971,7 @@ menu .sec-slide1 .container .below .button {
   line-height: 1.5;
   letter-spacing: 0.54px;
   gap: 8px;
+  background-color: #FFF;
 }
 menu .sec-slide1 .container .below .button a {
   color: #000;
@@ -1386,6 +1122,7 @@ menu .blog .container .below .button {
   line-height: 1.5;
   letter-spacing: 0.54px;
   gap: 8px;
+  background-color: #FFF;
 }
 menu .blog .container .below .button a {
   color: #000;
@@ -1396,12 +1133,12 @@ menu .blog .container .below .button::after {
   aspect-ratio: 1;
   background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
 }
-menu .section-7 {
+menu .section-show1 {
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
 }
-menu .section-7 .container {
+menu .section-show1 .container {
   width: 100%;
   max-width: 1120px;
   display: flex;
@@ -1409,12 +1146,12 @@ menu .section-7 .container {
   gap: 40px;
   margin: 0 auto;
 }
-menu .section-7 .container .title-main {
+menu .section-show1 .container .title-main {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-menu .section-7 .container .title-main p {
+menu .section-show1 .container .title-main p {
   text-align: center;
   color: #000;
   font-size: 40px;
@@ -1423,13 +1160,16 @@ menu .section-7 .container .title-main p {
   letter-spacing: 1.2px;
   position: relative;
 }
-menu .section-7 .container .title-main .title-sp {
+menu .section-show1 .container .title-main p br {
+  display: none;
+}
+menu .section-show1 .container .title-main .title-sp {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
-menu .section-7 .container .title-main .title-sp span {
+menu .section-show1 .container .title-main .title-sp span {
   color: #F67600;
   text-align: center;
   font-family: "Oswald", serif;
@@ -1437,17 +1177,17 @@ menu .section-7 .container .title-main .title-sp span {
   font-weight: 500;
   letter-spacing: 0.8px;
 }
-menu .section-7 .container .title-main .title-sp .line {
+menu .section-show1 .container .title-main .title-sp .line {
   display: inline-block;
   width: 12px;
   height: 2px;
   background-color: #F67600;
 }
-menu .section-7 .container .content-main {
+menu .section-show1 .container .content-main {
   display: flex;
   gap: 40px;
 }
-menu .section-7 .container .content-main .left p {
+menu .section-show1 .container .content-main .left p {
   color: #000;
   font-size: 15px;
   font-weight: 400;
@@ -1455,67 +1195,67 @@ menu .section-7 .container .content-main .left p {
   letter-spacing: 0.45px;
   text-align: justify;
 }
-menu .section-7 .container .content-main .left p .br {
+menu .section-show1 .container .content-main .left p .br {
   display: none;
 }
-menu .section-7 .container .content-main .left p span {
+menu .section-show1 .container .content-main .left p span {
   color: #F67600;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.45px;
 }
-menu .section-7 .container .content-main .left img {
+menu .section-show1 .container .content-main .left img {
   display: none;
 }
-menu .section-7 .container .content-main .right .img {
+menu .section-show1 .container .content-main .right .img {
   width: 479px;
   height: 320px;
   border-radius: 16px;
 }
-menu .section-7 .container .content-main .right .img img {
+menu .section-show1 .container .content-main .right .img img {
   width: 100%;
 }
-menu .section-7 .container .staff {
+menu .section-show1 .container .staff {
   display: flex;
   gap: 24px;
 }
-menu .section-7 .container .staff .staff-info {
+menu .section-show1 .container .staff .staff-info {
   display: flex;
   gap: 24px;
   background-color: #fef8e9;
   padding: 24px;
   border-radius: 24px;
 }
-menu .section-7 .container .staff .staff-info .left img {
+menu .section-show1 .container .staff .staff-info .left img {
   width: 236px;
   height: 157px;
   flex-shrink: 0;
 }
-menu .section-7 .container .staff .staff-info .right {
+menu .section-show1 .container .staff .staff-info .right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
-menu .section-7 .container .staff .staff-info .right .name {
+menu .section-show1 .container .staff .staff-info .right .name {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.54px;
 }
-menu .section-7 .container .staff .staff-info .right .address {
+menu .section-show1 .container .staff .staff-info .right .address {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.45px;
 }
-menu .section-7 .container .staff .staff-info .right .link {
+menu .section-show1 .container .staff .staff-info .right .link {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-menu .section-7 .container .staff .staff-info .right .link p {
+menu .section-show1 .container .staff .staff-info .right .link p {
   font-size: 15px;
   color: #F67600;
   font-weight: 400;
@@ -1527,11 +1267,11 @@ menu .section-7 .container .staff .staff-info .right .link p {
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
-menu .section-7 .container .staff .staff-info .right .link img {
+menu .section-show1 .container .staff .staff-info .right .link img {
   width: 12px;
   height: 12px;
 }
-menu .section-7 .container .below .button {
+menu .section-show1 .container .below .button {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -1544,23 +1284,25 @@ menu .section-7 .container .below .button {
   line-height: 1.5;
   letter-spacing: 0.54px;
   gap: 8px;
+  background-color: #FFF;
 }
-menu .section-7 .container .below .button a {
+menu .section-show1 .container .below .button a {
   color: #000;
 }
-menu .section-7 .container .below .button::after {
+menu .section-show1 .container .below .button::after {
   content: "";
   width: 2.2rem;
   aspect-ratio: 1;
   background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
 }
-menu .section-6 {
+menu .section-show2 {
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
   background-color: #FEF8E9;
+  border-radius: 24px;
 }
-menu .section-6 .container {
+menu .section-show2 .container {
   width: 100%;
   max-width: 1120px;
   display: flex;
@@ -1569,12 +1311,12 @@ menu .section-6 .container {
   margin: 0 auto;
   padding: 80px 0;
 }
-menu .section-6 .container .title-main {
+menu .section-show2 .container .title-main {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-menu .section-6 .container .title-main p {
+menu .section-show2 .container .title-main p {
   text-align: center;
   color: #000;
   font-size: 40px;
@@ -1583,13 +1325,13 @@ menu .section-6 .container .title-main p {
   letter-spacing: 1.2px;
   position: relative;
 }
-menu .section-6 .container .title-main .title-sp {
+menu .section-show2 .container .title-main .title-sp {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
-menu .section-6 .container .title-main .title-sp span {
+menu .section-show2 .container .title-main .title-sp span {
   color: #F67600;
   text-align: center;
   font-family: "Oswald", serif;
@@ -1597,39 +1339,63 @@ menu .section-6 .container .title-main .title-sp span {
   font-weight: 500;
   letter-spacing: 0.8px;
 }
-menu .section-6 .container .title-main .title-sp .line {
+menu .section-show2 .container .title-main .title-sp .line {
   display: inline-block;
   width: 12px;
   height: 2px;
   background-color: #F67600;
 }
-menu .section-6 .container .content-main {
+menu .section-show2 .container .content-main {
   display: flex;
   gap: 40px;
 }
-menu .section-6 .container .content-main .left .img {
+menu .section-show2 .container .content-main .left .img {
   width: 479px;
   height: 320px;
   border-radius: 16px;
 }
-menu .section-6 .container .content-main .left .img img {
+menu .section-show2 .container .content-main .left .img img {
   width: 100%;
 }
-menu .section-6 .container .content-main .right p {
+menu .section-show2 .container .content-main .right p {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.43px;
 }
-menu .section-6 .container .content-main .right p .br {
+menu .section-show2 .container .content-main .right p .br {
   display: none;
 }
-menu .section-6 .container .content-main .right .p {
+menu .section-show2 .container .content-main .right .p {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.45px;
   text-align: right;
+}
+menu .section-show2 .container .below .button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid;
+  width: 350px;
+  border-radius: 99px;
+  padding: 24px 64px 24px 48px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+  gap: 8px;
+  background-color: #FFF;
+}
+menu .section-show2 .container .below .button a {
+  color: #000;
+}
+menu .section-show2 .container .below .button::after {
+  content: "";
+  width: 2.2rem;
+  aspect-ratio: 1;
+  background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
 }
 
 .contact2 {
@@ -2062,253 +1828,116 @@ menu .section-6 .container .content-main .right .p {
   menu .section-1 .container .title-main p br {
     display: block;
   }
-  menu .section-2 .container .list {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
-    -moz-column-gap: 16px;
-         column-gap: 16px;
-    margin-top: 4rem;
-  }
-  menu .section-2 .container .list .item {
-    padding: 65px 32px 32px 32px;
-  }
-  menu .section-2 .container .list .item .icon span {
-    top: 10%;
-  }
-  menu .section-2 .container .list .item .text {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  menu .section-2 .container .list .item .image {
-    margin-top: 1.5rem;
-  }
-  menu .section-3 {
-    margin-top: 0;
-  }
-  menu .section-3 .container .group {
-    gap: 0;
-  }
-  menu .section-3 .container .group .vector-1, menu .section-3 .container .group .vector-2 {
-    display: none;
-  }
-  menu .section-3 .container .group .group-item .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 4rem;
-  }
-  menu .section-3 .container .group .group-item .title br {
-    display: flex;
-  }
-  menu .section-3 .container .group .group-item .title p {
-    font-size: 24px;
-    line-height: 1.5;
-    letter-spacing: 0.72px;
+  menu .section-reason {
     width: 100%;
+    max-width: 90%;
+    padding: 40px 0;
   }
-  menu .section-3 .container .group .group-item .title::before, menu .section-3 .container .group .group-item .title::after {
-    content: "";
-    width: 11.4rem;
-    background: url(../img/vecto1.png) no-repeat center center/cover;
-    height: 200px;
-  }
-  menu .section-3 .container .group .group-item .title::after {
-    rotate: 180deg;
-  }
-  menu .section-3 .container .group .group-item .text-1 {
-    line-height: 1.6;
-  }
-  menu .section-3 .container .group .group-item .text-2 {
-    line-height: 1.8;
-  }
-  menu .section-3 .container .group .group-item .text-1, menu .section-3 .container .group .group-item .text-2 {
-    font-size: 15px;
-    letter-spacing: 0.45px;
-  }
-  menu .section-3 .container .group .group-item .text-1 .sp, menu .section-3 .container .group .group-item .text-2 .sp {
-    display: block;
-  }
-  menu .section-4 {
-    margin-bottom: -210px;
-  }
-  menu .section-4 .container {
-    transform: scale(0.9) translateY(-7%);
-    transform-origin: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  menu .section-4 .container .group .card .group-title .title span {
-    font-size: 13px;
-    letter-spacing: 0.19px;
-  }
-  menu .section-4 .container .group .card .group-title .title p {
-    font-size: 24px;
-    letter-spacing: 0.72px;
-  }
-  menu .section-4 .container .group .card .title-group {
-    padding: 20px;
-  }
-  menu .section-4 .container .group .card .title-group .title-group-1 span {
-    font-size: 28px;
-    font-weight: 500;
-  }
-  menu .section-4 .container .group .card .title-group .title-group-1 p {
-    font-size: 16px;
-    letter-spacing: 0.48px;
-    line-height: 1.3;
-  }
-  menu .section-4 .container .group .card .content {
-    padding: 20px 24px 32px 24px;
-  }
-  menu .section-4 .container .group .card .content .above {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .group-image {
-    justify-content: center;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above {
-    display: block;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above small {
-    font-size: 15px;
-    letter-spacing: 0.45px;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title .title-above p {
-    font-size: 24px;
-    letter-spacing: 0.72px;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title span {
-    font-size: 11px;
-    letter-spacing: 0.33px;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-list p {
-    font-size: 15px;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-col {
-    display: block;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .group-image .title-col .title-col-1 p {
-    font-size: 15px;
-  }
-  menu .section-4 .container .group .card .content .above .left .group-left .text {
-    letter-spacing: 2.5px;
-  }
-  menu .section-4 .container .group .card .content2 {
-    padding: 20px 24px 32px 24px;
-  }
-  menu .section-4 .container .group .card .content2 .above {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  menu .section-4 .container .group .card .content2 .above .left .group-left {
-    gap: 12px;
-  }
-  menu .section-4 .container .group .card .content2 .above .left .group-left span {
-    font-size: 16px;
-    letter-spacing: 0.48px;
-  }
-  menu .section-4 .container .group .card .content2 .above .left .group-left .text p {
-    line-height: 1.6;
-  }
-  menu .section-4 .container .group .card .content2 {
-    max-height: 700px;
-  }
-  menu .section-4 .container .group .card .content2.close {
-    max-height: 0;
-    padding: 0;
-    margin: 0;
-  }
-  menu .section-5 {
-    margin-top: 32px;
-    margin-bottom: 48px;
-  }
-  menu .section-5 .container {
+  menu .section-reason .container {
     width: 90%;
+    gap: 32px;
   }
-  menu .section-5 .container .group {
-    gap: 24px;
-  }
-  menu .section-5 .container .group .card .title-group {
-    padding: 20px;
-  }
-  menu .section-5 .container .group .card .title-group .title-group-1 span {
-    font-size: 28px;
-    font-weight: 500;
-  }
-  menu .section-5 .container .group .card .title-group .title-group-1 p {
-    font-size: 16px;
-    letter-spacing: 0.48px;
-    line-height: 1.3;
-  }
-  menu .section-5 .container .group .card .content2 {
-    padding: 20px 24px 32px 24px;
-  }
-  menu .section-5 .container .group .card .content2 .above {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  menu .section-5 .container .group .card .content2 .above .left .group-left {
-    gap: 12px;
-  }
-  menu .section-5 .container .group .card .content2 .above .left .group-left .below {
-    display: none;
-  }
-  menu .section-5 .container .group .card .content2 .above .left .group-left span {
-    font-size: 16px;
-    letter-spacing: 0.48px;
-  }
-  menu .section-5 .container .group .card .content2 .above .left .group-left .text p {
-    line-height: 1.6;
-    letter-spacing: -0.5px;
-  }
-  menu .section-5 .container .group .card .content2 .above .below1 .button {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    border: 2px solid;
-    width: auto;
-    border-radius: 99px;
-    padding: 16px 32px 16px 40px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.54px;
+  menu .section-reason .container .title-main .title-p {
     gap: 8px;
   }
-  menu .section-5 .container .group .card .content2 .above .below1 .button a {
-    color: #000;
+  menu .section-reason .container .title-main .title-p p {
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
   }
-  menu .section-5 .container .group .card .content2 .above .below1 .button::after {
-    content: "";
-    width: 2.2rem;
-    aspect-ratio: 1;
-    background: var(--btn-icon-url, url(../img/nut.png)) no-repeat center center/100%;
+  menu .section-reason .container .title-main .title-span p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+    position: relative;
   }
-  menu .section-5 .container .group .card .content2 .above .right img {
-    max-width: 31rem;
+  menu .section-reason .container .title-main .title-span .title-sp span {
+    color: #F67600;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
   }
-  menu .section-5 .container .group .card .content2 {
-    max-height: 700px;
+  menu .section-reason .container .title-main .title-span .title-sp .line {
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color: #F67600;
   }
-  menu .section-5 .container .group .card .content2.close {
-    max-height: 0;
-    padding: 0;
-    margin: 0;
+  menu .section-reason .container .content-main .list {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+  menu .section-reason .container .content-main .item {
+    width: 100%;
+    padding: 40px 24px 24px 24px;
+  }
+  menu .section-reason .container .content-main .item .icon span {
+    left: 140px;
+    top: 7px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  menu .section-reason .container .content-main .item .text-image .image {
+    margin: 0 auto;
+  }
+  menu .section-reason .container .content-main .item .text-image .text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.42px;
+  }
+  menu .section-reason .container .content-main .below .button {
+    width: 260px;
+    padding: 16px 20px 16px 20px;
+    font-size: 15px;
+    gap: 4px;
   }
   menu .section-tab .container {
     max-width: 90%;
+    gap: 32px;
+  }
+  menu .section-tab .container .title-main .title-p {
+    gap: 8px;
+  }
+  menu .section-tab .container .title-main .title-p p {
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+  }
+  menu .section-tab .container .title-main .title-span p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+    position: relative;
+  }
+  menu .section-tab .container .title-main .title-span .title-sp span {
+    color: #F67600;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+  menu .section-tab .container .title-main .title-span .title-sp .line {
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color: #F67600;
   }
   menu .section-tab .container .tab .tab-head .tab-head__button {
     flex-wrap: nowrap;
@@ -2360,103 +1989,193 @@ menu .section-6 .container .content-main .right .p {
     line-height: 1.5;
     letter-spacing: 0.45px;
   }
-  menu .section-6 {
-    transform: scale(0.9);
+  menu .section-tab .container .below .button {
+    width: 183px;
+    padding: 16px 20px 16px 20px;
+    font-size: 15px;
   }
-  menu .section-6 .container {
+  menu .section-show2 {
     width: 90%;
   }
-  menu .section-6 .container .title-main p {
-    font-size: 24px;
-    margin-top: 48px;
-  }
-  menu .section-6 .container .title-main p br {
-    display: block;
-  }
-  menu .section-6 .container .content-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  menu .section-6 .container .content-main .left .img {
-    width: 343px;
-    height: 229px;
-  }
-  menu .section-6 .container .content-main .left .img img {
-    width: 100%;
-  }
-  menu .section-6 .container .content-main .right .p {
-    text-align: center;
-  }
-  menu .section-7 {
-    transform: scale(0.9);
-  }
-  menu .section-7 .container {
+  menu .section-show2 .container {
     width: 90%;
+    padding: 48px 0;
   }
-  menu .section-7 .container .title-main p {
-    font-size: 24px;
-    margin-top: 48px;
-  }
-  menu .section-7 .container .title-main p br {
-    display: block;
-  }
-  menu .section-7 .container .content-main {
+  menu .section-show2 .container .title-main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  menu .section-7 .container .content-main .left img {
-    display: flex;
-    margin: 0 auto;
-  }
-  menu .section-7 .container .content-main .right .img {
-    display: none;
-  }
-  menu .section-7 .container .staff {
-    display: flex;
-    flex-direction: column;
-  }
-  menu .section-7 .container .staff .staff-info {
-    display: flex;
     gap: 16px;
   }
-  menu .section-7 .container .staff .staff-info .left img {
+  menu .section-show2 .container .title-main p {
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+    position: relative;
+  }
+  menu .section-show2 .container .title-main .title-sp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  menu .section-show2 .container .title-main .title-sp span {
+    color: #F67600;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+  menu .section-show2 .container .title-main .title-sp .line {
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color: #F67600;
+  }
+  menu .section-show2 .container .content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  menu .section-show2 .container .content-main .left .img {
+    max-width: 300px;
+    height: auto;
+  }
+  menu .section-show2 .container .content-main .left .img img {
+    width: 100%;
+  }
+  menu .section-show2 .container .content-main .right .p {
+    text-align: center;
+  }
+  menu .section-show2 .container .below .button {
+    width: 214px;
+    padding: 16px 20px 16px 20px;
+    font-size: 15px;
+  }
+  menu .section-show1 .container {
+    width: 90%;
+  }
+  menu .section-show1 .container .title-main p {
+    font-size: 24px;
+  }
+  menu .section-show1 .container .title-main p br {
+    display: block;
+  }
+  menu .section-show1 .container .content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  menu .section-show1 .container .content-main .left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  menu .section-show1 .container .content-main .left img {
+    display: flex;
+  }
+  menu .section-show1 .container .content-main .left p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.45px;
+  }
+  menu .section-show1 .container .content-main .left p span {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.45px;
+  }
+  menu .section-show1 .container .content-main .right .img {
+    display: none;
+  }
+  menu .section-show1 .container .staff {
+    display: flex;
+    flex-direction: column;
+  }
+  menu .section-show1 .container .staff .staff-info {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 16px;
+  }
+  menu .section-show1 .container .staff .staff-info .left img {
     width: 124px;
     height: 124px;
   }
-  menu .section-7 .container .staff .staff-info .right {
+  menu .section-show1 .container .staff .staff-info .right {
     gap: 4px;
   }
-  menu .section-7 .container .staff .staff-info .right .name {
+  menu .section-show1 .container .staff .staff-info .right .name {
     font-size: 15px;
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.45px;
   }
-  menu .section-7 .container .staff .staff-info .right .address {
+  menu .section-show1 .container .staff .staff-info .right .address {
     font-size: 13px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.39px;
   }
-  menu .section-7 .container .staff .staff-info .right .link p {
+  menu .section-show1 .container .staff .staff-info .right .link p {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.42px;
+    letter-spacing: 0px;
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
   }
+  menu .section-show1 .container .below .button {
+    width: 214px;
+    padding: 16px 20px 16px 20px;
+    font-size: 15px;
+  }
   menu .blog .container {
     width: 90%;
+    padding: 40px 0;
     gap: 32px;
   }
-  menu .blog .container .title-blog p {
-    font-size: 28px;
+  menu .blog .container .title-blog .title-p {
+    gap: 8px;
+  }
+  menu .blog .container .title-blog .title-p p {
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+  }
+  menu .blog .container .title-blog .title-span p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+    position: relative;
+  }
+  menu .blog .container .title-blog .title-span .title-sp span {
+    color: #F67600;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+  menu .blog .container .title-blog .title-span .title-sp .line {
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color: #F67600;
   }
   menu .blog .container .list-blog {
     width: 100%;
@@ -2508,14 +2227,47 @@ menu .section-6 .container .content-main .right .p {
     font-size: 15px;
   }
   menu .sec-slide {
-    transform: scale(0.9);
+    width: 100%;
+    max-width: 90%;
   }
   menu .sec-slide .container {
     width: 90%;
+    padding: 48px 0;
     gap: 32px;
   }
-  menu .sec-slide .container .title-main p {
-    font-size: 24px;
+  menu .sec-slide .container .title-main .title-p {
+    gap: 8px;
+  }
+  menu .sec-slide .container .title-main .title-p p {
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+  }
+  menu .sec-slide .container .title-main .title-span p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+    position: relative;
+  }
+  menu .sec-slide .container .title-main .title-span .title-sp span {
+    color: #F67600;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+  menu .sec-slide .container .title-main .title-span .title-sp .line {
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color: #F67600;
   }
   menu .sec-slide .container .btn-slide.next img {
     width: 32px;
@@ -2542,12 +2294,46 @@ menu .section-6 .container .content-main .right .p {
     font-size: 15px;
     width: 199px;
   }
+  menu .sec-slide1 {
+    width: 90%;
+  }
   menu .sec-slide1 .container {
     width: 90%;
     gap: 32px;
   }
-  menu .sec-slide1 .container .title-main p {
-    font-size: 24px;
+  menu .sec-slide1 .container .title-main .title-p {
+    gap: 8px;
+  }
+  menu .sec-slide1 .container .title-main .title-p p {
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+  }
+  menu .sec-slide1 .container .title-main .title-span p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+    position: relative;
+  }
+  menu .sec-slide1 .container .title-main .title-span .title-sp span {
+    color: #F67600;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+  menu .sec-slide1 .container .title-main .title-span .title-sp .line {
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color: #F67600;
   }
   menu .sec-slide1 .container .btn-slide.next img {
     width: 32px;
@@ -2572,7 +2358,7 @@ menu .section-6 .container .content-main .right .p {
   menu .sec-slide1 .container .below .button {
     padding: 16px 20px 16px 20px;
     font-size: 15px;
-    width: 199px;
+    width: 200px;
   }
   .contact2 {
     padding: 40px 0 0 0;
@@ -2666,53 +2452,8 @@ menu .section-6 .container .content-main .right .p {
   menu .section-1 .container .text-main p .sp {
     display: block;
   }
-  menu .section-2 .container .list {
-    row-gap: 20px;
-    -moz-column-gap: 16px;
-         column-gap: 16px;
-    margin-top: 4rem;
-  }
-  menu .section-2 .container .list .item {
-    padding: 32px 16px 16px 16px;
-  }
-  menu .section-2 .container .list .item .icon {
-    position: absolute;
-    top: -10px;
-  }
-  menu .section-2 .container .list .item .icon span {
-    font-size: 16px;
-    top: 10%;
-  }
-  menu .section-2 .container .list .item .icon img {
-    width: 33px;
-    height: 36px;
-  }
-  menu .section-2 .container .list .item .text {
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0;
-  }
-  menu .section-2 .container .list .item .text .sp-1 {
-    display: none;
-  }
-  menu .section-2 .container .list .item .text .sp {
-    display: block;
-  }
-  menu .section-2 .container .list .item .image {
-    margin-top: 1.5rem;
-  }
-  menu .section-3 .container {
-    transform: scale(0.9);
-  }
-  menu .section-4 {
-    margin-bottom: -260px;
-  }
-  menu .section-4 .container .group .content .below .button {
-    width: auto;
-  }
-  menu .section-5 {
-    margin-top: 32px;
-    margin-bottom: 48px;
+  menu .section-reason .container .content-main .item .icon span {
+    left: -15px;
   }
   menu .section-tab .container .tab .tab-head .tab-head__button button span {
     flex-shrink: 0;
@@ -2727,12 +2468,12 @@ menu .section-6 .container .content-main .right .p {
   menu .section-tab .container .tab .tab-body .tab-body__item .tab-head__list .list-item .item-list .item-content .span {
     text-align: left;
   }
-  menu .section-6 .container .content-main .right p {
-    letter-spacing: 0;
+  menu .section-show2 .container .content-main .right p {
+    letter-spacing: 0.45px;
   }
   menu .blog .container {
     width: 90%;
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
   menu .blog .container .title-blog p {
     font-size: 28px;
@@ -2777,7 +2518,7 @@ menu .section-6 .container .content-main .right .p {
     display: none;
   }
   menu .sec-slide .container .btn-slide {
-    top: 40%;
+    top: 50%;
   }
   menu .sec-slide .container .slider {
     max-width: 230px;
@@ -2793,10 +2534,10 @@ menu .section-6 .container .content-main .right .p {
     width: 100%;
   }
   menu .sec-slide1 {
-    transform: scale(0.9);
+    width: 100%;
   }
   menu .sec-slide1 .container .btn-slide {
-    top: 40%;
+    top: 50%;
   }
   menu .sec-slide1 .container .slider {
     max-width: 230px;

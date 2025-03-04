@@ -419,7 +419,7 @@ menu .section-reason .container .content-main .item {
 menu .section-reason .container .content-main .item .icon {
   position: absolute;
   top: -39px;
-  left: 150px;
+  left: 155px;
 }
 menu .section-reason .container .content-main .item .icon span {
   position: absolute;
@@ -2453,7 +2453,7 @@ menu .section-show2 .container .below .button::after {
     display: block;
   }
   menu .section-reason .container .content-main .item .icon span {
-    left: -15px;
+    left: -20px;
   }
   menu .section-tab .container .tab .tab-head .tab-head__button button span {
     flex-shrink: 0;

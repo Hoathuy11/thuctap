@@ -1019,6 +1019,7 @@ menu{
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+                max-width: 1120px;
                 .item-blog{
                     .main-blog{
                         display: flex;
@@ -1111,15 +1112,12 @@ menu{
     }
     .section-show1 {
         width: 100%;
-        max-width: 1360px;
-        margin:0 auto;
+        max-width: 1440px;
         .container {
-            width: 100%;
-            max-width: 1120px;
             display: flex;
             flex-direction: column;
             gap: 40px;
-            margin: 0 auto;
+            margin: 0 0 0 auto;
             .title-main {
                 display: flex;
                 flex-direction: column;
@@ -1159,7 +1157,10 @@ menu{
             }
             .content-main{
                 display: flex;
-                gap: 40px;
+                gap: 48px;
+                width: 100%;
+                max-width: 1300px;
+                margin: 0 0 0 auto;
                 .left{
                     p{
                         color: #000;
@@ -1185,9 +1186,8 @@ menu{
                 }
                 .right{
                     .img{
-                        width: 479px;
-                        height: 320px;
-                        border-radius: 16px;
+                        width: 684px;
+                        height: auto;
                         img{
                             width: 100%;
                         }
@@ -1196,6 +1196,7 @@ menu{
             }
             .staff{
                 display: flex;
+                justify-content: center;
                 gap: 24px;
                 .staff-info{
                     display: flex;
@@ -2145,6 +2146,7 @@ menu{
     menu .section-show1{ 
         .container{
             width: 90%;
+            margin: 0 auto;
             .title-main p{
                 font-size: 24px;
                 br{

@@ -996,6 +996,7 @@ menu .blog .container .list-blog {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 1120px;
 }
 menu .blog .container .list-blog .item-blog .main-blog {
   display: flex;
@@ -1080,16 +1081,13 @@ menu .blog .container .below .button::after {
 }
 menu .section-show1 {
   width: 100%;
-  max-width: 1360px;
-  margin: 0 auto;
+  max-width: 1440px;
 }
 menu .section-show1 .container {
-  width: 100%;
-  max-width: 1120px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 menu .section-show1 .container .title-main {
   display: flex;
@@ -1130,7 +1128,10 @@ menu .section-show1 .container .title-main .title-sp .line {
 }
 menu .section-show1 .container .content-main {
   display: flex;
-  gap: 40px;
+  gap: 48px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 0 0 auto;
 }
 menu .section-show1 .container .content-main .left p {
   color: #000;
@@ -1154,15 +1155,15 @@ menu .section-show1 .container .content-main .left img {
   display: none;
 }
 menu .section-show1 .container .content-main .right .img {
-  width: 479px;
-  height: 320px;
-  border-radius: 16px;
+  width: 684px;
+  height: auto;
 }
 menu .section-show1 .container .content-main .right .img img {
   width: 100%;
 }
 menu .section-show1 .container .staff {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 menu .section-show1 .container .staff .staff-info {
@@ -2038,6 +2039,7 @@ menu .section-show2 .container .below .button::after {
   }
   menu .section-show1 .container {
     width: 90%;
+    margin: 0 auto;
   }
   menu .section-show1 .container .title-main p {
     font-size: 24px;

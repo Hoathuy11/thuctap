@@ -44,4 +44,27 @@ $(document).ready(function(){
             }
         ]
     });
+    // Slider 3 - Chỉ hiển thị 3 slides cùng lúc
+    $('.slide-top .slider').slick({
+        infinite: true,
+        slidesToShow: 3,  // Hiển thị 3 slide
+        slidesToScroll: 1,
+        prevArrow: ".slide-top .prev",
+        nextArrow: ".slide-top .next",
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2  // Màn hình nhỏ hơn 769px sẽ hiển thị 2 slide
+                }
+            },
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1  // Màn hình nhỏ hơn 426px sẽ hiển thị 1 slide
+                }
+            }
+        ]
+    });
 });
+

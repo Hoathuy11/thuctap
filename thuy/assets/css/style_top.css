@@ -2224,50 +2224,31 @@ menu .section-show2 .container .below .button::after {
   }
   .banner {
     width: 90%;
-    min-height: 490px;
+    min-height: 850px;
   }
   .banner .bnr-text {
-    top: 7%;
-    left: 20px;
-    transform: scale(0.65);
+    top: 3%;
+    left: 28%;
   }
   .banner .text {
-    top: 17%;
+    top: 10%;
+    left: 23%;
   }
   .banner .text p {
-    font-size: 20px;
-    font-weight: 900;
-    line-height: 1.4;
-    letter-spacing: 0.6px;
     text-align: center;
   }
   .banner .text p br {
     display: block;
   }
   .banner .logo-top {
-    top: 30%;
+    top: 21%;
   }
   .banner .object {
-    transform: scale(0.8);
-    top: 38%;
+    top: 29%;
+    left: 35px;
   }
   .banner .object .object-img p {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.6px;
-    top: -77px;
-  }
-  .banner .object .object-img .p {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 120%;
-  }
-  .banner .object .object-img .p-1 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 1px;
+    top: -125px;
   }
   .banner .img-fml {
     margin: auto 0 0 0;
@@ -3111,12 +3092,13 @@ menu .section-show2 .container .below .button::after {
     min-height: 490px;
   }
   .banner .bnr-text {
-    top: 7%;
+    top: 5%;
     left: 20px;
     transform: scale(0.65);
   }
   .banner .text {
-    top: 17%;
+    top: 15%;
+    left: 50px;
   }
   .banner .text p {
     font-size: 20px;
@@ -3129,11 +3111,12 @@ menu .section-show2 .container .below .button::after {
     display: block;
   }
   .banner .logo-top {
-    top: 30%;
+    top: 28%;
   }
   .banner .object {
-    transform: scale(0.8);
+    transform: scale(0.9);
     top: 38%;
+    left: 1px;
   }
   .banner .object .object-img p {
     font-size: 12px;

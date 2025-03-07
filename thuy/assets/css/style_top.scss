@@ -483,6 +483,9 @@ menu{
                         font-weight: 700;
                         line-height: normal;
                         letter-spacing: 0.48px;
+                        br{
+                            display: none;
+                        }
                     }
                 }
                 .title-span{
@@ -812,8 +815,8 @@ menu{
                         flex-direction: column;
                         gap: 32px;
                         .list{
-                            display: flex;
-                            flex-wrap: wrap;
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
                             gap: 24px;
                         }
                         .item{
@@ -2285,18 +2288,9 @@ menu{
     .banner{
         width: 90%;
         max-width: none;
-        height: 148px;
-    }
-    .banner .reason{
-        h1{
-            font-size: 28px;
-            br{
-                display: block;
-            }
-        }
-        p{
-            font-size: 18px;
-        }
+        height: 480px;
+        display: flex;
+        flex-direction: column;
     }
     menu{
         gap: 48px;
@@ -2466,6 +2460,155 @@ menu{
                     padding: 16px 20px 16px 20px;
                     font-size: 15px;
                     gap: 4px;
+                }
+            }
+        }
+    }
+    menu .section-menu{
+        .container{
+            width: 100%;
+            overflow: hidden;
+            gap: 32px;
+            padding: 48px 0;
+            .title-main{
+                .title-p{
+                    p{
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 0.42px;
+                        br{
+                            display: block;
+                        }
+                    }
+                }
+                .title-span{
+                    p{
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 1.3;
+                        letter-spacing: 0.9px;
+                    }
+                    .title-sp{
+                        span{
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 0.64px;
+                        }
+                    }
+                }
+            }
+            .menu{
+                .menu-above{
+                    .menu-above__title{
+                        gap: 8px;
+                        p{
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 1.2;
+                            letter-spacing: 0.72px;
+                            br{
+                                display: block;
+                            }
+                        }
+                        .line {
+                            clip-path: inset(0 25% 0 25%); /* Cắt bớt 25% ở cả hai bên để giữ nguyên kích thước nét đứt */
+                            &:first-of-type {
+                                clip-path: inset(0 0 0 50%); /* Cắt 50% bên trái, giữ lại bên phải */
+                            }
+                            &:last-of-type {
+                                clip-path: inset(0 50% 0 0); /* Cắt 50% bên phải, giữ lại bên trái */
+                            }
+                        }
+                    }
+                    .menu-above__content{
+                        .list{
+                            display: grid;
+                            grid-template-columns: repeat(1, minmax(30rem, 1fr));
+                            row-gap: 40px;
+                            .item{
+                                padding: 24px;
+                                width: 90%;
+                                margin: 0 auto;
+                                .item{
+                                    .text{
+                                        font-size: 36px;
+                                    }
+                                    .text-image{
+                                        transform: scale(0.9);
+                                    }
+                                }
+                            }
+                        }
+                        .combo{
+                            display: flex;
+                            flex-direction: column;
+                            width: 90%;
+                            margin: 0 auto;
+                            .left{
+                                padding: 16px 32px 16px 32px;
+                                border-radius: 16px 16px 0 0;
+                                justify-content: center;
+                                p{
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    letter-spacing: 0.48px;
+                                   br{
+                                    display: none;
+                                   }
+                                }
+                            }
+                            .right{
+                                padding: 20px 16px 20px 16px;
+                                border-radius: 0 0 16px 16px;
+                                .button{
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    line-height: 1.4;
+                                    letter-spacing: 0.42px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .menu-below{
+                    .menu-below__title{
+                        gap: 8px;
+                        .title-p p{
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 0.42px;
+                        }
+                        .title-span p{
+                            font-size: 30px;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 0.9px;
+                        }
+                        .line {
+                            clip-path: inset(0 25% 0 25%); /* Cắt bớt 25% ở cả hai bên để giữ nguyên kích thước nét đứt */
+                            &:first-of-type {
+                                clip-path: inset(0 0 0 60%); /* Cắt 50% bên trái, giữ lại bên phải */
+                            }
+                            &:last-of-type {
+                                clip-path: inset(0 60% 0 0); /* Cắt 50% bên phải, giữ lại bên trái */
+                            }
+                        }
+                    }
+                    .menu-below__content{
+                        .list{
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 12px;
+                            width: 90%;
+                            margin: 0 auto;
+                            .item{
+                                padding: 12px 16px 20px 16px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -3133,6 +3276,18 @@ menu{
             .content-main .item {
                 .icon span{
                     left: -20px;
+                }
+            }
+        }
+    }
+    menu .section-menu{
+        .container{
+            .menu-below{
+                .menu-below__content{
+                    .list{
+                        width: 80%;
+                        margin: 0 auto;
+                    }
                 }
             }
         }

@@ -2251,6 +2251,7 @@ menu .section-show2 .container .below .button::after {
   }
   .banner .logo-top {
     top: 21%;
+    transform: scale(0.85);
   }
   .banner .object {
     top: 29%;
@@ -3135,6 +3136,8 @@ menu .section-show2 .container .below .button::after {
   }
   .banner .logo-top {
     top: 28%;
+    left: -5px;
+    transform: scale(0.95);
   }
   .banner .object {
     transform: scale(0.9);

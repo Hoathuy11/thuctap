@@ -2554,7 +2554,7 @@ menu .section-show2 .container .below .button::after {
             clip-path: inset(0 60% 0 0); /* Cắt 50% bên phải, giữ lại bên trái */
   }
   menu .section-menu .container .menu .menu-below .menu-below__content .list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 12px;
   }
   menu .section-menu .container .menu .menu-below .menu-below__content .list .item {
@@ -2566,12 +2566,12 @@ menu .section-show2 .container .below .button::after {
     line-height: 1.5;
   }
   menu .section-menu .container .menu .menu-below .menu-below__content .list .item .card {
-    gap: 8px;
+    gap: 0px;
     width: -moz-max-content;
     width: max-content;
   }
   menu .section-menu .container .menu .menu-below .menu-below__content .list .item .card .card-left span {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 1.4;
   }
@@ -2579,12 +2579,21 @@ menu .section-show2 .container .below .button::after {
     line-height: 1.4;
   }
   menu .section-menu .container .menu .menu-below .menu-below__content .list .item .card .card-left p .p-1 {
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 500;
   }
   menu .section-menu .container .menu .menu-below .menu-below__content .list .item .card .card-left p .p-2 {
-    font-size: 13px;
+    font-size: 8px;
     font-weight: 700;
+  }
+  menu .section-menu .container .menu .menu-below .menu-below__content .list .item .card .card-right p {
+    font-size: 10px;
+  }
+  menu .section-menu .container .menu .menu-below .menu-below__content .list .item .card .card-right .p-right {
+    font-size: 12px;
+  }
+  menu .section-menu .container .menu .menu-below .menu-below__content .list .item .card .card-right .p-right span {
+    font-size: 20px;
   }
   menu .section-menu .container .below .button {
     width: 230px;

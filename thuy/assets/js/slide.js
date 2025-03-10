@@ -61,7 +61,7 @@ $(document).ready(function(){
             {
                 breakpoint: 426,
                 settings: {
-                    slidesToShow: 1  // Màn hình nhỏ hơn 426px sẽ hiển thị 1 slide
+                    slidesToShow: 1 // Màn hình nhỏ hơn 426px sẽ hiển thị 1 slide
                 }
             }
         ]
